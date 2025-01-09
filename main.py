@@ -1,13 +1,14 @@
 from node import Node
 from algorithms import BFS
 from algorithms import DFS
+from algorithms import Dijkstra
 import costFunctions as c
 
 
 def main():
     start = Node(0, 0)
-    objective = Node(1, 2)
-    result = DFS(start, objective, c.C_1)
+    objective = Node(1, 8)
+    result = Dijkstra(start, objective, c.C_3)
     path = result[0].path()
 
     if result is None:
