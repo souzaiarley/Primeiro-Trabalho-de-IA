@@ -123,6 +123,44 @@ def Dijkstra(start: Node, goal: Node, costFunction: Callable):
     # If the goal node is not found, return None
     return None
 
+def GBFS(start: Node, goal: Node, heuristic: Callable):
+    # Start from the start node
+    current = start
+
+    # Create the priority queue and add the start node
+    frontier = PriorityQueue()
+    frontier.put((0, id(current), current))  # Priority = f(n) = h(n)
+
+    # Create a dictionary to store the nodes that have been reached and add the start node to the dictionary
+    reached = {}
+    reached[current] = current
+
+    # List of visited nodes
+    visited = []
+
+    # While there are nodes to explore
+    while not frontier.empty():
+        # Remove the node with the lowest f(n) cost (i.e., smallest heuristic)
+        current = frontier.get()[2]
+        visited.append(current)
+
+        # Check if it is the goal node
+        if current == goal:
+            return current, len(reached), len(visited)
+
+        # Expand the child nodes
+        for child in current.expandGBFS(heuristic, goal):
+            # Calculate the heuristic for the child node
+            f_est = heuristic(child, goal)  # f(n) = h(n)
+
+            # If the child node hasn't been reached before, or if it's a better path (lower heuristic)
+            if child not in reached:
+                reached[child] = child
+                frontier.put((f_est, id(child), child))  # Insert the child into the priority queue with its heuristic as the priority
+
+    # If the goal is not found, return None
+    return None
+
 
 def AStar(start: Node, goal: Node, costFunction: Callable, heuristic: Callable):
     # Start from the start node
