@@ -1,6 +1,7 @@
 from node import Node
 from algorithms import *
 from costFunctions import *
+from heuristics import *
 from random import randint
 
 # This function returns a string with the result of the search using it's information
@@ -92,6 +93,18 @@ def Experiment_0():
 
         f.write("\n        Cost function: C_4")
         result = Dijkstra(start, goal, C_4)
+        f.write(printResult(start, goal, result))
+
+        # Uniform-Cost Search
+        f.write("\n    Greedy Best-First Search\n")
+
+        # Calling the Dijkstra function with the cost functions
+        f.write("\n        Euclidean:")
+        result = GBFS(start, goal, euclidean)
+        f.write(printResult(start, goal, result))
+
+        f.write("\n        Manhattan:")
+        result = GBFS(start, goal, manhattan)
         f.write(printResult(start, goal, result))
 
 # This function runs the experiment 1, saving the results in a file

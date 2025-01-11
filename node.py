@@ -35,6 +35,19 @@ class Node:
             children.append(Node(self.x, self.y + 1, self.depth + 1, self, self.cost + costs[1]))
         return children
     
+    def expandGBFS(self, heuristic: Callable, goal: 'Node'): 
+        children = []
+        est = heuristic(self, goal)
+        if self.x - 1 >= 0:
+            children.append(Node(self.x - 1, self.y, self.depth + 1, self, est))
+        if self.x + 1 <= 30:
+            children.append(Node(self.x + 1, self.y, self.depth + 1, self, est))
+        if self.y - 1 >= 0:
+            children.append(Node(self.x, self.y - 1, self.depth + 1, self, est))
+        if self.y + 1 <= 30:
+            children.append(Node(self.x, self.y + 1, self.depth + 1, self, est))
+        return children
+    
     # Returns the path from the current node to the root node
     def path(self):
         path = []
