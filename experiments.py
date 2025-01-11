@@ -129,6 +129,7 @@ def Experiment_0():
 
         f.write("\n        Cost function: C_4 (manhattan)")
         result = AStar(start, goal, C_4, manhattan)
+        f.write(printResult(start, goal, result))
         
         # Greedy Best-First Search
         f.write("\n    Greedy Best-First Search\n")
