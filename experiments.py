@@ -1,6 +1,7 @@
 from node import Node
 from algorithms import *
 from costFunctions import *
+from heuristics import *
 from random import randint
 
 # This function returns a string with the result of the search using it's information
@@ -92,6 +93,42 @@ def Experiment_0():
 
         f.write("\n        Cost function: C_4")
         result = Dijkstra(start, goal, C_4)
+        f.write(printResult(start, goal, result))
+
+        # A* Search
+        f.write("\n    A* Search\n")
+
+        # Calling the AStar function with the cost functions
+        f.write("\n        Cost function: C_1 (euclidean)")
+        result = AStar(start, goal, C_1, euclidean)
+        f.write(printResult(start, goal, result))
+
+        f.write("\n        Cost function: C_1 (manhattan)")
+        result = AStar(start, goal, C_1, manhattan)
+        f.write(printResult(start, goal, result))
+
+        f.write("\n        Cost function: C_2 (euclidean)")
+        result = AStar(start, goal, C_2, euclidean)
+        f.write(printResult(start, goal, result))
+
+        f.write("\n        Cost function: C_2 (manhattan)")
+        result = AStar(start, goal, C_2, manhattan)
+        f.write(printResult(start, goal, result))
+
+        f.write("\n        Cost function: C_3 (euclidean)")
+        result = AStar(start, goal, C_3, euclidean)
+        f.write(printResult(start, goal, result))
+
+        f.write("\n        Cost function: C_3 (manhattan)")
+        result = AStar(start, goal, C_3, manhattan)
+        f.write(printResult(start, goal, result))
+
+        f.write("\n        Cost function: C_4 (euclidean)")
+        result = AStar(start, goal, C_4, euclidean)
+        f.write(printResult(start, goal, result))
+
+        f.write("\n        Cost function: C_4 (manhattan)")
+        result = AStar(start, goal, C_4, manhattan)
         f.write(printResult(start, goal, result))
 
 # This function runs the experiment 1, saving the results in a file
