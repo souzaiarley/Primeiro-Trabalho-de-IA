@@ -129,10 +129,11 @@ def Experiment_0():
 
         f.write("\n        Cost function: C_4 (manhattan)")
         result = AStar(start, goal, C_4, manhattan)
-        # Uniform-Cost Search
+        
+        # Greedy Best-First Search
         f.write("\n    Greedy Best-First Search\n")
 
-        # Calling the Dijkstra function with the cost functions
+        # Calling the GBFS function with the cost functions
         f.write("\n        Euclidean:")
         result = GBFS(start, goal, euclidean)
         f.write(printResult(start, goal, result))
