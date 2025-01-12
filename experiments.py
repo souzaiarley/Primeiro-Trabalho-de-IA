@@ -94,6 +94,42 @@ def Experiment_0():
         f.write("\n        Cost function: C_4")
         result = Dijkstra(start, goal, C_4)
         f.write(printResult(start, goal, result))
+        
+        # Greedy Best-First Search
+        f.write("\n    Greedy Best-First Search\n")
+
+        # Calling the Greedy function with the cost functions
+        f.write("\n        Cost function: C_1 (euclidean)")
+        result = GBFS(start, goal, C_1, euclidean)
+        f.write(printResult(start, goal, result))
+
+        f.write("\n        Cost function: C_1 (manhattan)")
+        result = GBFS(start, goal, C_1, manhattan)
+        f.write(printResult(start, goal, result))
+
+        f.write("\n        Cost function: C_2 (euclidean)")
+        result = GBFS(start, goal, C_2, euclidean)
+        f.write(printResult(start, goal, result))
+
+        f.write("\n        Cost function: C_2 (manhattan)")
+        result = GBFS(start, goal, C_2, manhattan)
+        f.write(printResult(start, goal, result))
+
+        f.write("\n        Cost function: C_3 (euclidean)")
+        result = GBFS(start, goal, C_3, euclidean)
+        f.write(printResult(start, goal, result))
+
+        f.write("\n        Cost function: C_3 (manhattan)")
+        result = GBFS(start, goal, C_3, manhattan)
+        f.write(printResult(start, goal, result))
+
+        f.write("\n        Cost function: C_4 (euclidean)")
+        result = GBFS(start, goal, C_4, euclidean)
+        f.write(printResult(start, goal, result))
+
+        f.write("\n        Cost function: C_4 (manhattan)")
+        result = GBFS(start, goal, C_4, manhattan)
+        f.write(printResult(start, goal, result))
 
         # A* Search
         f.write("\n    A* Search\n")
@@ -130,18 +166,7 @@ def Experiment_0():
         f.write("\n        Cost function: C_4 (manhattan)")
         result = AStar(start, goal, C_4, manhattan)
         f.write(printResult(start, goal, result))
-        
-        # Greedy Best-First Search
-        f.write("\n    Greedy Best-First Search\n")
 
-        # Calling the GBFS function with the cost functions
-        f.write("\n        Euclidean:")
-        result = GBFS(start, goal, euclidean)
-        f.write(printResult(start, goal, result))
-
-        f.write("\n        Manhattan:")
-        result = GBFS(start, goal, manhattan)
-        f.write(printResult(start, goal, result))
 
 # This function runs the experiment 1, saving the results in a file
 def Experiment_1():
