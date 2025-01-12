@@ -123,7 +123,7 @@ def Dijkstra(start: Node, goal: Node, costFunction: Callable):
     # If the goal node is not found, return None
     return None
 
-def GBFS(start: Node, goal: Node, heuristic: Callable):
+def GBFS(start: Node, goal: Node, costFunction: Callable, heuristic: Callable):
     # Start from the start node
     current = start
 
@@ -140,7 +140,7 @@ def GBFS(start: Node, goal: Node, heuristic: Callable):
 
     # While there are nodes to explore
     while not frontier.empty():
-        # Remove the node with the lowest f(n) cost (i.e., smallest heuristic)
+        # Remove the node with the lowest f(n) cost
         current = frontier.get()[2]
         visited.append(current)
 
@@ -149,14 +149,14 @@ def GBFS(start: Node, goal: Node, heuristic: Callable):
             return current, len(reached), len(visited)
 
         # Expand the child nodes
-        for child in current.expandGBFS(heuristic, goal):
-            # Calculate the heuristic for the child node
-            f_est = heuristic(child, goal)  # f(n) = h(n)
+        for child in current.expand(costFunction):
+            # Calculate the costs
+            f_cost = heuristic(child, goal)  # f(n) = h(n)
 
-            # If the child node hasn't been reached before, or if it's a better path (lower heuristic)
+            # Check if the node should be updated
             if child not in reached:
-                reached[child] = child
-                frontier.put((f_est, id(child), child))  # Insert the child into the priority queue with its heuristic as the priority
+                reached[child] = child  # Update the node in the reached dictionary
+                frontier.put((f_cost, id(child), child))  # Add to the priority queue
 
     # If the goal is not found, return None
     return None

@@ -86,7 +86,7 @@ if __name__ == "__main__":
             exit()
         if choice == "3":
             print("Running Greedy Search with cost function", choice_str, "and heuristic", heuristic_str)
-            # test(Greedy, costFunction, heuristic)
+            test(GBFS, costFunction, heuristic)
         elif choice == "4":
             print("Running A* with cost function", choice_str, " and", heuristic_str, "heuristic")
             test(AStar, costFunction, heuristic)
