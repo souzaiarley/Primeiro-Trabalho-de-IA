@@ -44,6 +44,48 @@ def BFS(start: Node, goal: Node, costFunction: Callable):
     # If the goal node is not found, return None
     return None
 
+# Random Breadth First Search
+def RandomBFS(start: Node, goal: Node, costFunction: Callable):
+    # Start from the start node
+    currentNode = start
+    
+    # If the start node is the goal node, return the start node
+    if currentNode == goal:
+        return (currentNode, 1, 1)
+    
+    # Create a queue to store the nodes to be visited and add the start node to the queue
+    frontier = Queue()
+    frontier.put(currentNode)
+
+    # Create a set to store the nodes that have been reached and add the start node to the set
+    reached = set()
+    reached.add(currentNode)
+
+    # Create a list to store the nodes that have been visited
+    visited = []
+
+    # While the queue is not empty
+    while not frontier.empty():
+        # Get the first node in the queue, remove it from the queue, and add it to the visited list
+        currentNode = frontier.get()
+        visited.append(currentNode)
+        
+        # Expand the current node
+        children = currentNode.expand(costFunction)
+
+        # Shuffle the children nodes to make the search random
+        shuffle(children)
+
+        # For each child node, if the child node is the goal node, return the child node. Otherwise, add the child node to the queue and to the reached set
+        for child in children:
+            if child == goal:
+                return (child, len(reached)+1, len(visited)) # Return the goal node, the number of nodes reached (generated), and the number of nodes visited
+            if child not in reached:
+                reached.add(child)
+                frontier.put(child)
+    
+    # If the goal node is not found, return None
+    return None
 
 # Depth First Search
 def DFS(start: Node, goal: Node, costFunction: Callable):
