@@ -2,6 +2,7 @@ from node import Node
 from queue import Queue
 from queue import PriorityQueue
 from typing import Callable
+from random import shuffle
 
 # Breadth First Search
 def BFS(start: Node, goal: Node, costFunction: Callable):
@@ -84,6 +85,48 @@ def DFS(start: Node, goal: Node, costFunction: Callable):
     # If the goal node is not found, return None
     return None
 
+# Random Depth First Search
+def RandomDFS(start: Node, goal: Node, costFunction: Callable):
+    # Start from the start node
+    currentNode = start
+    
+    # If the start node is the goal node, return the start node
+    if currentNode == goal:
+        return (currentNode, 1, 1)
+    
+    # Create a stack to store the nodes to be visited and add the start node to the stack
+    frontier = []
+    frontier.append(currentNode)
+
+    # Create a set to store the nodes that have been reached and add the start node to the set
+    reached = set()
+    reached.add(currentNode)
+
+    # Create a list to store the nodes that have been visited
+    visited = []
+
+    # While the stack is not empty
+    while not len(frontier) == 0:
+        # Get the last node in the stack, remove it from the stack, and add it to the visited list
+        currentNode = frontier.pop()
+        visited.append(currentNode)
+
+        # Expand the current node
+        children = currentNode.expand(costFunction)
+
+        # Shuffle the children nodes to make the search random
+        shuffle(children)
+
+        # For each child node, if the child node is the goal node, return the child node. Otherwise, add the child node to the stack and to the reached set
+        for child in children:
+            if child == goal:
+                return (child, len(reached)+1, len(visited)) # Return the goal node, the number of nodes reached (generated), and the number of nodes visited
+            if child not in reached:
+                reached.add(child)
+                frontier.append(child)
+    
+    # If the goal node is not found, return None
+    return None
 
 # Uniform Cost Search
 def Dijkstra(start: Node, goal: Node, costFunction: Callable):
