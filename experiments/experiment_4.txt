@@ -1,0 +1,2683 @@
+|==============|
+| Experiment 4 |
+|==============|
+
+Nodes: Start (17, 5) - Goal (21, 5)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (17, 5)
+            Goal: (21, 5)
+            Path: (17, 5) -> (18, 5) -> (19, 5) -> (20, 5) -> (21, 5)
+            Path cost: 40 (C1)
+            Path cost: 60 (C2)
+            Path cost: 54 (C3)
+            Path cost: 50 (C4)
+            Nodes generated: 35
+            Nodes visited: 20
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (17, 5)
+            Goal: (21, 5)
+            Path: (17, 5) -> (18, 5) -> (19, 5) -> (20, 5) -> (21, 5)
+            Path cost: 40 (C1)
+            Path cost: 60 (C2)
+            Path cost: 54 (C3)
+            Path cost: 50 (C4)
+            Nodes generated: 37
+            Nodes visited: 22
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (17, 5)
+            Goal: (21, 5)
+            Path: (17, 5) -> (18, 5) -> (19, 5) -> (20, 5) -> (21, 5)
+            Path cost: 40 (C1)
+            Path cost: 60 (C2)
+            Path cost: 54 (C3)
+            Path cost: 50 (C4)
+            Nodes generated: 39
+            Nodes visited: 23
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (17, 5)
+            Goal: (21, 5)
+            Path: (17, 5) -> (18, 5) -> (19, 5) -> (20, 5) -> (21, 5)
+            Path cost: 40 (C1)
+            Path cost: 60 (C2)
+            Path cost: 54 (C3)
+            Path cost: 50 (C4)
+            Nodes generated: 40
+            Nodes visited: 24
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (17, 5)
+            Goal: (21, 5)
+            Path: (17, 5) -> (18, 5) -> (19, 5) -> (20, 5) -> (21, 5)
+            Path cost: 40 (C1)
+            Path cost: 60 (C2)
+            Path cost: 54 (C3)
+            Path cost: 50 (C4)
+            Nodes generated: 35
+            Nodes visited: 20
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (17, 5)
+            Goal: (21, 5)
+            Path: (17, 5) -> (18, 5) -> (19, 5) -> (20, 5) -> (21, 5)
+            Path cost: 40 (C1)
+            Path cost: 60 (C2)
+            Path cost: 54 (C3)
+            Path cost: 50 (C4)
+            Nodes generated: 38
+            Nodes visited: 22
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (17, 5)
+            Goal: (21, 5)
+            Path: (17, 5) -> (18, 5) -> (19, 5) -> (20, 5) -> (21, 5)
+            Path cost: 40 (C1)
+            Path cost: 60 (C2)
+            Path cost: 54 (C3)
+            Path cost: 50 (C4)
+            Nodes generated: 41
+            Nodes visited: 25
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (17, 5)
+            Goal: (21, 5)
+            Path: (17, 5) -> (18, 5) -> (19, 5) -> (20, 5) -> (21, 5)
+            Path cost: 40 (C1)
+            Path cost: 60 (C2)
+            Path cost: 54 (C3)
+            Path cost: 50 (C4)
+            Nodes generated: 28
+            Nodes visited: 14
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (17, 5)
+            Goal: (21, 5)
+            Path: (17, 5) -> (18, 5) -> (19, 5) -> (20, 5) -> (21, 5)
+            Path cost: 40 (C1)
+            Path cost: 60 (C2)
+            Path cost: 54 (C3)
+            Path cost: 50 (C4)
+            Nodes generated: 31
+            Nodes visited: 17
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (17, 5)
+            Goal: (21, 5)
+            Path: (17, 5) -> (18, 5) -> (19, 5) -> (20, 5) -> (21, 5)
+            Path cost: 40 (C1)
+            Path cost: 60 (C2)
+            Path cost: 54 (C3)
+            Path cost: 50 (C4)
+            Nodes generated: 34
+            Nodes visited: 19
+
+Nodes: Start (13, 8) - Goal (1, 11)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (13, 8)
+            Goal: (1, 11)
+            Path: (13, 8) -> (13, 9) -> (12, 9) -> (11, 9) -> (11, 10) -> (10, 10) -> (9, 10) -> (9, 11) -> (8, 11) -> (7, 11) -> (6, 11) -> (5, 11) -> (4, 11) -> (3, 11) -> (2, 11) -> (1, 11)
+            Path cost: 150 (C1)
+            Path cost: 210 (C2)
+            Path cost: 178 (C3)
+            Path cost: 132 (C4)
+            Nodes generated: 389
+            Nodes visited: 344
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (13, 8)
+            Goal: (1, 11)
+            Path: (13, 8) -> (13, 9) -> (12, 9) -> (11, 9) -> (10, 9) -> (9, 9) -> (8, 9) -> (7, 9) -> (6, 9) -> (5, 9) -> (4, 9) -> (3, 9) -> (2, 9) -> (1, 9) -> (1, 10) -> (1, 11)
+            Path cost: 150 (C1)
+            Path cost: 210 (C2)
+            Path cost: 176 (C3)
+            Path cost: 132 (C4)
+            Nodes generated: 386
+            Nodes visited: 342
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (13, 8)
+            Goal: (1, 11)
+            Path: (13, 8) -> (12, 8) -> (11, 8) -> (11, 9) -> (11, 10) -> (10, 10) -> (10, 11) -> (9, 11) -> (8, 11) -> (7, 11) -> (6, 11) -> (5, 11) -> (4, 11) -> (3, 11) -> (2, 11) -> (1, 11)
+            Path cost: 150 (C1)
+            Path cost: 210 (C2)
+            Path cost: 181 (C3)
+            Path cost: 133 (C4)
+            Nodes generated: 394
+            Nodes visited: 349
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (13, 8)
+            Goal: (1, 11)
+            Path: (13, 8) -> (13, 9) -> (12, 9) -> (12, 10) -> (11, 10) -> (11, 11) -> (10, 11) -> (9, 11) -> (8, 11) -> (7, 11) -> (6, 11) -> (5, 11) -> (4, 11) -> (3, 11) -> (2, 11) -> (1, 11)
+            Path cost: 150 (C1)
+            Path cost: 210 (C2)
+            Path cost: 177 (C3)
+            Path cost: 129 (C4)
+            Nodes generated: 394
+            Nodes visited: 349
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (13, 8)
+            Goal: (1, 11)
+            Path: (13, 8) -> (12, 8) -> (12, 9) -> (11, 9) -> (10, 9) -> (10, 10) -> (10, 11) -> (9, 11) -> (8, 11) -> (7, 11) -> (6, 11) -> (5, 11) -> (4, 11) -> (3, 11) -> (2, 11) -> (1, 11)
+            Path cost: 150 (C1)
+            Path cost: 210 (C2)
+            Path cost: 181 (C3)
+            Path cost: 133 (C4)
+            Nodes generated: 394
+            Nodes visited: 349
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (13, 8)
+            Goal: (1, 11)
+            Path: (13, 8) -> (13, 9) -> (13, 10) -> (12, 10) -> (12, 11) -> (11, 11) -> (10, 11) -> (9, 11) -> (8, 11) -> (7, 11) -> (6, 11) -> (5, 11) -> (4, 11) -> (3, 11) -> (2, 11) -> (1, 11)
+            Path cost: 150 (C1)
+            Path cost: 210 (C2)
+            Path cost: 175 (C3)
+            Path cost: 127 (C4)
+            Nodes generated: 419
+            Nodes visited: 373
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (13, 8)
+            Goal: (1, 11)
+            Path: (13, 8) -> (13, 9) -> (12, 9) -> (12, 10) -> (12, 11) -> (11, 11) -> (10, 11) -> (9, 11) -> (8, 11) -> (7, 11) -> (6, 11) -> (5, 11) -> (4, 11) -> (3, 11) -> (2, 11) -> (1, 11)
+            Path cost: 150 (C1)
+            Path cost: 210 (C2)
+            Path cost: 176 (C3)
+            Path cost: 128 (C4)
+            Nodes generated: 419
+            Nodes visited: 373
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (13, 8)
+            Goal: (1, 11)
+            Path: (13, 8) -> (12, 8) -> (11, 8) -> (11, 9) -> (10, 9) -> (10, 10) -> (10, 11) -> (9, 11) -> (8, 11) -> (7, 11) -> (6, 11) -> (5, 11) -> (4, 11) -> (3, 11) -> (2, 11) -> (1, 11)
+            Path cost: 150 (C1)
+            Path cost: 210 (C2)
+            Path cost: 182 (C3)
+            Path cost: 134 (C4)
+            Nodes generated: 398
+            Nodes visited: 354
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (13, 8)
+            Goal: (1, 11)
+            Path: (13, 8) -> (13, 9) -> (12, 9) -> (11, 9) -> (11, 10) -> (10, 10) -> (10, 11) -> (9, 11) -> (8, 11) -> (7, 11) -> (6, 11) -> (5, 11) -> (4, 11) -> (3, 11) -> (2, 11) -> (1, 11)
+            Path cost: 150 (C1)
+            Path cost: 210 (C2)
+            Path cost: 179 (C3)
+            Path cost: 131 (C4)
+            Nodes generated: 393
+            Nodes visited: 348
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (13, 8)
+            Goal: (1, 11)
+            Path: (13, 8) -> (12, 8) -> (12, 9) -> (12, 10) -> (11, 10) -> (11, 11) -> (10, 11) -> (9, 11) -> (8, 11) -> (7, 11) -> (6, 11) -> (5, 11) -> (4, 11) -> (3, 11) -> (2, 11) -> (1, 11)
+            Path cost: 150 (C1)
+            Path cost: 210 (C2)
+            Path cost: 178 (C3)
+            Path cost: 130 (C4)
+            Nodes generated: 409
+            Nodes visited: 365
+
+Nodes: Start (21, 10) - Goal (11, 0)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (21, 10)
+            Goal: (11, 0)
+            Path: (21, 10) -> (20, 10) -> (20, 9) -> (19, 9) -> (19, 8) -> (18, 8) -> (18, 7) -> (18, 6) -> (17, 6) -> (16, 6) -> (15, 6) -> (14, 6) -> (13, 6) -> (12, 6) -> (11, 6) -> (11, 5) -> (11, 4) -> (11, 3) -> (11, 2) -> (11, 1) -> (11, 0)
+            Path cost: 200 (C1)
+            Path cost: 250 (C2)
+            Path cost: 226 (C3)
+            Path cost: 184 (C4)
+            Nodes generated: 616
+            Nodes visited: 574
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (21, 10)
+            Goal: (11, 0)
+            Path: (21, 10) -> (20, 10) -> (20, 9) -> (19, 9) -> (19, 8) -> (19, 7) -> (18, 7) -> (17, 7) -> (17, 6) -> (17, 5) -> (16, 5) -> (16, 4) -> (16, 3) -> (16, 2) -> (16, 1) -> (16, 0) -> (15, 0) -> (14, 0) -> (13, 0) -> (12, 0) -> (11, 0)
+            Path cost: 200 (C1)
+            Path cost: 250 (C2)
+            Path cost: 225 (C3)
+            Path cost: 213 (C4)
+            Nodes generated: 609
+            Nodes visited: 569
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (21, 10)
+            Goal: (11, 0)
+            Path: (21, 10) -> (20, 10) -> (19, 10) -> (19, 9) -> (19, 8) -> (19, 7) -> (18, 7) -> (18, 6) -> (17, 6) -> (17, 5) -> (16, 5) -> (16, 4) -> (15, 4) -> (14, 4) -> (14, 3) -> (14, 2) -> (13, 2) -> (12, 2) -> (11, 2) -> (11, 1) -> (11, 0)
+            Path cost: 200 (C1)
+            Path cost: 250 (C2)
+            Path cost: 225 (C3)
+            Path cost: 199 (C4)
+            Nodes generated: 610
+            Nodes visited: 570
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (21, 10)
+            Goal: (11, 0)
+            Path: (21, 10) -> (20, 10) -> (20, 9) -> (19, 9) -> (19, 8) -> (19, 7) -> (19, 6) -> (19, 5) -> (19, 4) -> (19, 3) -> (18, 3) -> (17, 3) -> (17, 2) -> (17, 1) -> (17, 0) -> (16, 0) -> (15, 0) -> (14, 0) -> (13, 0) -> (12, 0) -> (11, 0)
+            Path cost: 200 (C1)
+            Path cost: 250 (C2)
+            Path cost: 232 (C3)
+            Path cost: 212 (C4)
+            Nodes generated: 581
+            Nodes visited: 541
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (21, 10)
+            Goal: (11, 0)
+            Path: (21, 10) -> (20, 10) -> (19, 10) -> (19, 9) -> (19, 8) -> (19, 7) -> (18, 7) -> (17, 7) -> (16, 7) -> (15, 7) -> (14, 7) -> (13, 7) -> (12, 7) -> (12, 6) -> (12, 5) -> (12, 4) -> (11, 4) -> (11, 3) -> (11, 2) -> (11, 1) -> (11, 0)
+            Path cost: 200 (C1)
+            Path cost: 250 (C2)
+            Path cost: 228 (C3)
+            Path cost: 186 (C4)
+            Nodes generated: 585
+            Nodes visited: 544
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (21, 10)
+            Goal: (11, 0)
+            Path: (21, 10) -> (20, 10) -> (20, 9) -> (19, 9) -> (18, 9) -> (18, 8) -> (18, 7) -> (18, 6) -> (17, 6) -> (17, 5) -> (16, 5) -> (15, 5) -> (14, 5) -> (13, 5) -> (12, 5) -> (12, 4) -> (12, 3) -> (11, 3) -> (11, 2) -> (11, 1) -> (11, 0)
+            Path cost: 200 (C1)
+            Path cost: 250 (C2)
+            Path cost: 229 (C3)
+            Path cost: 191 (C4)
+            Nodes generated: 601
+            Nodes visited: 559
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (21, 10)
+            Goal: (11, 0)
+            Path: (21, 10) -> (20, 10) -> (19, 10) -> (18, 10) -> (17, 10) -> (16, 10) -> (16, 9) -> (16, 8) -> (15, 8) -> (15, 7) -> (15, 6) -> (14, 6) -> (13, 6) -> (12, 6) -> (12, 5) -> (12, 4) -> (12, 3) -> (11, 3) -> (11, 2) -> (11, 1) -> (11, 0)
+            Path cost: 200 (C1)
+            Path cost: 250 (C2)
+            Path cost: 228 (C3)
+            Path cost: 200 (C4)
+            Nodes generated: 601
+            Nodes visited: 559
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (21, 10)
+            Goal: (11, 0)
+            Path: (21, 10) -> (20, 10) -> (19, 10) -> (18, 10) -> (18, 9) -> (18, 8) -> (18, 7) -> (17, 7) -> (16, 7) -> (15, 7) -> (15, 6) -> (14, 6) -> (13, 6) -> (12, 6) -> (12, 5) -> (11, 5) -> (11, 4) -> (11, 3) -> (11, 2) -> (11, 1) -> (11, 0)
+            Path cost: 200 (C1)
+            Path cost: 250 (C2)
+            Path cost: 227 (C3)
+            Path cost: 191 (C4)
+            Nodes generated: 605
+            Nodes visited: 563
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (21, 10)
+            Goal: (11, 0)
+            Path: (21, 10) -> (21, 9) -> (21, 8) -> (20, 8) -> (20, 7) -> (20, 6) -> (20, 5) -> (19, 5) -> (19, 4) -> (19, 3) -> (19, 2) -> (18, 2) -> (17, 2) -> (17, 1) -> (17, 0) -> (16, 0) -> (15, 0) -> (14, 0) -> (13, 0) -> (12, 0) -> (11, 0)
+            Path cost: 200 (C1)
+            Path cost: 250 (C2)
+            Path cost: 224 (C3)
+            Path cost: 208 (C4)
+            Nodes generated: 590
+            Nodes visited: 551
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (21, 10)
+            Goal: (11, 0)
+            Path: (21, 10) -> (20, 10) -> (20, 9) -> (19, 9) -> (19, 8) -> (18, 8) -> (17, 8) -> (17, 7) -> (16, 7) -> (16, 6) -> (16, 5) -> (15, 5) -> (15, 4) -> (15, 3) -> (14, 3) -> (13, 3) -> (13, 2) -> (12, 2) -> (12, 1) -> (12, 0) -> (11, 0)
+            Path cost: 200 (C1)
+            Path cost: 250 (C2)
+            Path cost: 228 (C3)
+            Path cost: 204 (C4)
+            Nodes generated: 581
+            Nodes visited: 541
+
+Nodes: Start (22, 16) - Goal (24, 17)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (22, 16)
+            Goal: (24, 17)
+            Path: (22, 16) -> (22, 17) -> (23, 17) -> (24, 17)
+            Path cost: 30 (C1)
+            Path cost: 40 (C2)
+            Path cost: 37 (C3)
+            Path cost: 35 (C4)
+            Nodes generated: 22
+            Nodes visited: 10
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (22, 16)
+            Goal: (24, 17)
+            Path: (22, 16) -> (22, 17) -> (23, 17) -> (24, 17)
+            Path cost: 30 (C1)
+            Path cost: 40 (C2)
+            Path cost: 37 (C3)
+            Path cost: 35 (C4)
+            Nodes generated: 16
+            Nodes visited: 7
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (22, 16)
+            Goal: (24, 17)
+            Path: (22, 16) -> (22, 17) -> (23, 17) -> (24, 17)
+            Path cost: 30 (C1)
+            Path cost: 40 (C2)
+            Path cost: 37 (C3)
+            Path cost: 35 (C4)
+            Nodes generated: 18
+            Nodes visited: 8
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (22, 16)
+            Goal: (24, 17)
+            Path: (22, 16) -> (23, 16) -> (24, 16) -> (24, 17)
+            Path cost: 30 (C1)
+            Path cost: 40 (C2)
+            Path cost: 39 (C3)
+            Path cost: 37 (C4)
+            Nodes generated: 14
+            Nodes visited: 6
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (22, 16)
+            Goal: (24, 17)
+            Path: (22, 16) -> (23, 16) -> (23, 17) -> (24, 17)
+            Path cost: 30 (C1)
+            Path cost: 40 (C2)
+            Path cost: 38 (C3)
+            Path cost: 36 (C4)
+            Nodes generated: 19
+            Nodes visited: 9
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (22, 16)
+            Goal: (24, 17)
+            Path: (22, 16) -> (22, 17) -> (23, 17) -> (24, 17)
+            Path cost: 30 (C1)
+            Path cost: 40 (C2)
+            Path cost: 37 (C3)
+            Path cost: 35 (C4)
+            Nodes generated: 23
+            Nodes visited: 11
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (22, 16)
+            Goal: (24, 17)
+            Path: (22, 16) -> (23, 16) -> (24, 16) -> (24, 17)
+            Path cost: 30 (C1)
+            Path cost: 40 (C2)
+            Path cost: 39 (C3)
+            Path cost: 37 (C4)
+            Nodes generated: 22
+            Nodes visited: 11
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (22, 16)
+            Goal: (24, 17)
+            Path: (22, 16) -> (22, 17) -> (23, 17) -> (24, 17)
+            Path cost: 30 (C1)
+            Path cost: 40 (C2)
+            Path cost: 37 (C3)
+            Path cost: 35 (C4)
+            Nodes generated: 14
+            Nodes visited: 6
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (22, 16)
+            Goal: (24, 17)
+            Path: (22, 16) -> (22, 17) -> (23, 17) -> (24, 17)
+            Path cost: 30 (C1)
+            Path cost: 40 (C2)
+            Path cost: 37 (C3)
+            Path cost: 35 (C4)
+            Nodes generated: 18
+            Nodes visited: 8
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (22, 16)
+            Goal: (24, 17)
+            Path: (22, 16) -> (22, 17) -> (23, 17) -> (24, 17)
+            Path cost: 30 (C1)
+            Path cost: 40 (C2)
+            Path cost: 37 (C3)
+            Path cost: 35 (C4)
+            Nodes generated: 14
+            Nodes visited: 6
+
+Nodes: Start (10, 30) - Goal (23, 3)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (10, 30)
+            Goal: (23, 3)
+            Path: (10, 30) -> (11, 30) -> (12, 30) -> (12, 29) -> (13, 29) -> (14, 29) -> (14, 28) -> (14, 27) -> (14, 26) -> (15, 26) -> (16, 26) -> (17, 26) -> (18, 26) -> (18, 25) -> (19, 25) -> (19, 24) -> (20, 24) -> (20, 23) -> (21, 23) -> (22, 23) -> (23, 23) -> (23, 22) -> (23, 21) -> (23, 20) -> (23, 19) -> (23, 18) -> (23, 17) -> (23, 16) -> (23, 15) -> (23, 14) -> (23, 13) -> (23, 12) -> (23, 11) -> (23, 10) -> (23, 9) -> (23, 8) -> (23, 7) -> (23, 6) -> (23, 5) -> (23, 4) -> (23, 3)
+            Path cost: 400 (C1)
+            Path cost: 465 (C2)
+            Path cost: 433 (C3)
+            Path cost: 404 (C4)
+            Nodes generated: 902
+            Nodes visited: 888
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (10, 30)
+            Goal: (23, 3)
+            Path: (10, 30) -> (11, 30) -> (11, 29) -> (11, 28) -> (12, 28) -> (13, 28) -> (14, 28) -> (14, 27) -> (15, 27) -> (16, 27) -> (17, 27) -> (17, 26) -> (17, 25) -> (18, 25) -> (18, 24) -> (19, 24) -> (19, 23) -> (19, 22) -> (19, 21) -> (20, 21) -> (21, 21) -> (22, 21) -> (23, 21) -> (23, 20) -> (23, 19) -> (23, 18) -> (23, 17) -> (23, 16) -> (23, 15) -> (23, 14) -> (23, 13) -> (23, 12) -> (23, 11) -> (23, 10) -> (23, 9) -> (23, 8) -> (23, 7) -> (23, 6) -> (23, 5) -> (23, 4) -> (23, 3)
+            Path cost: 400 (C1)
+            Path cost: 465 (C2)
+            Path cost: 431 (C3)
+            Path cost: 390 (C4)
+            Nodes generated: 902
+            Nodes visited: 888
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (10, 30)
+            Goal: (23, 3)
+            Path: (10, 30) -> (11, 30) -> (11, 29) -> (12, 29) -> (13, 29) -> (14, 29) -> (15, 29) -> (15, 28) -> (15, 27) -> (16, 27) -> (17, 27) -> (17, 26) -> (17, 25) -> (18, 25) -> (18, 24) -> (19, 24) -> (19, 23) -> (19, 22) -> (19, 21) -> (19, 20) -> (19, 19) -> (20, 19) -> (21, 19) -> (22, 19) -> (22, 18) -> (22, 17) -> (23, 17) -> (23, 16) -> (23, 15) -> (23, 14) -> (23, 13) -> (23, 12) -> (23, 11) -> (23, 10) -> (23, 9) -> (23, 8) -> (23, 7) -> (23, 6) -> (23, 5) -> (23, 4) -> (23, 3)
+            Path cost: 400 (C1)
+            Path cost: 465 (C2)
+            Path cost: 436 (C3)
+            Path cost: 383 (C4)
+            Nodes generated: 902
+            Nodes visited: 888
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (10, 30)
+            Goal: (23, 3)
+            Path: (10, 30) -> (11, 30) -> (11, 29) -> (12, 29) -> (12, 28) -> (12, 27) -> (12, 26) -> (12, 25) -> (12, 24) -> (12, 23) -> (13, 23) -> (13, 22) -> (14, 22) -> (14, 21) -> (15, 21) -> (15, 20) -> (16, 20) -> (17, 20) -> (18, 20) -> (18, 19) -> (18, 18) -> (18, 17) -> (18, 16) -> (19, 16) -> (20, 16) -> (21, 16) -> (21, 15) -> (21, 14) -> (22, 14) -> (23, 14) -> (23, 13) -> (23, 12) -> (23, 11) -> (23, 10) -> (23, 9) -> (23, 8) -> (23, 7) -> (23, 6) -> (23, 5) -> (23, 4) -> (23, 3)
+            Path cost: 400 (C1)
+            Path cost: 465 (C2)
+            Path cost: 438 (C3)
+            Path cost: 402 (C4)
+            Nodes generated: 902
+            Nodes visited: 888
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (10, 30)
+            Goal: (23, 3)
+            Path: (10, 30) -> (11, 30) -> (12, 30) -> (13, 30) -> (14, 30) -> (15, 30) -> (16, 30) -> (17, 30) -> (18, 30) -> (19, 30) -> (20, 30) -> (20, 29) -> (21, 29) -> (21, 28) -> (22, 28) -> (23, 28) -> (23, 27) -> (23, 26) -> (23, 25) -> (23, 24) -> (23, 23) -> (23, 22) -> (23, 21) -> (23, 20) -> (23, 19) -> (23, 18) -> (23, 17) -> (23, 16) -> (23, 15) -> (23, 14) -> (23, 13) -> (23, 12) -> (23, 11) -> (23, 10) -> (23, 9) -> (23, 8) -> (23, 7) -> (23, 6) -> (23, 5) -> (23, 4) -> (23, 3)
+            Path cost: 400 (C1)
+            Path cost: 465 (C2)
+            Path cost: 430 (C3)
+            Path cost: 391 (C4)
+            Nodes generated: 902
+            Nodes visited: 888
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (10, 30)
+            Goal: (23, 3)
+            Path: (10, 30) -> (11, 30) -> (12, 30) -> (13, 30) -> (14, 30) -> (14, 29) -> (15, 29) -> (16, 29) -> (17, 29) -> (17, 28) -> (18, 28) -> (19, 28) -> (20, 28) -> (21, 28) -> (22, 28) -> (23, 28) -> (23, 27) -> (23, 26) -> (23, 25) -> (23, 24) -> (23, 23) -> (23, 22) -> (23, 21) -> (23, 20) -> (23, 19) -> (23, 18) -> (23, 17) -> (23, 16) -> (23, 15) -> (23, 14) -> (23, 13) -> (23, 12) -> (23, 11) -> (23, 10) -> (23, 9) -> (23, 8) -> (23, 7) -> (23, 6) -> (23, 5) -> (23, 4) -> (23, 3)
+            Path cost: 400 (C1)
+            Path cost: 465 (C2)
+            Path cost: 432 (C3)
+            Path cost: 389 (C4)
+            Nodes generated: 902
+            Nodes visited: 888
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (10, 30)
+            Goal: (23, 3)
+            Path: (10, 30) -> (11, 30) -> (11, 29) -> (11, 28) -> (11, 27) -> (12, 27) -> (13, 27) -> (14, 27) -> (15, 27) -> (16, 27) -> (16, 26) -> (16, 25) -> (17, 25) -> (17, 24) -> (18, 24) -> (18, 23) -> (18, 22) -> (18, 21) -> (18, 20) -> (19, 20) -> (20, 20) -> (20, 19) -> (20, 18) -> (20, 17) -> (20, 16) -> (20, 15) -> (21, 15) -> (21, 14) -> (21, 13) -> (22, 13) -> (22, 12) -> (22, 11) -> (22, 10) -> (23, 10) -> (23, 9) -> (23, 8) -> (23, 7) -> (23, 6) -> (23, 5) -> (23, 4) -> (23, 3)
+            Path cost: 400 (C1)
+            Path cost: 465 (C2)
+            Path cost: 427 (C3)
+            Path cost: 398 (C4)
+            Nodes generated: 898
+            Nodes visited: 883
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (10, 30)
+            Goal: (23, 3)
+            Path: (10, 30) -> (11, 30) -> (11, 29) -> (12, 29) -> (13, 29) -> (13, 28) -> (13, 27) -> (14, 27) -> (15, 27) -> (15, 26) -> (15, 25) -> (15, 24) -> (16, 24) -> (16, 23) -> (16, 22) -> (16, 21) -> (17, 21) -> (18, 21) -> (19, 21) -> (20, 21) -> (21, 21) -> (22, 21) -> (23, 21) -> (23, 20) -> (23, 19) -> (23, 18) -> (23, 17) -> (23, 16) -> (23, 15) -> (23, 14) -> (23, 13) -> (23, 12) -> (23, 11) -> (23, 10) -> (23, 9) -> (23, 8) -> (23, 7) -> (23, 6) -> (23, 5) -> (23, 4) -> (23, 3)
+            Path cost: 400 (C1)
+            Path cost: 465 (C2)
+            Path cost: 432 (C3)
+            Path cost: 405 (C4)
+            Nodes generated: 903
+            Nodes visited: 890
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (10, 30)
+            Goal: (23, 3)
+            Path: (10, 30) -> (10, 29) -> (11, 29) -> (12, 29) -> (12, 28) -> (13, 28) -> (14, 28) -> (15, 28) -> (16, 28) -> (16, 27) -> (17, 27) -> (17, 26) -> (18, 26) -> (18, 25) -> (19, 25) -> (19, 24) -> (20, 24) -> (20, 23) -> (20, 22) -> (21, 22) -> (21, 21) -> (21, 20) -> (21, 19) -> (21, 18) -> (21, 17) -> (22, 17) -> (23, 17) -> (23, 16) -> (23, 15) -> (23, 14) -> (23, 13) -> (23, 12) -> (23, 11) -> (23, 10) -> (23, 9) -> (23, 8) -> (23, 7) -> (23, 6) -> (23, 5) -> (23, 4) -> (23, 3)
+            Path cost: 400 (C1)
+            Path cost: 465 (C2)
+            Path cost: 425 (C3)
+            Path cost: 394 (C4)
+            Nodes generated: 902
+            Nodes visited: 888
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (10, 30)
+            Goal: (23, 3)
+            Path: (10, 30) -> (11, 30) -> (12, 30) -> (12, 29) -> (12, 28) -> (13, 28) -> (13, 27) -> (13, 26) -> (13, 25) -> (14, 25) -> (15, 25) -> (15, 24) -> (16, 24) -> (16, 23) -> (17, 23) -> (17, 22) -> (18, 22) -> (19, 22) -> (20, 22) -> (21, 22) -> (21, 21) -> (22, 21) -> (22, 20) -> (22, 19) -> (23, 19) -> (23, 18) -> (23, 17) -> (23, 16) -> (23, 15) -> (23, 14) -> (23, 13) -> (23, 12) -> (23, 11) -> (23, 10) -> (23, 9) -> (23, 8) -> (23, 7) -> (23, 6) -> (23, 5) -> (23, 4) -> (23, 3)
+            Path cost: 400 (C1)
+            Path cost: 465 (C2)
+            Path cost: 432 (C3)
+            Path cost: 397 (C4)
+            Nodes generated: 902
+            Nodes visited: 888
+
+Nodes: Start (7, 30) - Goal (29, 21)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (7, 30)
+            Goal: (29, 21)
+            Path: (7, 30) -> (7, 29) -> (8, 29) -> (9, 29) -> (9, 28) -> (10, 28) -> (11, 28) -> (11, 27) -> (11, 26) -> (11, 25) -> (12, 25) -> (13, 25) -> (13, 24) -> (14, 24) -> (14, 23) -> (15, 23) -> (15, 22) -> (15, 21) -> (16, 21) -> (17, 21) -> (18, 21) -> (19, 21) -> (20, 21) -> (21, 21) -> (22, 21) -> (23, 21) -> (24, 21) -> (25, 21) -> (26, 21) -> (27, 21) -> (28, 21) -> (29, 21)
+            Path cost: 310 (C1)
+            Path cost: 420 (C2)
+            Path cost: 362 (C3)
+            Path cost: 315 (C4)
+            Nodes generated: 679
+            Nodes visited: 647
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (7, 30)
+            Goal: (29, 21)
+            Path: (7, 30) -> (8, 30) -> (9, 30) -> (9, 29) -> (9, 28) -> (10, 28) -> (11, 28) -> (11, 27) -> (11, 26) -> (11, 25) -> (12, 25) -> (13, 25) -> (13, 24) -> (14, 24) -> (15, 24) -> (15, 23) -> (15, 22) -> (15, 21) -> (16, 21) -> (17, 21) -> (18, 21) -> (19, 21) -> (20, 21) -> (21, 21) -> (22, 21) -> (23, 21) -> (24, 21) -> (25, 21) -> (26, 21) -> (27, 21) -> (28, 21) -> (29, 21)
+            Path cost: 310 (C1)
+            Path cost: 420 (C2)
+            Path cost: 363 (C3)
+            Path cost: 316 (C4)
+            Nodes generated: 678
+            Nodes visited: 646
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (7, 30)
+            Goal: (29, 21)
+            Path: (7, 30) -> (8, 30) -> (9, 30) -> (10, 30) -> (10, 29) -> (10, 28) -> (10, 27) -> (11, 27) -> (12, 27) -> (12, 26) -> (13, 26) -> (13, 25) -> (14, 25) -> (14, 24) -> (14, 23) -> (14, 22) -> (15, 22) -> (16, 22) -> (17, 22) -> (18, 22) -> (18, 21) -> (19, 21) -> (20, 21) -> (21, 21) -> (22, 21) -> (23, 21) -> (24, 21) -> (25, 21) -> (26, 21) -> (27, 21) -> (28, 21) -> (29, 21)
+            Path cost: 310 (C1)
+            Path cost: 420 (C2)
+            Path cost: 367 (C3)
+            Path cost: 316 (C4)
+            Nodes generated: 669
+            Nodes visited: 637
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (7, 30)
+            Goal: (29, 21)
+            Path: (7, 30) -> (7, 29) -> (8, 29) -> (8, 28) -> (8, 27) -> (8, 26) -> (9, 26) -> (9, 25) -> (10, 25) -> (11, 25) -> (12, 25) -> (12, 24) -> (12, 23) -> (12, 22) -> (12, 21) -> (13, 21) -> (14, 21) -> (15, 21) -> (16, 21) -> (17, 21) -> (18, 21) -> (19, 21) -> (20, 21) -> (21, 21) -> (22, 21) -> (23, 21) -> (24, 21) -> (25, 21) -> (26, 21) -> (27, 21) -> (28, 21) -> (29, 21)
+            Path cost: 310 (C1)
+            Path cost: 420 (C2)
+            Path cost: 366 (C3)
+            Path cost: 315 (C4)
+            Nodes generated: 675
+            Nodes visited: 643
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (7, 30)
+            Goal: (29, 21)
+            Path: (7, 30) -> (8, 30) -> (8, 29) -> (8, 28) -> (8, 27) -> (9, 27) -> (9, 26) -> (9, 25) -> (9, 24) -> (10, 24) -> (11, 24) -> (11, 23) -> (11, 22) -> (12, 22) -> (12, 21) -> (13, 21) -> (14, 21) -> (15, 21) -> (16, 21) -> (17, 21) -> (18, 21) -> (19, 21) -> (20, 21) -> (21, 21) -> (22, 21) -> (23, 21) -> (24, 21) -> (25, 21) -> (26, 21) -> (27, 21) -> (28, 21) -> (29, 21)
+            Path cost: 310 (C1)
+            Path cost: 420 (C2)
+            Path cost: 367 (C3)
+            Path cost: 318 (C4)
+            Nodes generated: 682
+            Nodes visited: 650
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (7, 30)
+            Goal: (29, 21)
+            Path: (7, 30) -> (7, 29) -> (8, 29) -> (9, 29) -> (9, 28) -> (10, 28) -> (10, 27) -> (11, 27) -> (11, 26) -> (12, 26) -> (12, 25) -> (12, 24) -> (13, 24) -> (14, 24) -> (15, 24) -> (15, 23) -> (16, 23) -> (16, 22) -> (17, 22) -> (18, 22) -> (18, 21) -> (19, 21) -> (20, 21) -> (21, 21) -> (22, 21) -> (23, 21) -> (24, 21) -> (25, 21) -> (26, 21) -> (27, 21) -> (28, 21) -> (29, 21)
+            Path cost: 310 (C1)
+            Path cost: 420 (C2)
+            Path cost: 358 (C3)
+            Path cost: 311 (C4)
+            Nodes generated: 675
+            Nodes visited: 643
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (7, 30)
+            Goal: (29, 21)
+            Path: (7, 30) -> (8, 30) -> (9, 30) -> (9, 29) -> (10, 29) -> (11, 29) -> (11, 28) -> (12, 28) -> (13, 28) -> (13, 27) -> (14, 27) -> (14, 26) -> (14, 25) -> (15, 25) -> (16, 25) -> (16, 24) -> (16, 23) -> (17, 23) -> (18, 23) -> (19, 23) -> (19, 22) -> (20, 22) -> (21, 22) -> (21, 21) -> (22, 21) -> (23, 21) -> (24, 21) -> (25, 21) -> (26, 21) -> (27, 21) -> (28, 21) -> (29, 21)
+            Path cost: 310 (C1)
+            Path cost: 420 (C2)
+            Path cost: 361 (C3)
+            Path cost: 317 (C4)
+            Nodes generated: 666
+            Nodes visited: 634
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (7, 30)
+            Goal: (29, 21)
+            Path: (7, 30) -> (8, 30) -> (8, 29) -> (9, 29) -> (9, 28) -> (10, 28) -> (10, 27) -> (10, 26) -> (10, 25) -> (11, 25) -> (12, 25) -> (13, 25) -> (14, 25) -> (14, 24) -> (14, 23) -> (15, 23) -> (16, 23) -> (16, 22) -> (16, 21) -> (17, 21) -> (18, 21) -> (19, 21) -> (20, 21) -> (21, 21) -> (22, 21) -> (23, 21) -> (24, 21) -> (25, 21) -> (26, 21) -> (27, 21) -> (28, 21) -> (29, 21)
+            Path cost: 310 (C1)
+            Path cost: 420 (C2)
+            Path cost: 369 (C3)
+            Path cost: 310 (C4)
+            Nodes generated: 671
+            Nodes visited: 639
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (7, 30)
+            Goal: (29, 21)
+            Path: (7, 30) -> (7, 29) -> (7, 28) -> (8, 28) -> (9, 28) -> (9, 27) -> (10, 27) -> (11, 27) -> (12, 27) -> (12, 26) -> (12, 25) -> (12, 24) -> (13, 24) -> (14, 24) -> (15, 24) -> (15, 23) -> (16, 23) -> (16, 22) -> (17, 22) -> (18, 22) -> (19, 22) -> (19, 21) -> (20, 21) -> (21, 21) -> (22, 21) -> (23, 21) -> (24, 21) -> (25, 21) -> (26, 21) -> (27, 21) -> (28, 21) -> (29, 21)
+            Path cost: 310 (C1)
+            Path cost: 420 (C2)
+            Path cost: 353 (C3)
+            Path cost: 319 (C4)
+            Nodes generated: 667
+            Nodes visited: 635
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (7, 30)
+            Goal: (29, 21)
+            Path: (7, 30) -> (8, 30) -> (9, 30) -> (10, 30) -> (10, 29) -> (11, 29) -> (11, 28) -> (11, 27) -> (11, 26) -> (12, 26) -> (13, 26) -> (14, 26) -> (14, 25) -> (15, 25) -> (15, 24) -> (15, 23) -> (15, 22) -> (16, 22) -> (16, 21) -> (17, 21) -> (18, 21) -> (19, 21) -> (20, 21) -> (21, 21) -> (22, 21) -> (23, 21) -> (24, 21) -> (25, 21) -> (26, 21) -> (27, 21) -> (28, 21) -> (29, 21)
+            Path cost: 310 (C1)
+            Path cost: 420 (C2)
+            Path cost: 372 (C3)
+            Path cost: 315 (C4)
+            Nodes generated: 677
+            Nodes visited: 645
+
+Nodes: Start (29, 14) - Goal (20, 8)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (29, 14)
+            Goal: (20, 8)
+            Path: (29, 14) -> (28, 14) -> (27, 14) -> (27, 13) -> (27, 12) -> (27, 11) -> (26, 11) -> (26, 10) -> (25, 10) -> (24, 10) -> (23, 10) -> (23, 9) -> (22, 9) -> (21, 9) -> (21, 8) -> (20, 8)
+            Path cost: 150 (C1)
+            Path cost: 195 (C2)
+            Path cost: 172 (C3)
+            Path cost: 139 (C4)
+            Nodes generated: 254
+            Nodes visited: 222
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (29, 14)
+            Goal: (20, 8)
+            Path: (29, 14) -> (29, 13) -> (28, 13) -> (27, 13) -> (26, 13) -> (26, 12) -> (26, 11) -> (25, 11) -> (25, 10) -> (25, 9) -> (24, 9) -> (24, 8) -> (23, 8) -> (22, 8) -> (21, 8) -> (20, 8)
+            Path cost: 150 (C1)
+            Path cost: 195 (C2)
+            Path cost: 170 (C3)
+            Path cost: 143 (C4)
+            Nodes generated: 257
+            Nodes visited: 225
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (29, 14)
+            Goal: (20, 8)
+            Path: (29, 14) -> (28, 14) -> (28, 13) -> (27, 13) -> (26, 13) -> (25, 13) -> (25, 12) -> (24, 12) -> (24, 11) -> (23, 11) -> (23, 10) -> (22, 10) -> (22, 9) -> (21, 9) -> (20, 9) -> (20, 8)
+            Path cost: 150 (C1)
+            Path cost: 195 (C2)
+            Path cost: 173 (C3)
+            Path cost: 144 (C4)
+            Nodes generated: 269
+            Nodes visited: 237
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (29, 14)
+            Goal: (20, 8)
+            Path: (29, 14) -> (29, 13) -> (28, 13) -> (27, 13) -> (27, 12) -> (27, 11) -> (26, 11) -> (25, 11) -> (24, 11) -> (23, 11) -> (22, 11) -> (22, 10) -> (22, 9) -> (22, 8) -> (21, 8) -> (20, 8)
+            Path cost: 150 (C1)
+            Path cost: 195 (C2)
+            Path cost: 172 (C3)
+            Path cost: 139 (C4)
+            Nodes generated: 255
+            Nodes visited: 223
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (29, 14)
+            Goal: (20, 8)
+            Path: (29, 14) -> (29, 13) -> (29, 12) -> (28, 12) -> (27, 12) -> (27, 11) -> (27, 10) -> (27, 9) -> (27, 8) -> (26, 8) -> (25, 8) -> (24, 8) -> (23, 8) -> (22, 8) -> (21, 8) -> (20, 8)
+            Path cost: 150 (C1)
+            Path cost: 195 (C2)
+            Path cost: 173 (C3)
+            Path cost: 134 (C4)
+            Nodes generated: 277
+            Nodes visited: 244
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (29, 14)
+            Goal: (20, 8)
+            Path: (29, 14) -> (29, 13) -> (28, 13) -> (27, 13) -> (26, 13) -> (25, 13) -> (25, 12) -> (25, 11) -> (25, 10) -> (24, 10) -> (23, 10) -> (22, 10) -> (21, 10) -> (21, 9) -> (20, 9) -> (20, 8)
+            Path cost: 150 (C1)
+            Path cost: 195 (C2)
+            Path cost: 174 (C3)
+            Path cost: 139 (C4)
+            Nodes generated: 254
+            Nodes visited: 223
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (29, 14)
+            Goal: (20, 8)
+            Path: (29, 14) -> (28, 14) -> (27, 14) -> (26, 14) -> (26, 13) -> (26, 12) -> (26, 11) -> (25, 11) -> (25, 10) -> (25, 9) -> (24, 9) -> (23, 9) -> (22, 9) -> (22, 8) -> (21, 8) -> (20, 8)
+            Path cost: 150 (C1)
+            Path cost: 195 (C2)
+            Path cost: 177 (C3)
+            Path cost: 144 (C4)
+            Nodes generated: 272
+            Nodes visited: 239
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (29, 14)
+            Goal: (20, 8)
+            Path: (29, 14) -> (29, 13) -> (28, 13) -> (27, 13) -> (27, 12) -> (26, 12) -> (25, 12) -> (24, 12) -> (23, 12) -> (23, 11) -> (23, 10) -> (23, 9) -> (23, 8) -> (22, 8) -> (21, 8) -> (20, 8)
+            Path cost: 150 (C1)
+            Path cost: 195 (C2)
+            Path cost: 167 (C3)
+            Path cost: 146 (C4)
+            Nodes generated: 272
+            Nodes visited: 239
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (29, 14)
+            Goal: (20, 8)
+            Path: (29, 14) -> (28, 14) -> (28, 13) -> (28, 12) -> (28, 11) -> (28, 10) -> (27, 10) -> (26, 10) -> (25, 10) -> (24, 10) -> (24, 9) -> (23, 9) -> (23, 8) -> (22, 8) -> (21, 8) -> (20, 8)
+            Path cost: 150 (C1)
+            Path cost: 195 (C2)
+            Path cost: 172 (C3)
+            Path cost: 137 (C4)
+            Nodes generated: 256
+            Nodes visited: 224
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (29, 14)
+            Goal: (20, 8)
+            Path: (29, 14) -> (29, 13) -> (29, 12) -> (28, 12) -> (28, 11) -> (28, 10) -> (28, 9) -> (27, 9) -> (26, 9) -> (25, 9) -> (25, 8) -> (24, 8) -> (23, 8) -> (22, 8) -> (21, 8) -> (20, 8)
+            Path cost: 150 (C1)
+            Path cost: 195 (C2)
+            Path cost: 170 (C3)
+            Path cost: 133 (C4)
+            Nodes generated: 259
+            Nodes visited: 227
+
+Nodes: Start (28, 5) - Goal (9, 2)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (28, 5)
+            Goal: (9, 2)
+            Path: (28, 5) -> (28, 4) -> (28, 3) -> (28, 2) -> (27, 2) -> (26, 2) -> (25, 2) -> (24, 2) -> (23, 2) -> (22, 2) -> (21, 2) -> (20, 2) -> (19, 2) -> (18, 2) -> (17, 2) -> (16, 2) -> (15, 2) -> (14, 2) -> (13, 2) -> (12, 2) -> (11, 2) -> (10, 2) -> (9, 2)
+            Path cost: 220 (C1)
+            Path cost: 315 (C2)
+            Path cost: 263 (C3)
+            Path cost: 202 (C4)
+            Nodes generated: 426
+            Nodes visited: 396
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (28, 5)
+            Goal: (9, 2)
+            Path: (28, 5) -> (27, 5) -> (27, 4) -> (26, 4) -> (25, 4) -> (25, 3) -> (24, 3) -> (24, 2) -> (23, 2) -> (22, 2) -> (21, 2) -> (20, 2) -> (19, 2) -> (18, 2) -> (17, 2) -> (16, 2) -> (15, 2) -> (14, 2) -> (13, 2) -> (12, 2) -> (11, 2) -> (10, 2) -> (9, 2)
+            Path cost: 220 (C1)
+            Path cost: 315 (C2)
+            Path cost: 269 (C3)
+            Path cost: 210 (C4)
+            Nodes generated: 425
+            Nodes visited: 395
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (28, 5)
+            Goal: (9, 2)
+            Path: (28, 5) -> (27, 5) -> (26, 5) -> (25, 5) -> (24, 5) -> (23, 5) -> (22, 5) -> (21, 5) -> (21, 4) -> (20, 4) -> (19, 4) -> (18, 4) -> (18, 3) -> (17, 3) -> (16, 3) -> (15, 3) -> (15, 2) -> (14, 2) -> (13, 2) -> (12, 2) -> (11, 2) -> (10, 2) -> (9, 2)
+            Path cost: 220 (C1)
+            Path cost: 315 (C2)
+            Path cost: 269 (C3)
+            Path cost: 216 (C4)
+            Nodes generated: 422
+            Nodes visited: 392
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (28, 5)
+            Goal: (9, 2)
+            Path: (28, 5) -> (27, 5) -> (27, 4) -> (27, 3) -> (27, 2) -> (26, 2) -> (25, 2) -> (24, 2) -> (23, 2) -> (22, 2) -> (21, 2) -> (20, 2) -> (19, 2) -> (18, 2) -> (17, 2) -> (16, 2) -> (15, 2) -> (14, 2) -> (13, 2) -> (12, 2) -> (11, 2) -> (10, 2) -> (9, 2)
+            Path cost: 220 (C1)
+            Path cost: 315 (C2)
+            Path cost: 266 (C3)
+            Path cost: 205 (C4)
+            Nodes generated: 402
+            Nodes visited: 373
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (28, 5)
+            Goal: (9, 2)
+            Path: (28, 5) -> (28, 4) -> (28, 3) -> (28, 2) -> (27, 2) -> (26, 2) -> (25, 2) -> (24, 2) -> (23, 2) -> (22, 2) -> (21, 2) -> (20, 2) -> (19, 2) -> (18, 2) -> (17, 2) -> (16, 2) -> (15, 2) -> (14, 2) -> (13, 2) -> (12, 2) -> (11, 2) -> (10, 2) -> (9, 2)
+            Path cost: 220 (C1)
+            Path cost: 315 (C2)
+            Path cost: 263 (C3)
+            Path cost: 202 (C4)
+            Nodes generated: 426
+            Nodes visited: 396
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (28, 5)
+            Goal: (9, 2)
+            Path: (28, 5) -> (28, 4) -> (27, 4) -> (27, 3) -> (26, 3) -> (25, 3) -> (25, 2) -> (24, 2) -> (23, 2) -> (22, 2) -> (21, 2) -> (20, 2) -> (19, 2) -> (18, 2) -> (17, 2) -> (16, 2) -> (15, 2) -> (14, 2) -> (13, 2) -> (12, 2) -> (11, 2) -> (10, 2) -> (9, 2)
+            Path cost: 220 (C1)
+            Path cost: 315 (C2)
+            Path cost: 267 (C3)
+            Path cost: 206 (C4)
+            Nodes generated: 402
+            Nodes visited: 373
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (28, 5)
+            Goal: (9, 2)
+            Path: (28, 5) -> (27, 5) -> (26, 5) -> (25, 5) -> (25, 4) -> (25, 3) -> (25, 2) -> (24, 2) -> (23, 2) -> (22, 2) -> (21, 2) -> (20, 2) -> (19, 2) -> (18, 2) -> (17, 2) -> (16, 2) -> (15, 2) -> (14, 2) -> (13, 2) -> (12, 2) -> (11, 2) -> (10, 2) -> (9, 2)
+            Path cost: 220 (C1)
+            Path cost: 315 (C2)
+            Path cost: 272 (C3)
+            Path cost: 211 (C4)
+            Nodes generated: 404
+            Nodes visited: 375
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (28, 5)
+            Goal: (9, 2)
+            Path: (28, 5) -> (27, 5) -> (26, 5) -> (26, 4) -> (26, 3) -> (26, 2) -> (25, 2) -> (24, 2) -> (23, 2) -> (22, 2) -> (21, 2) -> (20, 2) -> (19, 2) -> (18, 2) -> (17, 2) -> (16, 2) -> (15, 2) -> (14, 2) -> (13, 2) -> (12, 2) -> (11, 2) -> (10, 2) -> (9, 2)
+            Path cost: 220 (C1)
+            Path cost: 315 (C2)
+            Path cost: 269 (C3)
+            Path cost: 208 (C4)
+            Nodes generated: 426
+            Nodes visited: 396
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (28, 5)
+            Goal: (9, 2)
+            Path: (28, 5) -> (27, 5) -> (26, 5) -> (26, 4) -> (26, 3) -> (26, 2) -> (25, 2) -> (24, 2) -> (23, 2) -> (22, 2) -> (21, 2) -> (20, 2) -> (19, 2) -> (18, 2) -> (17, 2) -> (16, 2) -> (15, 2) -> (14, 2) -> (13, 2) -> (12, 2) -> (11, 2) -> (10, 2) -> (9, 2)
+            Path cost: 220 (C1)
+            Path cost: 315 (C2)
+            Path cost: 269 (C3)
+            Path cost: 208 (C4)
+            Nodes generated: 402
+            Nodes visited: 373
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (28, 5)
+            Goal: (9, 2)
+            Path: (28, 5) -> (27, 5) -> (27, 4) -> (27, 3) -> (26, 3) -> (26, 2) -> (25, 2) -> (24, 2) -> (23, 2) -> (22, 2) -> (21, 2) -> (20, 2) -> (19, 2) -> (18, 2) -> (17, 2) -> (16, 2) -> (15, 2) -> (14, 2) -> (13, 2) -> (12, 2) -> (11, 2) -> (10, 2) -> (9, 2)
+            Path cost: 220 (C1)
+            Path cost: 315 (C2)
+            Path cost: 267 (C3)
+            Path cost: 206 (C4)
+            Nodes generated: 402
+            Nodes visited: 373
+
+Nodes: Start (6, 5) - Goal (13, 12)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (6, 5)
+            Goal: (13, 12)
+            Path: (6, 5) -> (7, 5) -> (8, 5) -> (8, 6) -> (9, 6) -> (9, 7) -> (9, 8) -> (10, 8) -> (10, 9) -> (11, 9) -> (12, 9) -> (13, 9) -> (13, 10) -> (13, 11) -> (13, 12)
+            Path cost: 140 (C1)
+            Path cost: 175 (C2)
+            Path cost: 164 (C3)
+            Path cost: 133 (C4)
+            Nodes generated: 265
+            Nodes visited: 240
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (6, 5)
+            Goal: (13, 12)
+            Path: (6, 5) -> (7, 5) -> (7, 6) -> (7, 7) -> (7, 8) -> (8, 8) -> (9, 8) -> (10, 8) -> (11, 8) -> (11, 9) -> (11, 10) -> (11, 11) -> (12, 11) -> (13, 11) -> (13, 12)
+            Path cost: 140 (C1)
+            Path cost: 175 (C2)
+            Path cost: 150 (C3)
+            Path cost: 133 (C4)
+            Nodes generated: 266
+            Nodes visited: 240
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (6, 5)
+            Goal: (13, 12)
+            Path: (6, 5) -> (7, 5) -> (7, 6) -> (7, 7) -> (8, 7) -> (9, 7) -> (9, 8) -> (9, 9) -> (9, 10) -> (10, 10) -> (11, 10) -> (11, 11) -> (12, 11) -> (13, 11) -> (13, 12)
+            Path cost: 140 (C1)
+            Path cost: 175 (C2)
+            Path cost: 156 (C3)
+            Path cost: 131 (C4)
+            Nodes generated: 254
+            Nodes visited: 229
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (6, 5)
+            Goal: (13, 12)
+            Path: (6, 5) -> (6, 6) -> (6, 7) -> (6, 8) -> (7, 8) -> (7, 9) -> (7, 10) -> (7, 11) -> (8, 11) -> (8, 12) -> (9, 12) -> (10, 12) -> (11, 12) -> (12, 12) -> (13, 12)
+            Path cost: 140 (C1)
+            Path cost: 175 (C2)
+            Path cost: 156 (C3)
+            Path cost: 123 (C4)
+            Nodes generated: 267
+            Nodes visited: 241
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (6, 5)
+            Goal: (13, 12)
+            Path: (6, 5) -> (6, 6) -> (7, 6) -> (7, 7) -> (8, 7) -> (9, 7) -> (10, 7) -> (11, 7) -> (11, 8) -> (11, 9) -> (11, 10) -> (12, 10) -> (12, 11) -> (13, 11) -> (13, 12)
+            Path cost: 140 (C1)
+            Path cost: 175 (C2)
+            Path cost: 154 (C3)
+            Path cost: 135 (C4)
+            Nodes generated: 261
+            Nodes visited: 235
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (6, 5)
+            Goal: (13, 12)
+            Path: (6, 5) -> (6, 6) -> (7, 6) -> (7, 7) -> (7, 8) -> (8, 8) -> (9, 8) -> (10, 8) -> (11, 8) -> (12, 8) -> (13, 8) -> (13, 9) -> (13, 10) -> (13, 11) -> (13, 12)
+            Path cost: 140 (C1)
+            Path cost: 175 (C2)
+            Path cost: 155 (C3)
+            Path cost: 128 (C4)
+            Nodes generated: 264
+            Nodes visited: 238
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (6, 5)
+            Goal: (13, 12)
+            Path: (6, 5) -> (6, 6) -> (6, 7) -> (7, 7) -> (8, 7) -> (9, 7) -> (10, 7) -> (11, 7) -> (11, 8) -> (11, 9) -> (11, 10) -> (11, 11) -> (11, 12) -> (12, 12) -> (13, 12)
+            Path cost: 140 (C1)
+            Path cost: 175 (C2)
+            Path cost: 150 (C3)
+            Path cost: 137 (C4)
+            Nodes generated: 262
+            Nodes visited: 236
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (6, 5)
+            Goal: (13, 12)
+            Path: (6, 5) -> (7, 5) -> (8, 5) -> (8, 6) -> (9, 6) -> (9, 7) -> (9, 8) -> (10, 8) -> (10, 9) -> (11, 9) -> (11, 10) -> (12, 10) -> (13, 10) -> (13, 11) -> (13, 12)
+            Path cost: 140 (C1)
+            Path cost: 175 (C2)
+            Path cost: 160 (C3)
+            Path cost: 135 (C4)
+            Nodes generated: 260
+            Nodes visited: 234
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (6, 5)
+            Goal: (13, 12)
+            Path: (6, 5) -> (6, 6) -> (6, 7) -> (7, 7) -> (7, 8) -> (7, 9) -> (8, 9) -> (8, 10) -> (8, 11) -> (8, 12) -> (9, 12) -> (10, 12) -> (11, 12) -> (12, 12) -> (13, 12)
+            Path cost: 140 (C1)
+            Path cost: 175 (C2)
+            Path cost: 155 (C3)
+            Path cost: 126 (C4)
+            Nodes generated: 270
+            Nodes visited: 244
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (6, 5)
+            Goal: (13, 12)
+            Path: (6, 5) -> (7, 5) -> (7, 6) -> (8, 6) -> (8, 7) -> (9, 7) -> (9, 8) -> (10, 8) -> (10, 9) -> (10, 10) -> (10, 11) -> (10, 12) -> (11, 12) -> (12, 12) -> (13, 12)
+            Path cost: 140 (C1)
+            Path cost: 175 (C2)
+            Path cost: 153 (C3)
+            Path cost: 138 (C4)
+            Nodes generated: 257
+            Nodes visited: 231
+
+Nodes: Start (14, 10) - Goal (29, 18)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (14, 10)
+            Goal: (29, 18)
+            Path: (14, 10) -> (15, 10) -> (15, 11) -> (15, 12) -> (16, 12) -> (17, 12) -> (18, 12) -> (19, 12) -> (19, 13) -> (20, 13) -> (21, 13) -> (21, 14) -> (22, 14) -> (23, 14) -> (23, 15) -> (23, 16) -> (23, 17) -> (23, 18) -> (24, 18) -> (25, 18) -> (26, 18) -> (27, 18) -> (28, 18) -> (29, 18)
+            Path cost: 230 (C1)
+            Path cost: 305 (C2)
+            Path cost: 262 (C3)
+            Path cost: 218 (C4)
+            Nodes generated: 776
+            Nodes visited: 740
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (14, 10)
+            Goal: (29, 18)
+            Path: (14, 10) -> (14, 11) -> (15, 11) -> (16, 11) -> (16, 12) -> (17, 12) -> (17, 13) -> (18, 13) -> (18, 14) -> (19, 14) -> (19, 15) -> (20, 15) -> (21, 15) -> (21, 16) -> (21, 17) -> (21, 18) -> (22, 18) -> (23, 18) -> (24, 18) -> (25, 18) -> (26, 18) -> (27, 18) -> (28, 18) -> (29, 18)
+            Path cost: 230 (C1)
+            Path cost: 305 (C2)
+            Path cost: 271 (C3)
+            Path cost: 225 (C4)
+            Nodes generated: 785
+            Nodes visited: 750
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (14, 10)
+            Goal: (29, 18)
+            Path: (14, 10) -> (14, 11) -> (15, 11) -> (16, 11) -> (16, 12) -> (17, 12) -> (17, 13) -> (17, 14) -> (17, 15) -> (18, 15) -> (18, 16) -> (19, 16) -> (20, 16) -> (21, 16) -> (21, 17) -> (22, 17) -> (23, 17) -> (24, 17) -> (24, 18) -> (25, 18) -> (26, 18) -> (27, 18) -> (28, 18) -> (29, 18)
+            Path cost: 230 (C1)
+            Path cost: 305 (C2)
+            Path cost: 274 (C3)
+            Path cost: 222 (C4)
+            Nodes generated: 771
+            Nodes visited: 734
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (14, 10)
+            Goal: (29, 18)
+            Path: (14, 10) -> (14, 11) -> (15, 11) -> (16, 11) -> (16, 12) -> (16, 13) -> (16, 14) -> (16, 15) -> (17, 15) -> (18, 15) -> (19, 15) -> (19, 16) -> (20, 16) -> (20, 17) -> (21, 17) -> (21, 18) -> (22, 18) -> (23, 18) -> (24, 18) -> (25, 18) -> (26, 18) -> (27, 18) -> (28, 18) -> (29, 18)
+            Path cost: 230 (C1)
+            Path cost: 305 (C2)
+            Path cost: 272 (C3)
+            Path cost: 222 (C4)
+            Nodes generated: 770
+            Nodes visited: 733
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (14, 10)
+            Goal: (29, 18)
+            Path: (14, 10) -> (15, 10) -> (15, 11) -> (15, 12) -> (15, 13) -> (15, 14) -> (15, 15) -> (15, 16) -> (16, 16) -> (16, 17) -> (16, 18) -> (17, 18) -> (18, 18) -> (19, 18) -> (20, 18) -> (21, 18) -> (22, 18) -> (23, 18) -> (24, 18) -> (25, 18) -> (26, 18) -> (27, 18) -> (28, 18) -> (29, 18)
+            Path cost: 230 (C1)
+            Path cost: 305 (C2)
+            Path cost: 272 (C3)
+            Path cost: 224 (C4)
+            Nodes generated: 779
+            Nodes visited: 744
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (14, 10)
+            Goal: (29, 18)
+            Path: (14, 10) -> (14, 11) -> (15, 11) -> (15, 12) -> (15, 13) -> (16, 13) -> (17, 13) -> (17, 14) -> (17, 15) -> (17, 16) -> (17, 17) -> (18, 17) -> (19, 17) -> (20, 17) -> (20, 18) -> (21, 18) -> (22, 18) -> (23, 18) -> (24, 18) -> (25, 18) -> (26, 18) -> (27, 18) -> (28, 18) -> (29, 18)
+            Path cost: 230 (C1)
+            Path cost: 305 (C2)
+            Path cost: 268 (C3)
+            Path cost: 226 (C4)
+            Nodes generated: 768
+            Nodes visited: 731
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (14, 10)
+            Goal: (29, 18)
+            Path: (14, 10) -> (14, 11) -> (14, 12) -> (14, 13) -> (14, 14) -> (15, 14) -> (15, 15) -> (15, 16) -> (15, 17) -> (16, 17) -> (17, 17) -> (18, 17) -> (19, 17) -> (20, 17) -> (21, 17) -> (21, 18) -> (22, 18) -> (23, 18) -> (24, 18) -> (25, 18) -> (26, 18) -> (27, 18) -> (28, 18) -> (29, 18)
+            Path cost: 230 (C1)
+            Path cost: 305 (C2)
+            Path cost: 270 (C3)
+            Path cost: 214 (C4)
+            Nodes generated: 786
+            Nodes visited: 751
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (14, 10)
+            Goal: (29, 18)
+            Path: (14, 10) -> (15, 10) -> (16, 10) -> (16, 11) -> (16, 12) -> (17, 12) -> (18, 12) -> (19, 12) -> (20, 12) -> (21, 12) -> (21, 13) -> (21, 14) -> (21, 15) -> (22, 15) -> (22, 16) -> (23, 16) -> (24, 16) -> (25, 16) -> (26, 16) -> (27, 16) -> (28, 16) -> (28, 17) -> (29, 17) -> (29, 18)
+            Path cost: 230 (C1)
+            Path cost: 305 (C2)
+            Path cost: 266 (C3)
+            Path cost: 236 (C4)
+            Nodes generated: 766
+            Nodes visited: 730
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (14, 10)
+            Goal: (29, 18)
+            Path: (14, 10) -> (14, 11) -> (14, 12) -> (14, 13) -> (15, 13) -> (15, 14) -> (16, 14) -> (17, 14) -> (18, 14) -> (18, 15) -> (18, 16) -> (18, 17) -> (19, 17) -> (20, 17) -> (20, 18) -> (21, 18) -> (22, 18) -> (23, 18) -> (24, 18) -> (25, 18) -> (26, 18) -> (27, 18) -> (28, 18) -> (29, 18)
+            Path cost: 230 (C1)
+            Path cost: 305 (C2)
+            Path cost: 263 (C3)
+            Path cost: 223 (C4)
+            Nodes generated: 787
+            Nodes visited: 751
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (14, 10)
+            Goal: (29, 18)
+            Path: (14, 10) -> (15, 10) -> (16, 10) -> (16, 11) -> (17, 11) -> (17, 12) -> (17, 13) -> (18, 13) -> (18, 14) -> (18, 15) -> (19, 15) -> (20, 15) -> (20, 16) -> (21, 16) -> (21, 17) -> (22, 17) -> (23, 17) -> (24, 17) -> (25, 17) -> (25, 18) -> (26, 18) -> (27, 18) -> (28, 18) -> (29, 18)
+            Path cost: 230 (C1)
+            Path cost: 305 (C2)
+            Path cost: 278 (C3)
+            Path cost: 224 (C4)
+            Nodes generated: 788
+            Nodes visited: 754
+
+Nodes: Start (12, 7) - Goal (21, 12)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (12, 7)
+            Goal: (21, 12)
+            Path: (12, 7) -> (12, 8) -> (12, 9) -> (12, 10) -> (13, 10) -> (13, 11) -> (14, 11) -> (15, 11) -> (16, 11) -> (16, 12) -> (17, 12) -> (18, 12) -> (19, 12) -> (20, 12) -> (21, 12)
+            Path cost: 140 (C1)
+            Path cost: 185 (C2)
+            Path cost: 157 (C3)
+            Path cost: 120 (C4)
+            Nodes generated: 359
+            Nodes visited: 319
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (12, 7)
+            Goal: (21, 12)
+            Path: (12, 7) -> (12, 8) -> (12, 9) -> (12, 10) -> (12, 11) -> (12, 12) -> (13, 12) -> (14, 12) -> (15, 12) -> (16, 12) -> (17, 12) -> (18, 12) -> (19, 12) -> (20, 12) -> (21, 12)
+            Path cost: 140 (C1)
+            Path cost: 185 (C2)
+            Path cost: 158 (C3)
+            Path cost: 115 (C4)
+            Nodes generated: 361
+            Nodes visited: 321
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (12, 7)
+            Goal: (21, 12)
+            Path: (12, 7) -> (12, 8) -> (12, 9) -> (12, 10) -> (12, 11) -> (12, 12) -> (13, 12) -> (14, 12) -> (15, 12) -> (16, 12) -> (17, 12) -> (18, 12) -> (19, 12) -> (20, 12) -> (21, 12)
+            Path cost: 140 (C1)
+            Path cost: 185 (C2)
+            Path cost: 158 (C3)
+            Path cost: 115 (C4)
+            Nodes generated: 348
+            Nodes visited: 307
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (12, 7)
+            Goal: (21, 12)
+            Path: (12, 7) -> (12, 8) -> (13, 8) -> (14, 8) -> (15, 8) -> (15, 9) -> (16, 9) -> (16, 10) -> (17, 10) -> (18, 10) -> (18, 11) -> (18, 12) -> (19, 12) -> (20, 12) -> (21, 12)
+            Path cost: 140 (C1)
+            Path cost: 185 (C2)
+            Path cost: 157 (C3)
+            Path cost: 132 (C4)
+            Nodes generated: 356
+            Nodes visited: 316
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (12, 7)
+            Goal: (21, 12)
+            Path: (12, 7) -> (12, 8) -> (13, 8) -> (14, 8) -> (15, 8) -> (15, 9) -> (15, 10) -> (15, 11) -> (16, 11) -> (17, 11) -> (17, 12) -> (18, 12) -> (19, 12) -> (20, 12) -> (21, 12)
+            Path cost: 140 (C1)
+            Path cost: 185 (C2)
+            Path cost: 162 (C3)
+            Path cost: 129 (C4)
+            Nodes generated: 344
+            Nodes visited: 303
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (12, 7)
+            Goal: (21, 12)
+            Path: (12, 7) -> (13, 7) -> (14, 7) -> (14, 8) -> (15, 8) -> (15, 9) -> (16, 9) -> (17, 9) -> (17, 10) -> (18, 10) -> (18, 11) -> (18, 12) -> (19, 12) -> (20, 12) -> (21, 12)
+            Path cost: 140 (C1)
+            Path cost: 185 (C2)
+            Path cost: 158 (C3)
+            Path cost: 135 (C4)
+            Nodes generated: 330
+            Nodes visited: 289
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (12, 7)
+            Goal: (21, 12)
+            Path: (12, 7) -> (12, 8) -> (12, 9) -> (13, 9) -> (13, 10) -> (13, 11) -> (13, 12) -> (14, 12) -> (15, 12) -> (16, 12) -> (17, 12) -> (18, 12) -> (19, 12) -> (20, 12) -> (21, 12)
+            Path cost: 140 (C1)
+            Path cost: 185 (C2)
+            Path cost: 161 (C3)
+            Path cost: 118 (C4)
+            Nodes generated: 362
+            Nodes visited: 322
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (12, 7)
+            Goal: (21, 12)
+            Path: (12, 7) -> (13, 7) -> (13, 8) -> (14, 8) -> (14, 9) -> (14, 10) -> (15, 10) -> (15, 11) -> (16, 11) -> (17, 11) -> (17, 12) -> (18, 12) -> (19, 12) -> (20, 12) -> (21, 12)
+            Path cost: 140 (C1)
+            Path cost: 185 (C2)
+            Path cost: 161 (C3)
+            Path cost: 128 (C4)
+            Nodes generated: 333
+            Nodes visited: 292
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (12, 7)
+            Goal: (21, 12)
+            Path: (12, 7) -> (13, 7) -> (14, 7) -> (15, 7) -> (16, 7) -> (17, 7) -> (18, 7) -> (19, 7) -> (19, 8) -> (19, 9) -> (20, 9) -> (20, 10) -> (21, 10) -> (21, 11) -> (21, 12)
+            Path cost: 140 (C1)
+            Path cost: 185 (C2)
+            Path cost: 160 (C3)
+            Path cost: 139 (C4)
+            Nodes generated: 342
+            Nodes visited: 303
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (12, 7)
+            Goal: (21, 12)
+            Path: (12, 7) -> (12, 8) -> (13, 8) -> (13, 9) -> (13, 10) -> (13, 11) -> (13, 12) -> (14, 12) -> (15, 12) -> (16, 12) -> (17, 12) -> (18, 12) -> (19, 12) -> (20, 12) -> (21, 12)
+            Path cost: 140 (C1)
+            Path cost: 185 (C2)
+            Path cost: 162 (C3)
+            Path cost: 119 (C4)
+            Nodes generated: 334
+            Nodes visited: 293
+
+Nodes: Start (18, 7) - Goal (11, 28)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (18, 7)
+            Goal: (11, 28)
+            Path: (18, 7) -> (18, 8) -> (18, 9) -> (18, 10) -> (18, 11) -> (17, 11) -> (16, 11) -> (15, 11) -> (14, 11) -> (14, 12) -> (14, 13) -> (13, 13) -> (12, 13) -> (11, 13) -> (11, 14) -> (11, 15) -> (11, 16) -> (11, 17) -> (11, 18) -> (11, 19) -> (11, 20) -> (11, 21) -> (11, 22) -> (11, 23) -> (11, 24) -> (11, 25) -> (11, 26) -> (11, 27) -> (11, 28)
+            Path cost: 280 (C1)
+            Path cost: 315 (C2)
+            Path cost: 290 (C3)
+            Path cost: 265 (C4)
+            Nodes generated: 840
+            Nodes visited: 817
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (18, 7)
+            Goal: (11, 28)
+            Path: (18, 7) -> (18, 8) -> (17, 8) -> (16, 8) -> (16, 9) -> (15, 9) -> (15, 10) -> (15, 11) -> (14, 11) -> (13, 11) -> (12, 11) -> (12, 12) -> (12, 13) -> (11, 13) -> (11, 14) -> (11, 15) -> (11, 16) -> (11, 17) -> (11, 18) -> (11, 19) -> (11, 20) -> (11, 21) -> (11, 22) -> (11, 23) -> (11, 24) -> (11, 25) -> (11, 26) -> (11, 27) -> (11, 28)
+            Path cost: 280 (C1)
+            Path cost: 315 (C2)
+            Path cost: 298 (C3)
+            Path cost: 271 (C4)
+            Nodes generated: 832
+            Nodes visited: 808
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (18, 7)
+            Goal: (11, 28)
+            Path: (18, 7) -> (17, 7) -> (17, 8) -> (16, 8) -> (15, 8) -> (14, 8) -> (14, 9) -> (13, 9) -> (12, 9) -> (11, 9) -> (11, 10) -> (11, 11) -> (11, 12) -> (11, 13) -> (11, 14) -> (11, 15) -> (11, 16) -> (11, 17) -> (11, 18) -> (11, 19) -> (11, 20) -> (11, 21) -> (11, 22) -> (11, 23) -> (11, 24) -> (11, 25) -> (11, 26) -> (11, 27) -> (11, 28)
+            Path cost: 280 (C1)
+            Path cost: 315 (C2)
+            Path cost: 297 (C3)
+            Path cost: 278 (C4)
+            Nodes generated: 840
+            Nodes visited: 817
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (18, 7)
+            Goal: (11, 28)
+            Path: (18, 7) -> (17, 7) -> (16, 7) -> (16, 8) -> (15, 8) -> (14, 8) -> (14, 9) -> (14, 10) -> (13, 10) -> (12, 10) -> (12, 11) -> (11, 11) -> (11, 12) -> (11, 13) -> (11, 14) -> (11, 15) -> (11, 16) -> (11, 17) -> (11, 18) -> (11, 19) -> (11, 20) -> (11, 21) -> (11, 22) -> (11, 23) -> (11, 24) -> (11, 25) -> (11, 26) -> (11, 27) -> (11, 28)
+            Path cost: 280 (C1)
+            Path cost: 315 (C2)
+            Path cost: 302 (C3)
+            Path cost: 277 (C4)
+            Nodes generated: 832
+            Nodes visited: 808
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (18, 7)
+            Goal: (11, 28)
+            Path: (18, 7) -> (17, 7) -> (17, 8) -> (17, 9) -> (16, 9) -> (15, 9) -> (15, 10) -> (14, 10) -> (13, 10) -> (12, 10) -> (11, 10) -> (11, 11) -> (11, 12) -> (11, 13) -> (11, 14) -> (11, 15) -> (11, 16) -> (11, 17) -> (11, 18) -> (11, 19) -> (11, 20) -> (11, 21) -> (11, 22) -> (11, 23) -> (11, 24) -> (11, 25) -> (11, 26) -> (11, 27) -> (11, 28)
+            Path cost: 280 (C1)
+            Path cost: 315 (C2)
+            Path cost: 298 (C3)
+            Path cost: 271 (C4)
+            Nodes generated: 832
+            Nodes visited: 808
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (18, 7)
+            Goal: (11, 28)
+            Path: (18, 7) -> (18, 8) -> (18, 9) -> (18, 10) -> (17, 10) -> (17, 11) -> (17, 12) -> (16, 12) -> (15, 12) -> (15, 13) -> (15, 14) -> (15, 15) -> (15, 16) -> (14, 16) -> (14, 17) -> (14, 18) -> (14, 19) -> (13, 19) -> (12, 19) -> (11, 19) -> (11, 20) -> (11, 21) -> (11, 22) -> (11, 23) -> (11, 24) -> (11, 25) -> (11, 26) -> (11, 27) -> (11, 28)
+            Path cost: 280 (C1)
+            Path cost: 315 (C2)
+            Path cost: 292 (C3)
+            Path cost: 283 (C4)
+            Nodes generated: 836
+            Nodes visited: 812
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (18, 7)
+            Goal: (11, 28)
+            Path: (18, 7) -> (17, 7) -> (16, 7) -> (15, 7) -> (15, 8) -> (14, 8) -> (14, 9) -> (13, 9) -> (12, 9) -> (12, 10) -> (12, 11) -> (12, 12) -> (11, 12) -> (11, 13) -> (11, 14) -> (11, 15) -> (11, 16) -> (11, 17) -> (11, 18) -> (11, 19) -> (11, 20) -> (11, 21) -> (11, 22) -> (11, 23) -> (11, 24) -> (11, 25) -> (11, 26) -> (11, 27) -> (11, 28)
+            Path cost: 280 (C1)
+            Path cost: 315 (C2)
+            Path cost: 296 (C3)
+            Path cost: 281 (C4)
+            Nodes generated: 832
+            Nodes visited: 808
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (18, 7)
+            Goal: (11, 28)
+            Path: (18, 7) -> (17, 7) -> (16, 7) -> (15, 7) -> (14, 7) -> (13, 7) -> (13, 8) -> (13, 9) -> (13, 10) -> (12, 10) -> (11, 10) -> (11, 11) -> (11, 12) -> (11, 13) -> (11, 14) -> (11, 15) -> (11, 16) -> (11, 17) -> (11, 18) -> (11, 19) -> (11, 20) -> (11, 21) -> (11, 22) -> (11, 23) -> (11, 24) -> (11, 25) -> (11, 26) -> (11, 27) -> (11, 28)
+            Path cost: 280 (C1)
+            Path cost: 315 (C2)
+            Path cost: 302 (C3)
+            Path cost: 281 (C4)
+            Nodes generated: 832
+            Nodes visited: 808
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (18, 7)
+            Goal: (11, 28)
+            Path: (18, 7) -> (18, 8) -> (18, 9) -> (18, 10) -> (18, 11) -> (18, 12) -> (18, 13) -> (17, 13) -> (16, 13) -> (16, 14) -> (16, 15) -> (16, 16) -> (15, 16) -> (15, 17) -> (15, 18) -> (14, 18) -> (14, 19) -> (13, 19) -> (13, 20) -> (13, 21) -> (12, 21) -> (12, 22) -> (12, 23) -> (11, 23) -> (11, 24) -> (11, 25) -> (11, 26) -> (11, 27) -> (11, 28)
+            Path cost: 280 (C1)
+            Path cost: 315 (C2)
+            Path cost: 298 (C3)
+            Path cost: 276 (C4)
+            Nodes generated: 834
+            Nodes visited: 810
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (18, 7)
+            Goal: (11, 28)
+            Path: (18, 7) -> (18, 8) -> (18, 9) -> (18, 10) -> (17, 10) -> (16, 10) -> (16, 11) -> (16, 12) -> (15, 12) -> (15, 13) -> (14, 13) -> (14, 14) -> (13, 14) -> (12, 14) -> (12, 15) -> (12, 16) -> (12, 17) -> (12, 18) -> (12, 19) -> (11, 19) -> (11, 20) -> (11, 21) -> (11, 22) -> (11, 23) -> (11, 24) -> (11, 25) -> (11, 26) -> (11, 27) -> (11, 28)
+            Path cost: 280 (C1)
+            Path cost: 315 (C2)
+            Path cost: 291 (C3)
+            Path cost: 272 (C4)
+            Nodes generated: 827
+            Nodes visited: 802
+
+Nodes: Start (29, 18) - Goal (15, 19)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (29, 18)
+            Goal: (15, 19)
+            Path: (29, 18) -> (28, 18) -> (28, 19) -> (27, 19) -> (26, 19) -> (25, 19) -> (24, 19) -> (23, 19) -> (22, 19) -> (21, 19) -> (20, 19) -> (19, 19) -> (18, 19) -> (17, 19) -> (16, 19) -> (15, 19)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 182 (C3)
+            Path cost: 132 (C4)
+            Nodes generated: 260
+            Nodes visited: 232
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (29, 18)
+            Goal: (15, 19)
+            Path: (29, 18) -> (28, 18) -> (27, 18) -> (27, 19) -> (26, 19) -> (25, 19) -> (24, 19) -> (23, 19) -> (22, 19) -> (21, 19) -> (20, 19) -> (19, 19) -> (18, 19) -> (17, 19) -> (16, 19) -> (15, 19)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 183 (C3)
+            Path cost: 133 (C4)
+            Nodes generated: 274
+            Nodes visited: 244
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (29, 18)
+            Goal: (15, 19)
+            Path: (29, 18) -> (28, 18) -> (28, 19) -> (27, 19) -> (26, 19) -> (25, 19) -> (24, 19) -> (23, 19) -> (22, 19) -> (21, 19) -> (20, 19) -> (19, 19) -> (18, 19) -> (17, 19) -> (16, 19) -> (15, 19)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 182 (C3)
+            Path cost: 132 (C4)
+            Nodes generated: 274
+            Nodes visited: 245
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (29, 18)
+            Goal: (15, 19)
+            Path: (29, 18) -> (28, 18) -> (28, 19) -> (27, 19) -> (26, 19) -> (25, 19) -> (24, 19) -> (23, 19) -> (22, 19) -> (21, 19) -> (20, 19) -> (19, 19) -> (18, 19) -> (17, 19) -> (16, 19) -> (15, 19)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 182 (C3)
+            Path cost: 132 (C4)
+            Nodes generated: 261
+            Nodes visited: 233
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (29, 18)
+            Goal: (15, 19)
+            Path: (29, 18) -> (28, 18) -> (28, 19) -> (27, 19) -> (26, 19) -> (25, 19) -> (24, 19) -> (23, 19) -> (22, 19) -> (21, 19) -> (20, 19) -> (19, 19) -> (18, 19) -> (17, 19) -> (16, 19) -> (15, 19)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 182 (C3)
+            Path cost: 132 (C4)
+            Nodes generated: 260
+            Nodes visited: 232
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (29, 18)
+            Goal: (15, 19)
+            Path: (29, 18) -> (29, 19) -> (28, 19) -> (27, 19) -> (26, 19) -> (25, 19) -> (24, 19) -> (23, 19) -> (22, 19) -> (21, 19) -> (20, 19) -> (19, 19) -> (18, 19) -> (17, 19) -> (16, 19) -> (15, 19)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 181 (C3)
+            Path cost: 131 (C4)
+            Nodes generated: 260
+            Nodes visited: 232
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (29, 18)
+            Goal: (15, 19)
+            Path: (29, 18) -> (29, 19) -> (28, 19) -> (27, 19) -> (26, 19) -> (25, 19) -> (24, 19) -> (23, 19) -> (22, 19) -> (21, 19) -> (20, 19) -> (19, 19) -> (18, 19) -> (17, 19) -> (16, 19) -> (15, 19)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 181 (C3)
+            Path cost: 131 (C4)
+            Nodes generated: 260
+            Nodes visited: 232
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (29, 18)
+            Goal: (15, 19)
+            Path: (29, 18) -> (29, 19) -> (28, 19) -> (27, 19) -> (26, 19) -> (25, 19) -> (24, 19) -> (23, 19) -> (22, 19) -> (21, 19) -> (20, 19) -> (19, 19) -> (18, 19) -> (17, 19) -> (16, 19) -> (15, 19)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 181 (C3)
+            Path cost: 131 (C4)
+            Nodes generated: 259
+            Nodes visited: 230
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (29, 18)
+            Goal: (15, 19)
+            Path: (29, 18) -> (28, 18) -> (27, 18) -> (26, 18) -> (26, 19) -> (25, 19) -> (24, 19) -> (23, 19) -> (22, 19) -> (21, 19) -> (20, 19) -> (19, 19) -> (18, 19) -> (17, 19) -> (16, 19) -> (15, 19)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 184 (C3)
+            Path cost: 134 (C4)
+            Nodes generated: 275
+            Nodes visited: 245
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (29, 18)
+            Goal: (15, 19)
+            Path: (29, 18) -> (28, 18) -> (28, 19) -> (27, 19) -> (26, 19) -> (25, 19) -> (24, 19) -> (23, 19) -> (22, 19) -> (21, 19) -> (20, 19) -> (19, 19) -> (18, 19) -> (17, 19) -> (16, 19) -> (15, 19)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 182 (C3)
+            Path cost: 132 (C4)
+            Nodes generated: 272
+            Nodes visited: 242
+
+Nodes: Start (7, 20) - Goal (29, 5)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (7, 20)
+            Goal: (29, 5)
+            Path: (7, 20) -> (7, 19) -> (8, 19) -> (9, 19) -> (10, 19) -> (11, 19) -> (12, 19) -> (12, 18) -> (12, 17) -> (13, 17) -> (13, 16) -> (13, 15) -> (13, 14) -> (14, 14) -> (14, 13) -> (14, 12) -> (14, 11) -> (15, 11) -> (16, 11) -> (17, 11) -> (17, 10) -> (18, 10) -> (18, 9) -> (18, 8) -> (19, 8) -> (19, 7) -> (20, 7) -> (20, 6) -> (21, 6) -> (22, 6) -> (22, 5) -> (23, 5) -> (24, 5) -> (25, 5) -> (26, 5) -> (27, 5) -> (28, 5) -> (29, 5)
+            Path cost: 370 (C1)
+            Path cost: 480 (C2)
+            Path cost: 420 (C3)
+            Path cost: 366 (C4)
+            Nodes generated: 939
+            Nodes visited: 931
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (7, 20)
+            Goal: (29, 5)
+            Path: (7, 20) -> (8, 20) -> (8, 19) -> (8, 18) -> (9, 18) -> (10, 18) -> (10, 17) -> (11, 17) -> (12, 17) -> (12, 16) -> (13, 16) -> (14, 16) -> (14, 15) -> (15, 15) -> (16, 15) -> (17, 15) -> (17, 14) -> (17, 13) -> (17, 12) -> (17, 11) -> (18, 11) -> (18, 10) -> (19, 10) -> (20, 10) -> (20, 9) -> (21, 9) -> (21, 8) -> (21, 7) -> (21, 6) -> (21, 5) -> (22, 5) -> (23, 5) -> (24, 5) -> (25, 5) -> (26, 5) -> (27, 5) -> (28, 5) -> (29, 5)
+            Path cost: 370 (C1)
+            Path cost: 480 (C2)
+            Path cost: 424 (C3)
+            Path cost: 349 (C4)
+            Nodes generated: 939
+            Nodes visited: 930
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (7, 20)
+            Goal: (29, 5)
+            Path: (7, 20) -> (7, 19) -> (7, 18) -> (8, 18) -> (9, 18) -> (9, 17) -> (10, 17) -> (10, 16) -> (11, 16) -> (11, 15) -> (11, 14) -> (12, 14) -> (12, 13) -> (12, 12) -> (13, 12) -> (13, 11) -> (13, 10) -> (13, 9) -> (13, 8) -> (13, 7) -> (14, 7) -> (14, 6) -> (15, 6) -> (15, 5) -> (16, 5) -> (17, 5) -> (18, 5) -> (19, 5) -> (20, 5) -> (21, 5) -> (22, 5) -> (23, 5) -> (24, 5) -> (25, 5) -> (26, 5) -> (27, 5) -> (28, 5) -> (29, 5)
+            Path cost: 370 (C1)
+            Path cost: 480 (C2)
+            Path cost: 421 (C3)
+            Path cost: 362 (C4)
+            Nodes generated: 939
+            Nodes visited: 931
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (7, 20)
+            Goal: (29, 5)
+            Path: (7, 20) -> (7, 19) -> (7, 18) -> (8, 18) -> (9, 18) -> (9, 17) -> (10, 17) -> (11, 17) -> (12, 17) -> (13, 17) -> (14, 17) -> (15, 17) -> (15, 16) -> (15, 15) -> (15, 14) -> (15, 13) -> (15, 12) -> (16, 12) -> (16, 11) -> (16, 10) -> (16, 9) -> (17, 9) -> (17, 8) -> (18, 8) -> (19, 8) -> (20, 8) -> (20, 7) -> (21, 7) -> (22, 7) -> (23, 7) -> (23, 6) -> (24, 6) -> (24, 5) -> (25, 5) -> (26, 5) -> (27, 5) -> (28, 5) -> (29, 5)
+            Path cost: 370 (C1)
+            Path cost: 480 (C2)
+            Path cost: 430 (C3)
+            Path cost: 346 (C4)
+            Nodes generated: 936
+            Nodes visited: 927
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (7, 20)
+            Goal: (29, 5)
+            Path: (7, 20) -> (7, 19) -> (7, 18) -> (8, 18) -> (8, 17) -> (8, 16) -> (9, 16) -> (9, 15) -> (9, 14) -> (10, 14) -> (10, 13) -> (10, 12) -> (11, 12) -> (12, 12) -> (12, 11) -> (13, 11) -> (14, 11) -> (14, 10) -> (15, 10) -> (15, 9) -> (15, 8) -> (15, 7) -> (15, 6) -> (16, 6) -> (16, 5) -> (17, 5) -> (18, 5) -> (19, 5) -> (20, 5) -> (21, 5) -> (22, 5) -> (23, 5) -> (24, 5) -> (25, 5) -> (26, 5) -> (27, 5) -> (28, 5) -> (29, 5)
+            Path cost: 370 (C1)
+            Path cost: 480 (C2)
+            Path cost: 420 (C3)
+            Path cost: 362 (C4)
+            Nodes generated: 939
+            Nodes visited: 931
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (7, 20)
+            Goal: (29, 5)
+            Path: (7, 20) -> (8, 20) -> (9, 20) -> (9, 19) -> (9, 18) -> (9, 17) -> (9, 16) -> (10, 16) -> (11, 16) -> (11, 15) -> (11, 14) -> (12, 14) -> (13, 14) -> (14, 14) -> (14, 13) -> (14, 12) -> (14, 11) -> (15, 11) -> (15, 10) -> (16, 10) -> (17, 10) -> (17, 9) -> (18, 9) -> (19, 9) -> (19, 8) -> (20, 8) -> (21, 8) -> (21, 7) -> (22, 7) -> (22, 6) -> (23, 6) -> (24, 6) -> (24, 5) -> (25, 5) -> (26, 5) -> (27, 5) -> (28, 5) -> (29, 5)
+            Path cost: 370 (C1)
+            Path cost: 480 (C2)
+            Path cost: 426 (C3)
+            Path cost: 367 (C4)
+            Nodes generated: 935
+            Nodes visited: 926
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (7, 20)
+            Goal: (29, 5)
+            Path: (7, 20) -> (8, 20) -> (8, 19) -> (9, 19) -> (9, 18) -> (9, 17) -> (10, 17) -> (10, 16) -> (11, 16) -> (12, 16) -> (12, 15) -> (12, 14) -> (13, 14) -> (13, 13) -> (14, 13) -> (14, 12) -> (14, 11) -> (14, 10) -> (15, 10) -> (15, 9) -> (15, 8) -> (16, 8) -> (17, 8) -> (18, 8) -> (18, 7) -> (19, 7) -> (20, 7) -> (20, 6) -> (21, 6) -> (22, 6) -> (22, 5) -> (23, 5) -> (24, 5) -> (25, 5) -> (26, 5) -> (27, 5) -> (28, 5) -> (29, 5)
+            Path cost: 370 (C1)
+            Path cost: 480 (C2)
+            Path cost: 425 (C3)
+            Path cost: 349 (C4)
+            Nodes generated: 939
+            Nodes visited: 931
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (7, 20)
+            Goal: (29, 5)
+            Path: (7, 20) -> (8, 20) -> (8, 19) -> (8, 18) -> (8, 17) -> (9, 17) -> (9, 16) -> (9, 15) -> (9, 14) -> (10, 14) -> (10, 13) -> (11, 13) -> (11, 12) -> (11, 11) -> (12, 11) -> (12, 10) -> (13, 10) -> (14, 10) -> (14, 9) -> (15, 9) -> (16, 9) -> (17, 9) -> (17, 8) -> (17, 7) -> (18, 7) -> (19, 7) -> (20, 7) -> (20, 6) -> (21, 6) -> (22, 6) -> (23, 6) -> (23, 5) -> (24, 5) -> (25, 5) -> (26, 5) -> (27, 5) -> (28, 5) -> (29, 5)
+            Path cost: 370 (C1)
+            Path cost: 480 (C2)
+            Path cost: 428 (C3)
+            Path cost: 363 (C4)
+            Nodes generated: 939
+            Nodes visited: 930
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (7, 20)
+            Goal: (29, 5)
+            Path: (7, 20) -> (8, 20) -> (9, 20) -> (10, 20) -> (11, 20) -> (12, 20) -> (12, 19) -> (13, 19) -> (13, 18) -> (13, 17) -> (13, 16) -> (14, 16) -> (15, 16) -> (16, 16) -> (16, 15) -> (16, 14) -> (16, 13) -> (16, 12) -> (17, 12) -> (17, 11) -> (17, 10) -> (18, 10) -> (18, 9) -> (18, 8) -> (19, 8) -> (19, 7) -> (20, 7) -> (21, 7) -> (21, 6) -> (21, 5) -> (22, 5) -> (23, 5) -> (24, 5) -> (25, 5) -> (26, 5) -> (27, 5) -> (28, 5) -> (29, 5)
+            Path cost: 370 (C1)
+            Path cost: 480 (C2)
+            Path cost: 416 (C3)
+            Path cost: 360 (C4)
+            Nodes generated: 939
+            Nodes visited: 931
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (7, 20)
+            Goal: (29, 5)
+            Path: (7, 20) -> (8, 20) -> (8, 19) -> (9, 19) -> (9, 18) -> (10, 18) -> (10, 17) -> (11, 17) -> (11, 16) -> (11, 15) -> (12, 15) -> (12, 14) -> (13, 14) -> (13, 13) -> (13, 12) -> (13, 11) -> (13, 10) -> (14, 10) -> (14, 9) -> (15, 9) -> (15, 8) -> (15, 7) -> (15, 6) -> (16, 6) -> (17, 6) -> (17, 5) -> (18, 5) -> (19, 5) -> (20, 5) -> (21, 5) -> (22, 5) -> (23, 5) -> (24, 5) -> (25, 5) -> (26, 5) -> (27, 5) -> (28, 5) -> (29, 5)
+            Path cost: 370 (C1)
+            Path cost: 480 (C2)
+            Path cost: 425 (C3)
+            Path cost: 367 (C4)
+            Nodes generated: 939
+            Nodes visited: 931
+
+Nodes: Start (8, 24) - Goal (22, 2)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (8, 24)
+            Goal: (22, 2)
+            Path: (8, 24) -> (8, 23) -> (9, 23) -> (10, 23) -> (11, 23) -> (11, 22) -> (12, 22) -> (12, 21) -> (13, 21) -> (13, 20) -> (13, 19) -> (13, 18) -> (13, 17) -> (13, 16) -> (14, 16) -> (15, 16) -> (15, 15) -> (15, 14) -> (15, 13) -> (16, 13) -> (16, 12) -> (17, 12) -> (17, 11) -> (17, 10) -> (17, 9) -> (17, 8) -> (18, 8) -> (18, 7) -> (19, 7) -> (20, 7) -> (20, 6) -> (21, 6) -> (22, 6) -> (22, 5) -> (22, 4) -> (22, 3) -> (22, 2)
+            Path cost: 360 (C1)
+            Path cost: 430 (C2)
+            Path cost: 394 (C3)
+            Path cost: 365 (C4)
+            Nodes generated: 898
+            Nodes visited: 885
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (8, 24)
+            Goal: (22, 2)
+            Path: (8, 24) -> (8, 23) -> (8, 22) -> (8, 21) -> (8, 20) -> (8, 19) -> (9, 19) -> (10, 19) -> (11, 19) -> (12, 19) -> (13, 19) -> (14, 19) -> (15, 19) -> (16, 19) -> (16, 18) -> (16, 17) -> (16, 16) -> (17, 16) -> (18, 16) -> (19, 16) -> (19, 15) -> (19, 14) -> (19, 13) -> (20, 13) -> (20, 12) -> (20, 11) -> (20, 10) -> (20, 9) -> (21, 9) -> (22, 9) -> (22, 8) -> (22, 7) -> (22, 6) -> (22, 5) -> (22, 4) -> (22, 3) -> (22, 2)
+            Path cost: 360 (C1)
+            Path cost: 430 (C2)
+            Path cost: 396 (C3)
+            Path cost: 347 (C4)
+            Nodes generated: 903
+            Nodes visited: 890
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (8, 24)
+            Goal: (22, 2)
+            Path: (8, 24) -> (9, 24) -> (10, 24) -> (11, 24) -> (11, 23) -> (11, 22) -> (11, 21) -> (11, 20) -> (11, 19) -> (12, 19) -> (12, 18) -> (13, 18) -> (14, 18) -> (14, 17) -> (15, 17) -> (16, 17) -> (16, 16) -> (17, 16) -> (18, 16) -> (19, 16) -> (19, 15) -> (19, 14) -> (19, 13) -> (19, 12) -> (20, 12) -> (21, 12) -> (22, 12) -> (22, 11) -> (22, 10) -> (22, 9) -> (22, 8) -> (22, 7) -> (22, 6) -> (22, 5) -> (22, 4) -> (22, 3) -> (22, 2)
+            Path cost: 360 (C1)
+            Path cost: 430 (C2)
+            Path cost: 394 (C3)
+            Path cost: 363 (C4)
+            Nodes generated: 904
+            Nodes visited: 892
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (8, 24)
+            Goal: (22, 2)
+            Path: (8, 24) -> (9, 24) -> (9, 23) -> (9, 22) -> (9, 21) -> (9, 20) -> (10, 20) -> (10, 19) -> (11, 19) -> (11, 18) -> (12, 18) -> (13, 18) -> (13, 17) -> (14, 17) -> (15, 17) -> (15, 16) -> (15, 15) -> (15, 14) -> (15, 13) -> (16, 13) -> (17, 13) -> (18, 13) -> (19, 13) -> (19, 12) -> (20, 12) -> (21, 12) -> (21, 11) -> (21, 10) -> (21, 9) -> (21, 8) -> (22, 8) -> (22, 7) -> (22, 6) -> (22, 5) -> (22, 4) -> (22, 3) -> (22, 2)
+            Path cost: 360 (C1)
+            Path cost: 430 (C2)
+            Path cost: 390 (C3)
+            Path cost: 349 (C4)
+            Nodes generated: 902
+            Nodes visited: 889
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (8, 24)
+            Goal: (22, 2)
+            Path: (8, 24) -> (8, 23) -> (9, 23) -> (10, 23) -> (10, 22) -> (11, 22) -> (12, 22) -> (12, 21) -> (12, 20) -> (13, 20) -> (13, 19) -> (13, 18) -> (13, 17) -> (14, 17) -> (15, 17) -> (16, 17) -> (16, 16) -> (17, 16) -> (17, 15) -> (17, 14) -> (18, 14) -> (18, 13) -> (19, 13) -> (20, 13) -> (21, 13) -> (21, 12) -> (21, 11) -> (21, 10) -> (22, 10) -> (22, 9) -> (22, 8) -> (22, 7) -> (22, 6) -> (22, 5) -> (22, 4) -> (22, 3) -> (22, 2)
+            Path cost: 360 (C1)
+            Path cost: 430 (C2)
+            Path cost: 397 (C3)
+            Path cost: 357 (C4)
+            Nodes generated: 904
+            Nodes visited: 891
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (8, 24)
+            Goal: (22, 2)
+            Path: (8, 24) -> (8, 23) -> (8, 22) -> (9, 22) -> (9, 21) -> (9, 20) -> (10, 20) -> (11, 20) -> (12, 20) -> (12, 19) -> (12, 18) -> (12, 17) -> (12, 16) -> (13, 16) -> (14, 16) -> (14, 15) -> (15, 15) -> (16, 15) -> (17, 15) -> (17, 14) -> (17, 13) -> (17, 12) -> (17, 11) -> (17, 10) -> (18, 10) -> (18, 9) -> (18, 8) -> (18, 7) -> (19, 7) -> (20, 7) -> (21, 7) -> (22, 7) -> (22, 6) -> (22, 5) -> (22, 4) -> (22, 3) -> (22, 2)
+            Path cost: 360 (C1)
+            Path cost: 430 (C2)
+            Path cost: 388 (C3)
+            Path cost: 371 (C4)
+            Nodes generated: 899
+            Nodes visited: 886
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (8, 24)
+            Goal: (22, 2)
+            Path: (8, 24) -> (8, 23) -> (9, 23) -> (10, 23) -> (10, 22) -> (11, 22) -> (12, 22) -> (12, 21) -> (13, 21) -> (14, 21) -> (14, 20) -> (14, 19) -> (14, 18) -> (14, 17) -> (14, 16) -> (15, 16) -> (15, 15) -> (16, 15) -> (17, 15) -> (17, 14) -> (18, 14) -> (19, 14) -> (20, 14) -> (20, 13) -> (20, 12) -> (21, 12) -> (22, 12) -> (22, 11) -> (22, 10) -> (22, 9) -> (22, 8) -> (22, 7) -> (22, 6) -> (22, 5) -> (22, 4) -> (22, 3) -> (22, 2)
+            Path cost: 360 (C1)
+            Path cost: 430 (C2)
+            Path cost: 393 (C3)
+            Path cost: 357 (C4)
+            Nodes generated: 904
+            Nodes visited: 892
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (8, 24)
+            Goal: (22, 2)
+            Path: (8, 24) -> (8, 23) -> (8, 22) -> (9, 22) -> (9, 21) -> (10, 21) -> (11, 21) -> (12, 21) -> (13, 21) -> (13, 20) -> (13, 19) -> (14, 19) -> (14, 18) -> (14, 17) -> (14, 16) -> (14, 15) -> (14, 14) -> (14, 13) -> (14, 12) -> (15, 12) -> (15, 11) -> (15, 10) -> (15, 9) -> (15, 8) -> (15, 7) -> (16, 7) -> (17, 7) -> (17, 6) -> (17, 5) -> (18, 5) -> (19, 5) -> (20, 5) -> (20, 4) -> (21, 4) -> (21, 3) -> (22, 3) -> (22, 2)
+            Path cost: 360 (C1)
+            Path cost: 430 (C2)
+            Path cost: 390 (C3)
+            Path cost: 361 (C4)
+            Nodes generated: 896
+            Nodes visited: 884
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (8, 24)
+            Goal: (22, 2)
+            Path: (8, 24) -> (9, 24) -> (10, 24) -> (11, 24) -> (12, 24) -> (13, 24) -> (14, 24) -> (14, 23) -> (14, 22) -> (15, 22) -> (16, 22) -> (17, 22) -> (18, 22) -> (18, 21) -> (19, 21) -> (19, 20) -> (20, 20) -> (21, 20) -> (22, 20) -> (22, 19) -> (22, 18) -> (22, 17) -> (22, 16) -> (22, 15) -> (22, 14) -> (22, 13) -> (22, 12) -> (22, 11) -> (22, 10) -> (22, 9) -> (22, 8) -> (22, 7) -> (22, 6) -> (22, 5) -> (22, 4) -> (22, 3) -> (22, 2)
+            Path cost: 360 (C1)
+            Path cost: 430 (C2)
+            Path cost: 398 (C3)
+            Path cost: 358 (C4)
+            Nodes generated: 904
+            Nodes visited: 892
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (8, 24)
+            Goal: (22, 2)
+            Path: (8, 24) -> (8, 23) -> (8, 22) -> (9, 22) -> (10, 22) -> (10, 21) -> (11, 21) -> (12, 21) -> (13, 21) -> (14, 21) -> (15, 21) -> (15, 20) -> (15, 19) -> (15, 18) -> (15, 17) -> (15, 16) -> (16, 16) -> (17, 16) -> (18, 16) -> (18, 15) -> (18, 14) -> (19, 14) -> (19, 13) -> (20, 13) -> (21, 13) -> (22, 13) -> (22, 12) -> (22, 11) -> (22, 10) -> (22, 9) -> (22, 8) -> (22, 7) -> (22, 6) -> (22, 5) -> (22, 4) -> (22, 3) -> (22, 2)
+            Path cost: 360 (C1)
+            Path cost: 430 (C2)
+            Path cost: 393 (C3)
+            Path cost: 343 (C4)
+            Nodes generated: 904
+            Nodes visited: 892
+
+Nodes: Start (1, 16) - Goal (27, 14)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (1, 16)
+            Goal: (27, 14)
+            Path: (1, 16) -> (2, 16) -> (3, 16) -> (4, 16) -> (4, 15) -> (5, 15) -> (6, 15) -> (7, 15) -> (7, 14) -> (8, 14) -> (9, 14) -> (10, 14) -> (11, 14) -> (12, 14) -> (13, 14) -> (14, 14) -> (15, 14) -> (16, 14) -> (17, 14) -> (18, 14) -> (19, 14) -> (20, 14) -> (21, 14) -> (22, 14) -> (23, 14) -> (24, 14) -> (25, 14) -> (26, 14) -> (27, 14)
+            Path cost: 280 (C1)
+            Path cost: 410 (C2)
+            Path cost: 346 (C3)
+            Path cost: 270 (C4)
+            Nodes generated: 687
+            Nodes visited: 656
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (1, 16)
+            Goal: (27, 14)
+            Path: (1, 16) -> (2, 16) -> (3, 16) -> (4, 16) -> (4, 15) -> (5, 15) -> (5, 14) -> (6, 14) -> (7, 14) -> (8, 14) -> (9, 14) -> (10, 14) -> (11, 14) -> (12, 14) -> (13, 14) -> (14, 14) -> (15, 14) -> (16, 14) -> (17, 14) -> (18, 14) -> (19, 14) -> (20, 14) -> (21, 14) -> (22, 14) -> (23, 14) -> (24, 14) -> (25, 14) -> (26, 14) -> (27, 14)
+            Path cost: 280 (C1)
+            Path cost: 410 (C2)
+            Path cost: 348 (C3)
+            Path cost: 268 (C4)
+            Nodes generated: 687
+            Nodes visited: 656
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (1, 16)
+            Goal: (27, 14)
+            Path: (1, 16) -> (2, 16) -> (3, 16) -> (3, 15) -> (3, 14) -> (4, 14) -> (5, 14) -> (6, 14) -> (7, 14) -> (8, 14) -> (9, 14) -> (10, 14) -> (11, 14) -> (12, 14) -> (13, 14) -> (14, 14) -> (15, 14) -> (16, 14) -> (17, 14) -> (18, 14) -> (19, 14) -> (20, 14) -> (21, 14) -> (22, 14) -> (23, 14) -> (24, 14) -> (25, 14) -> (26, 14) -> (27, 14)
+            Path cost: 280 (C1)
+            Path cost: 410 (C2)
+            Path cost: 345 (C3)
+            Path cost: 265 (C4)
+            Nodes generated: 687
+            Nodes visited: 656
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (1, 16)
+            Goal: (27, 14)
+            Path: (1, 16) -> (2, 16) -> (3, 16) -> (4, 16) -> (4, 15) -> (4, 14) -> (5, 14) -> (6, 14) -> (7, 14) -> (8, 14) -> (9, 14) -> (10, 14) -> (11, 14) -> (12, 14) -> (13, 14) -> (14, 14) -> (15, 14) -> (16, 14) -> (17, 14) -> (18, 14) -> (19, 14) -> (20, 14) -> (21, 14) -> (22, 14) -> (23, 14) -> (24, 14) -> (25, 14) -> (26, 14) -> (27, 14)
+            Path cost: 280 (C1)
+            Path cost: 410 (C2)
+            Path cost: 347 (C3)
+            Path cost: 267 (C4)
+            Nodes generated: 687
+            Nodes visited: 656
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (1, 16)
+            Goal: (27, 14)
+            Path: (1, 16) -> (1, 15) -> (1, 14) -> (2, 14) -> (3, 14) -> (4, 14) -> (5, 14) -> (6, 14) -> (7, 14) -> (8, 14) -> (9, 14) -> (10, 14) -> (11, 14) -> (12, 14) -> (13, 14) -> (14, 14) -> (15, 14) -> (16, 14) -> (17, 14) -> (18, 14) -> (19, 14) -> (20, 14) -> (21, 14) -> (22, 14) -> (23, 14) -> (24, 14) -> (25, 14) -> (26, 14) -> (27, 14)
+            Path cost: 280 (C1)
+            Path cost: 410 (C2)
+            Path cost: 341 (C3)
+            Path cost: 261 (C4)
+            Nodes generated: 673
+            Nodes visited: 642
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (1, 16)
+            Goal: (27, 14)
+            Path: (1, 16) -> (1, 15) -> (2, 15) -> (2, 14) -> (3, 14) -> (4, 14) -> (5, 14) -> (6, 14) -> (7, 14) -> (8, 14) -> (9, 14) -> (10, 14) -> (11, 14) -> (12, 14) -> (13, 14) -> (14, 14) -> (15, 14) -> (16, 14) -> (17, 14) -> (18, 14) -> (19, 14) -> (20, 14) -> (21, 14) -> (22, 14) -> (23, 14) -> (24, 14) -> (25, 14) -> (26, 14) -> (27, 14)
+            Path cost: 280 (C1)
+            Path cost: 410 (C2)
+            Path cost: 342 (C3)
+            Path cost: 262 (C4)
+            Nodes generated: 673
+            Nodes visited: 642
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (1, 16)
+            Goal: (27, 14)
+            Path: (1, 16) -> (2, 16) -> (2, 15) -> (2, 14) -> (3, 14) -> (4, 14) -> (5, 14) -> (6, 14) -> (7, 14) -> (8, 14) -> (9, 14) -> (10, 14) -> (11, 14) -> (12, 14) -> (13, 14) -> (14, 14) -> (15, 14) -> (16, 14) -> (17, 14) -> (18, 14) -> (19, 14) -> (20, 14) -> (21, 14) -> (22, 14) -> (23, 14) -> (24, 14) -> (25, 14) -> (26, 14) -> (27, 14)
+            Path cost: 280 (C1)
+            Path cost: 410 (C2)
+            Path cost: 343 (C3)
+            Path cost: 263 (C4)
+            Nodes generated: 673
+            Nodes visited: 642
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (1, 16)
+            Goal: (27, 14)
+            Path: (1, 16) -> (1, 15) -> (2, 15) -> (2, 14) -> (3, 14) -> (4, 14) -> (5, 14) -> (6, 14) -> (7, 14) -> (8, 14) -> (9, 14) -> (10, 14) -> (11, 14) -> (12, 14) -> (13, 14) -> (14, 14) -> (15, 14) -> (16, 14) -> (17, 14) -> (18, 14) -> (19, 14) -> (20, 14) -> (21, 14) -> (22, 14) -> (23, 14) -> (24, 14) -> (25, 14) -> (26, 14) -> (27, 14)
+            Path cost: 280 (C1)
+            Path cost: 410 (C2)
+            Path cost: 342 (C3)
+            Path cost: 262 (C4)
+            Nodes generated: 673
+            Nodes visited: 642
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (1, 16)
+            Goal: (27, 14)
+            Path: (1, 16) -> (2, 16) -> (3, 16) -> (3, 15) -> (3, 14) -> (4, 14) -> (5, 14) -> (6, 14) -> (7, 14) -> (8, 14) -> (9, 14) -> (10, 14) -> (11, 14) -> (12, 14) -> (13, 14) -> (14, 14) -> (15, 14) -> (16, 14) -> (17, 14) -> (18, 14) -> (19, 14) -> (20, 14) -> (21, 14) -> (22, 14) -> (23, 14) -> (24, 14) -> (25, 14) -> (26, 14) -> (27, 14)
+            Path cost: 280 (C1)
+            Path cost: 410 (C2)
+            Path cost: 345 (C3)
+            Path cost: 265 (C4)
+            Nodes generated: 687
+            Nodes visited: 656
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (1, 16)
+            Goal: (27, 14)
+            Path: (1, 16) -> (1, 15) -> (2, 15) -> (2, 14) -> (3, 14) -> (4, 14) -> (5, 14) -> (6, 14) -> (7, 14) -> (8, 14) -> (9, 14) -> (10, 14) -> (11, 14) -> (12, 14) -> (13, 14) -> (14, 14) -> (15, 14) -> (16, 14) -> (17, 14) -> (18, 14) -> (19, 14) -> (20, 14) -> (21, 14) -> (22, 14) -> (23, 14) -> (24, 14) -> (25, 14) -> (26, 14) -> (27, 14)
+            Path cost: 280 (C1)
+            Path cost: 410 (C2)
+            Path cost: 342 (C3)
+            Path cost: 262 (C4)
+            Nodes generated: 673
+            Nodes visited: 642
+
+Nodes: Start (2, 16) - Goal (7, 3)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (2, 16)
+            Goal: (7, 3)
+            Path: (2, 16) -> (3, 16) -> (3, 15) -> (3, 14) -> (4, 14) -> (4, 13) -> (5, 13) -> (5, 12) -> (5, 11) -> (5, 10) -> (6, 10) -> (6, 9) -> (7, 9) -> (7, 8) -> (7, 7) -> (7, 6) -> (7, 5) -> (7, 4) -> (7, 3)
+            Path cost: 180 (C1)
+            Path cost: 205 (C2)
+            Path cost: 191 (C3)
+            Path cost: 176 (C4)
+            Nodes generated: 385
+            Nodes visited: 352
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (2, 16)
+            Goal: (7, 3)
+            Path: (2, 16) -> (2, 15) -> (2, 14) -> (3, 14) -> (4, 14) -> (5, 14) -> (5, 13) -> (6, 13) -> (7, 13) -> (7, 12) -> (7, 11) -> (7, 10) -> (7, 9) -> (7, 8) -> (7, 7) -> (7, 6) -> (7, 5) -> (7, 4) -> (7, 3)
+            Path cost: 180 (C1)
+            Path cost: 205 (C2)
+            Path cost: 189 (C3)
+            Path cost: 178 (C4)
+            Nodes generated: 390
+            Nodes visited: 357
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (2, 16)
+            Goal: (7, 3)
+            Path: (2, 16) -> (2, 15) -> (3, 15) -> (4, 15) -> (4, 14) -> (4, 13) -> (4, 12) -> (4, 11) -> (5, 11) -> (6, 11) -> (7, 11) -> (7, 10) -> (7, 9) -> (7, 8) -> (7, 7) -> (7, 6) -> (7, 5) -> (7, 4) -> (7, 3)
+            Path cost: 180 (C1)
+            Path cost: 205 (C2)
+            Path cost: 196 (C3)
+            Path cost: 173 (C4)
+            Nodes generated: 388
+            Nodes visited: 355
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (2, 16)
+            Goal: (7, 3)
+            Path: (2, 16) -> (2, 15) -> (3, 15) -> (4, 15) -> (5, 15) -> (5, 14) -> (6, 14) -> (6, 13) -> (6, 12) -> (7, 12) -> (7, 11) -> (7, 10) -> (7, 9) -> (7, 8) -> (7, 7) -> (7, 6) -> (7, 5) -> (7, 4) -> (7, 3)
+            Path cost: 180 (C1)
+            Path cost: 205 (C2)
+            Path cost: 192 (C3)
+            Path cost: 181 (C4)
+            Nodes generated: 388
+            Nodes visited: 354
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (2, 16)
+            Goal: (7, 3)
+            Path: (2, 16) -> (2, 15) -> (2, 14) -> (3, 14) -> (3, 13) -> (4, 13) -> (5, 13) -> (6, 13) -> (7, 13) -> (7, 12) -> (7, 11) -> (7, 10) -> (7, 9) -> (7, 8) -> (7, 7) -> (7, 6) -> (7, 5) -> (7, 4) -> (7, 3)
+            Path cost: 180 (C1)
+            Path cost: 205 (C2)
+            Path cost: 187 (C3)
+            Path cost: 176 (C4)
+            Nodes generated: 387
+            Nodes visited: 353
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (2, 16)
+            Goal: (7, 3)
+            Path: (2, 16) -> (3, 16) -> (4, 16) -> (5, 16) -> (5, 15) -> (6, 15) -> (7, 15) -> (7, 14) -> (7, 13) -> (7, 12) -> (7, 11) -> (7, 10) -> (7, 9) -> (7, 8) -> (7, 7) -> (7, 6) -> (7, 5) -> (7, 4) -> (7, 3)
+            Path cost: 180 (C1)
+            Path cost: 205 (C2)
+            Path cost: 193 (C3)
+            Path cost: 188 (C4)
+            Nodes generated: 406
+            Nodes visited: 373
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (2, 16)
+            Goal: (7, 3)
+            Path: (2, 16) -> (3, 16) -> (3, 15) -> (4, 15) -> (4, 14) -> (5, 14) -> (5, 13) -> (5, 12) -> (6, 12) -> (6, 11) -> (7, 11) -> (7, 10) -> (7, 9) -> (7, 8) -> (7, 7) -> (7, 6) -> (7, 5) -> (7, 4) -> (7, 3)
+            Path cost: 180 (C1)
+            Path cost: 205 (C2)
+            Path cost: 195 (C3)
+            Path cost: 178 (C4)
+            Nodes generated: 400
+            Nodes visited: 366
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (2, 16)
+            Goal: (7, 3)
+            Path: (2, 16) -> (2, 15) -> (2, 14) -> (3, 14) -> (4, 14) -> (4, 13) -> (4, 12) -> (4, 11) -> (4, 10) -> (5, 10) -> (6, 10) -> (6, 9) -> (6, 8) -> (6, 7) -> (6, 6) -> (6, 5) -> (6, 4) -> (7, 4) -> (7, 3)
+            Path cost: 180 (C1)
+            Path cost: 205 (C2)
+            Path cost: 197 (C3)
+            Path cost: 176 (C4)
+            Nodes generated: 379
+            Nodes visited: 346
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (2, 16)
+            Goal: (7, 3)
+            Path: (2, 16) -> (2, 15) -> (2, 14) -> (2, 13) -> (3, 13) -> (4, 13) -> (4, 12) -> (5, 12) -> (6, 12) -> (6, 11) -> (7, 11) -> (7, 10) -> (7, 9) -> (7, 8) -> (7, 7) -> (7, 6) -> (7, 5) -> (7, 4) -> (7, 3)
+            Path cost: 180 (C1)
+            Path cost: 205 (C2)
+            Path cost: 190 (C3)
+            Path cost: 171 (C4)
+            Nodes generated: 384
+            Nodes visited: 351
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (2, 16)
+            Goal: (7, 3)
+            Path: (2, 16) -> (2, 15) -> (2, 14) -> (2, 13) -> (2, 12) -> (2, 11) -> (3, 11) -> (3, 10) -> (3, 9) -> (3, 8) -> (3, 7) -> (4, 7) -> (5, 7) -> (6, 7) -> (7, 7) -> (7, 6) -> (7, 5) -> (7, 4) -> (7, 3)
+            Path cost: 180 (C1)
+            Path cost: 205 (C2)
+            Path cost: 188 (C3)
+            Path cost: 169 (C4)
+            Nodes generated: 394
+            Nodes visited: 362
+
+Nodes: Start (19, 27) - Goal (15, 28)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (19, 27)
+            Goal: (15, 28)
+            Path: (19, 27) -> (18, 27) -> (18, 28) -> (17, 28) -> (16, 28) -> (15, 28)
+            Path cost: 50 (C1)
+            Path cost: 70 (C2)
+            Path cost: 61 (C3)
+            Path cost: 57 (C4)
+            Nodes generated: 52
+            Nodes visited: 34
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (19, 27)
+            Goal: (15, 28)
+            Path: (19, 27) -> (18, 27) -> (18, 28) -> (17, 28) -> (16, 28) -> (15, 28)
+            Path cost: 50 (C1)
+            Path cost: 70 (C2)
+            Path cost: 61 (C3)
+            Path cost: 57 (C4)
+            Nodes generated: 51
+            Nodes visited: 34
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (19, 27)
+            Goal: (15, 28)
+            Path: (19, 27) -> (19, 28) -> (18, 28) -> (17, 28) -> (16, 28) -> (15, 28)
+            Path cost: 50 (C1)
+            Path cost: 70 (C2)
+            Path cost: 60 (C3)
+            Path cost: 56 (C4)
+            Nodes generated: 46
+            Nodes visited: 31
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (19, 27)
+            Goal: (15, 28)
+            Path: (19, 27) -> (18, 27) -> (18, 28) -> (17, 28) -> (16, 28) -> (15, 28)
+            Path cost: 50 (C1)
+            Path cost: 70 (C2)
+            Path cost: 61 (C3)
+            Path cost: 57 (C4)
+            Nodes generated: 52
+            Nodes visited: 35
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (19, 27)
+            Goal: (15, 28)
+            Path: (19, 27) -> (19, 28) -> (18, 28) -> (17, 28) -> (16, 28) -> (15, 28)
+            Path cost: 50 (C1)
+            Path cost: 70 (C2)
+            Path cost: 60 (C3)
+            Path cost: 56 (C4)
+            Nodes generated: 56
+            Nodes visited: 39
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (19, 27)
+            Goal: (15, 28)
+            Path: (19, 27) -> (19, 28) -> (18, 28) -> (17, 28) -> (16, 28) -> (15, 28)
+            Path cost: 50 (C1)
+            Path cost: 70 (C2)
+            Path cost: 60 (C3)
+            Path cost: 56 (C4)
+            Nodes generated: 56
+            Nodes visited: 39
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (19, 27)
+            Goal: (15, 28)
+            Path: (19, 27) -> (19, 28) -> (18, 28) -> (17, 28) -> (16, 28) -> (15, 28)
+            Path cost: 50 (C1)
+            Path cost: 70 (C2)
+            Path cost: 60 (C3)
+            Path cost: 56 (C4)
+            Nodes generated: 56
+            Nodes visited: 39
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (19, 27)
+            Goal: (15, 28)
+            Path: (19, 27) -> (18, 27) -> (17, 27) -> (16, 27) -> (16, 28) -> (15, 28)
+            Path cost: 50 (C1)
+            Path cost: 70 (C2)
+            Path cost: 63 (C3)
+            Path cost: 59 (C4)
+            Nodes generated: 42
+            Nodes visited: 26
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (19, 27)
+            Goal: (15, 28)
+            Path: (19, 27) -> (19, 28) -> (18, 28) -> (17, 28) -> (16, 28) -> (15, 28)
+            Path cost: 50 (C1)
+            Path cost: 70 (C2)
+            Path cost: 60 (C3)
+            Path cost: 56 (C4)
+            Nodes generated: 46
+            Nodes visited: 31
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (19, 27)
+            Goal: (15, 28)
+            Path: (19, 27) -> (18, 27) -> (18, 28) -> (17, 28) -> (16, 28) -> (15, 28)
+            Path cost: 50 (C1)
+            Path cost: 70 (C2)
+            Path cost: 61 (C3)
+            Path cost: 57 (C4)
+            Nodes generated: 43
+            Nodes visited: 28
+
+Nodes: Start (19, 21) - Goal (23, 17)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (19, 21)
+            Goal: (23, 17)
+            Path: (19, 21) -> (19, 20) -> (19, 19) -> (19, 18) -> (19, 17) -> (20, 17) -> (21, 17) -> (22, 17) -> (23, 17)
+            Path cost: 80 (C1)
+            Path cost: 100 (C2)
+            Path cost: 84 (C3)
+            Path cost: 74 (C4)
+            Nodes generated: 125
+            Nodes visited: 95
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (19, 21)
+            Goal: (23, 17)
+            Path: (19, 21) -> (20, 21) -> (21, 21) -> (22, 21) -> (23, 21) -> (23, 20) -> (23, 19) -> (23, 18) -> (23, 17)
+            Path cost: 80 (C1)
+            Path cost: 100 (C2)
+            Path cost: 94 (C3)
+            Path cost: 90 (C4)
+            Nodes generated: 141
+            Nodes visited: 109
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (19, 21)
+            Goal: (23, 17)
+            Path: (19, 21) -> (20, 21) -> (21, 21) -> (22, 21) -> (22, 20) -> (23, 20) -> (23, 19) -> (23, 18) -> (23, 17)
+            Path cost: 80 (C1)
+            Path cost: 100 (C2)
+            Path cost: 93 (C3)
+            Path cost: 89 (C4)
+            Nodes generated: 123
+            Nodes visited: 93
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (19, 21)
+            Goal: (23, 17)
+            Path: (19, 21) -> (19, 20) -> (20, 20) -> (20, 19) -> (20, 18) -> (21, 18) -> (22, 18) -> (22, 17) -> (23, 17)
+            Path cost: 80 (C1)
+            Path cost: 100 (C2)
+            Path cost: 87 (C3)
+            Path cost: 79 (C4)
+            Nodes generated: 130
+            Nodes visited: 99
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (19, 21)
+            Goal: (23, 17)
+            Path: (19, 21) -> (20, 21) -> (21, 21) -> (21, 20) -> (22, 20) -> (23, 20) -> (23, 19) -> (23, 18) -> (23, 17)
+            Path cost: 80 (C1)
+            Path cost: 100 (C2)
+            Path cost: 92 (C3)
+            Path cost: 88 (C4)
+            Nodes generated: 124
+            Nodes visited: 94
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (19, 21)
+            Goal: (23, 17)
+            Path: (19, 21) -> (20, 21) -> (21, 21) -> (21, 20) -> (22, 20) -> (22, 19) -> (22, 18) -> (23, 18) -> (23, 17)
+            Path cost: 80 (C1)
+            Path cost: 100 (C2)
+            Path cost: 92 (C3)
+            Path cost: 86 (C4)
+            Nodes generated: 130
+            Nodes visited: 99
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (19, 21)
+            Goal: (23, 17)
+            Path: (19, 21) -> (20, 21) -> (20, 20) -> (20, 19) -> (20, 18) -> (20, 17) -> (21, 17) -> (22, 17) -> (23, 17)
+            Path cost: 80 (C1)
+            Path cost: 100 (C2)
+            Path cost: 88 (C3)
+            Path cost: 78 (C4)
+            Nodes generated: 116
+            Nodes visited: 87
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (19, 21)
+            Goal: (23, 17)
+            Path: (19, 21) -> (20, 21) -> (20, 20) -> (21, 20) -> (22, 20) -> (22, 19) -> (23, 19) -> (23, 18) -> (23, 17)
+            Path cost: 80 (C1)
+            Path cost: 100 (C2)
+            Path cost: 90 (C3)
+            Path cost: 86 (C4)
+            Nodes generated: 139
+            Nodes visited: 107
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (19, 21)
+            Goal: (23, 17)
+            Path: (19, 21) -> (19, 20) -> (19, 19) -> (20, 19) -> (21, 19) -> (21, 18) -> (22, 18) -> (23, 18) -> (23, 17)
+            Path cost: 80 (C1)
+            Path cost: 100 (C2)
+            Path cost: 86 (C3)
+            Path cost: 80 (C4)
+            Nodes generated: 136
+            Nodes visited: 104
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (19, 21)
+            Goal: (23, 17)
+            Path: (19, 21) -> (20, 21) -> (21, 21) -> (22, 21) -> (23, 21) -> (23, 20) -> (23, 19) -> (23, 18) -> (23, 17)
+            Path cost: 80 (C1)
+            Path cost: 100 (C2)
+            Path cost: 94 (C3)
+            Path cost: 90 (C4)
+            Nodes generated: 123
+            Nodes visited: 93
+
+Nodes: Start (22, 3) - Goal (8, 4)
+
+    Random Breadth-First Search
+
+        Iteration: 1
+
+            Solution Found:
+            Start: (22, 3)
+            Goal: (8, 4)
+            Path: (22, 3) -> (21, 3) -> (21, 4) -> (20, 4) -> (19, 4) -> (18, 4) -> (17, 4) -> (16, 4) -> (15, 4) -> (14, 4) -> (13, 4) -> (12, 4) -> (11, 4) -> (10, 4) -> (9, 4) -> (8, 4)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 182 (C3)
+            Path cost: 132 (C4)
+            Nodes generated: 288
+            Nodes visited: 261
+
+        Iteration: 2
+
+            Solution Found:
+            Start: (22, 3)
+            Goal: (8, 4)
+            Path: (22, 3) -> (21, 3) -> (20, 3) -> (20, 4) -> (19, 4) -> (18, 4) -> (17, 4) -> (16, 4) -> (15, 4) -> (14, 4) -> (13, 4) -> (12, 4) -> (11, 4) -> (10, 4) -> (9, 4) -> (8, 4)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 183 (C3)
+            Path cost: 133 (C4)
+            Nodes generated: 287
+            Nodes visited: 260
+
+        Iteration: 3
+
+            Solution Found:
+            Start: (22, 3)
+            Goal: (8, 4)
+            Path: (22, 3) -> (21, 3) -> (20, 3) -> (19, 3) -> (18, 3) -> (18, 4) -> (17, 4) -> (16, 4) -> (15, 4) -> (14, 4) -> (13, 4) -> (12, 4) -> (11, 4) -> (10, 4) -> (9, 4) -> (8, 4)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 185 (C3)
+            Path cost: 135 (C4)
+            Nodes generated: 281
+            Nodes visited: 254
+
+        Iteration: 4
+
+            Solution Found:
+            Start: (22, 3)
+            Goal: (8, 4)
+            Path: (22, 3) -> (21, 3) -> (21, 4) -> (20, 4) -> (19, 4) -> (18, 4) -> (17, 4) -> (16, 4) -> (15, 4) -> (14, 4) -> (13, 4) -> (12, 4) -> (11, 4) -> (10, 4) -> (9, 4) -> (8, 4)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 182 (C3)
+            Path cost: 132 (C4)
+            Nodes generated: 292
+            Nodes visited: 265
+
+        Iteration: 5
+
+            Solution Found:
+            Start: (22, 3)
+            Goal: (8, 4)
+            Path: (22, 3) -> (21, 3) -> (21, 4) -> (20, 4) -> (19, 4) -> (18, 4) -> (17, 4) -> (16, 4) -> (15, 4) -> (14, 4) -> (13, 4) -> (12, 4) -> (11, 4) -> (10, 4) -> (9, 4) -> (8, 4)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 182 (C3)
+            Path cost: 132 (C4)
+            Nodes generated: 281
+            Nodes visited: 254
+
+        Iteration: 6
+
+            Solution Found:
+            Start: (22, 3)
+            Goal: (8, 4)
+            Path: (22, 3) -> (21, 3) -> (21, 4) -> (20, 4) -> (19, 4) -> (18, 4) -> (17, 4) -> (16, 4) -> (15, 4) -> (14, 4) -> (13, 4) -> (12, 4) -> (11, 4) -> (10, 4) -> (9, 4) -> (8, 4)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 182 (C3)
+            Path cost: 132 (C4)
+            Nodes generated: 281
+            Nodes visited: 254
+
+        Iteration: 7
+
+            Solution Found:
+            Start: (22, 3)
+            Goal: (8, 4)
+            Path: (22, 3) -> (21, 3) -> (21, 4) -> (20, 4) -> (19, 4) -> (18, 4) -> (17, 4) -> (16, 4) -> (15, 4) -> (14, 4) -> (13, 4) -> (12, 4) -> (11, 4) -> (10, 4) -> (9, 4) -> (8, 4)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 182 (C3)
+            Path cost: 132 (C4)
+            Nodes generated: 284
+            Nodes visited: 257
+
+        Iteration: 8
+
+            Solution Found:
+            Start: (22, 3)
+            Goal: (8, 4)
+            Path: (22, 3) -> (21, 3) -> (20, 3) -> (19, 3) -> (18, 3) -> (17, 3) -> (17, 4) -> (16, 4) -> (15, 4) -> (14, 4) -> (13, 4) -> (12, 4) -> (11, 4) -> (10, 4) -> (9, 4) -> (8, 4)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 186 (C3)
+            Path cost: 136 (C4)
+            Nodes generated: 276
+            Nodes visited: 249
+
+        Iteration: 9
+
+            Solution Found:
+            Start: (22, 3)
+            Goal: (8, 4)
+            Path: (22, 3) -> (21, 3) -> (20, 3) -> (19, 3) -> (19, 4) -> (18, 4) -> (17, 4) -> (16, 4) -> (15, 4) -> (14, 4) -> (13, 4) -> (12, 4) -> (11, 4) -> (10, 4) -> (9, 4) -> (8, 4)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 184 (C3)
+            Path cost: 134 (C4)
+            Nodes generated: 277
+            Nodes visited: 250
+
+        Iteration: 10
+
+            Solution Found:
+            Start: (22, 3)
+            Goal: (8, 4)
+            Path: (22, 3) -> (22, 4) -> (21, 4) -> (20, 4) -> (19, 4) -> (18, 4) -> (17, 4) -> (16, 4) -> (15, 4) -> (14, 4) -> (13, 4) -> (12, 4) -> (11, 4) -> (10, 4) -> (9, 4) -> (8, 4)
+            Path cost: 150 (C1)
+            Path cost: 220 (C2)
+            Path cost: 181 (C3)
+            Path cost: 131 (C4)
+            Nodes generated: 292
+            Nodes visited: 265
