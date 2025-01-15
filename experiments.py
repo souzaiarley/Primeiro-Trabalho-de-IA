@@ -34,6 +34,7 @@ def printResult(start: Node, goal: Node, result):
             Nodes visited: {result[2]}
     """
 
+
 def Experiment_0():
     with open("experiments/experiment_0.txt", "w") as f:
         f.write("|==============|\n")
@@ -261,6 +262,44 @@ def Experiment_1():
             f.write("\n        Cost function: C_4")
             result = Dijkstra(start, goal, C_4)
             f.write(printResult(start, goal, result))
+
+
+# This function runs the experiment 2, saving the results in a file
+def Experiment_2():
+    with open("experiments/experiment_2.txt", "w") as f:
+        f.write("|==============|\n")
+        f.write("| Experiment 2 |\n")
+        f.write("|==============|\n")
+
+        for i in range(50):
+            # Generate random coordinates for the start and goal nodes
+            startX = randint(0, 30)
+            startY = randint(0, 30)
+            goalX = randint(0, 30)
+            goalY = randint(0, 30)
+
+            # Create Node objects for the start and goal points
+            start = Node(startX, startY)
+            goal = Node(goalX, goalY)
+
+            # Log the start and goal nodes to the file
+            f.write(f"\nIteration {i + 1}:\n")
+            f.write(f"Nodes: Start {start} - Goal {goal}\n")
+
+            # Perform Uniform-Cost Search (Dijkstra) for each cost function
+            f.write("\n    Uniform-Cost Search (Dijkstra)\n")
+            for cost_function, label in [(C_1, "C_1"), (C_2, "C_2"), (C_3, "C_3"), (C_4, "C_4")]:
+                f.write(f"\n        Cost function: {label}")
+                result = Dijkstra(start, goal, cost_function)
+                f.write(printResult(start, goal, result))
+
+            # Perform A* Search for each combination of cost function and heuristic
+            f.write("\n    A* Search\n")
+            for cost_function, cost_label in [(C_1, "C_1"), (C_2, "C_2"), (C_3, "C_3"), (C_4, "C_4")]:
+                for heuristic, heuristic_label in [(euclidean, "Euclidean (H1)"), (manhattan, "Manhattan (H2)")]:
+                    f.write(f"\n        Cost function: {cost_label}, Heuristic: {heuristic_label}")
+                    result = AStar(start, goal, cost_function, heuristic)
+                    f.write(printResult(start, goal, result))
 
 
 # This function runs the experiment 4, saving the results in a file
