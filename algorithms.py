@@ -293,32 +293,41 @@ def AStar(start: Node, goal: Node, costFunction: Callable, heuristic: Callable):
     frontier = PriorityQueue()
     frontier.put((0, id(current), current))  # Priority = f(n) = g(n) + h(n)
 
-    # Create a dictionary to store the nodes that have been reached and add the start node to the dictionary
+    # Create a dictionary to store the states that have been reached and it's nodes. It also adds the start state to the dictionary
     reached = {}
-    reached[current] = current
+    reached[(current.x, current.y)] = current
 
     # List of visited nodes
     visited = []
 
-    # While there are nodes to explore
+    # Number of nodes generated
+    generated = 1
+
+    # While the queue is not empty
     while not frontier.empty():
         # Remove the node with the lowest f(n) cost
         current = frontier.get()[2]
         visited.append(current)
 
-        # Check if it is the goal node
-        if current == goal:
-            return current, len(reached), len(visited)
+        # If the current node's state is the goal, return the current node, the number of nodes reached (generated), and the number of nodes visited
+        if current.x == goal.x and current.y == goal.y:
+            return (current, generated, len(visited))
+
+        # Expand the current node
+        children = current.expand(costFunction)
+
+        # Update the number of nodes generated
+        generated += len(children)
 
         # Expand the child nodes
-        for child in current.expand(costFunction):
+        for child in children:
             # Calculate the costs
             g_cost = child.cost  # g(n) is already included in the child's cost (updated in expand)
             f_cost = g_cost + heuristic(child, goal)  # f(n) = g(n) + h(n)
 
             # Check if the node should be updated
-            if child not in reached or g_cost < reached[child].cost:
-                reached[child] = child  # Update the node in the reached dictionary
+            if (child.x, child.y) not in reached or g_cost < reached[(child.x, child.y)].cost:
+                reached[(child.x, child.y)] = child  # Update the node in the reached dictionary
                 frontier.put((f_cost, id(child), child))  # Add to the priority queue
 
     # If the goal is not found, return None
