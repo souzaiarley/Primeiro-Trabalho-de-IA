@@ -264,15 +264,13 @@ def Experiment_1():
             f.write(printResult(start, goal, result))
 
 
+# This function runs the experiment 2, saving the results in a file
 def Experiment_2():
-    # Open a file to save the results of Experiment 2
     with open("experiments/experiment_2.txt", "w") as f:
-        # Write the experiment header
         f.write("|==============|\n")
         f.write("| Experiment 2 |\n")
         f.write("|==============|\n")
 
-        # Run the experiment for 50 iterations
         for i in range(50):
             # Generate random coordinates for the start and goal nodes
             startX = randint(0, 30)
@@ -291,22 +289,16 @@ def Experiment_2():
             # Perform Uniform-Cost Search (Dijkstra) for each cost function
             f.write("\n    Uniform-Cost Search (Dijkstra)\n")
             for cost_function, label in [(C_1, "C_1"), (C_2, "C_2"), (C_3, "C_3"), (C_4, "C_4")]:
-                # Log the current cost function being used
                 f.write(f"\n        Cost function: {label}")
-                # Execute the Dijkstra algorithm
                 result = Dijkstra(start, goal, cost_function)
-                # Log the results to the file
                 f.write(printResult(start, goal, result))
 
             # Perform A* Search for each combination of cost function and heuristic
             f.write("\n    A* Search\n")
             for cost_function, cost_label in [(C_1, "C_1"), (C_2, "C_2"), (C_3, "C_3"), (C_4, "C_4")]:
                 for heuristic, heuristic_label in [(euclidean, "Euclidean (H1)"), (manhattan, "Manhattan (H2)")]:
-                    # Log the current cost function and heuristic being used
                     f.write(f"\n        Cost function: {cost_label}, Heuristic: {heuristic_label}")
-                    # Execute the A* algorithm
                     result = AStar(start, goal, cost_function, heuristic)
-                    # Log the results to the file
                     f.write(printResult(start, goal, result))
 
 
