@@ -242,35 +242,43 @@ def GBFS(start: Node, goal: Node, costFunction: Callable, heuristic: Callable):
     # Start from the start node
     current = start
 
-    # Create the priority queue and add the start node
+    # Create a priority queue to store the nodes to be visited and add the start node to the queue
     frontier = PriorityQueue()
     frontier.put((0, id(current), current))  # Priority = f(n) = h(n)
 
-    # Create a dictionary to store the nodes that have been reached and add the start node to the dictionary
+    # Create a dictionary to store the states that have been reached and it's nodes. It also adds the start state to the dictionary
     reached = {}
-    reached[current] = current
+    reached[(current.x, current.y)] = current
 
     # List of visited nodes
     visited = []
 
-    # While there are nodes to explore
+    # Number of nodes generated
+    generated = 1
+
+    # While the queue is not empty
     while not frontier.empty():
         # Remove the node with the lowest f(n) cost
         current = frontier.get()[2]
         visited.append(current)
 
-        # Check if it is the goal node
-        if current == goal:
-            return current, len(reached), len(visited)
+        # If the current node's state is the goal, return the current node, the number of nodes reached (generated), and the number of nodes visited
+        if current.x == goal.x and current.y == goal.y:
+            return (current, generated, len(visited))
 
-        # Expand the child nodes
-        for child in current.expand(costFunction):
+        # Expand the current node
+        children = current.expand(costFunction)
+
+        # Update the number of nodes generated
+        generated += len(children)
+
+        for child in children:
             # Calculate the costs
             f_cost = heuristic(child, goal)  # f(n) = h(n)
 
             # Check if the node should be updated
-            if child not in reached:
-                reached[child] = child  # Update the node in the reached dictionary
+            if (child.x, child.y) not in reached:
+                reached[(child.x, child.y)] = child  # Update the node in the reached dictionary
                 frontier.put((f_cost, id(child), child))  # Add to the priority queue
 
     # If the goal is not found, return None
