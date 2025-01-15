@@ -205,10 +205,13 @@ def Dijkstra(start: Node, goal: Node, costFunction: Callable):
 
     # Create a dictionary to store the nodes that have been reached and add the start node to the dictionary
     reached = {}
-    reached[current] = current
+    reached[(current.x, current.y)] = current
 
     # Create a list to store the nodes that have been visited
     visited = []
+
+    # Number of nodes generated
+    generated = 1
 
     # While the queue is not empty
     while not frontier.empty():
@@ -217,16 +220,19 @@ def Dijkstra(start: Node, goal: Node, costFunction: Callable):
         visited.append(current)
         
         # If the current node is the goal node, return the current node, the number of nodes reached (generated), and the number of nodes visited
-        if current == goal:
-            return (current, len(reached), len(visited))
+        if current.x == goal.x and current.y == goal.y:
+            return (current, generated, len(visited))
         
         # Expand the current node
         children = current.expand(costFunction)
 
+        # Update the number of nodes generated
+        generated += len(children)
+
         # For each child node, if the child node is not in the reached dictionary or the cost of the child node is less than the cost of the child node in the reached dictionary, add the child node to the reached dictionary and to the queue (Relaxation)
         for child in children:
-            if child not in reached or child.cost < reached[child].cost:
-                reached[child] = child
+            if (child.x, child.y) not in reached or child.cost < reached[(child.x, child.y)].cost:
+                reached[(child.x, child.y)] = child
                 frontier.put((child.cost, id(child), child))
     
     # If the goal node is not found, return None
