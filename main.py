@@ -5,7 +5,6 @@ if __name__ == "__main__":
     print("[0] Experiment 0")
     print("[1] Experiment 1")
     print("[2] Experiment 2")
-    print("[3] Experiment 3")
     print("[4] Experiment 4")
     choice = input("Choice: ")
 
@@ -15,8 +14,6 @@ if __name__ == "__main__":
         Experiment_1()
     elif choice == "2":
         Experiment_2()
-    elif choice == "3":
-        Experiment_3()
     elif choice == "4":
         Experiment_4()
     else:

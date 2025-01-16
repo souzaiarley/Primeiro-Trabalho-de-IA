@@ -3,7 +3,6 @@ from algorithms import *
 from costFunctions import *
 from heuristics import *
 from random import randint
-from pathCost import getPathCost
 
 # This function returns the cost of a path using a cost function
 def getPathCost(path: list, costFunction: Callable):
@@ -281,19 +280,8 @@ def Experiment_2():
                     result = AStar(start, goal, cost_function, heuristic)
                     f.write(printResult(start, goal, result))
 
-def Experiment_3():
-    with open("experiments/experiment_3.txt", "w") as f:
-        f.write("|==============|\n")
-        f.write("| Experiment 3 |\n")
-        f.write("|==============|\n")
-    
-        for i in range(50):
-            # Generate random start and goal nodes
-            startX = randint(0, 30)
-            startY = randint(0, 30)
-            goalX = randint(0, 30)
-            goalY = randint(0, 30)
 
+<<<<<<< HEAD
             start = Node(startX, startY)
             goal = Node(goalX, goalY)
 
@@ -354,6 +342,8 @@ def Experiment_3():
 
 
             
+=======
+>>>>>>> parent of c9ac266 (experiments update (3))
 # This function runs the experiment 4, saving the results in a file
 def Experiment_4():
     with open("experiments/experiment_4.txt", "w") as f:
