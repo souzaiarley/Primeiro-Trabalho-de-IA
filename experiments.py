@@ -8,7 +8,7 @@ from pathCost import getPathCost
 # This function returns the cost of a path using a cost function
 def getPathCost(path: list, costFunction: Callable):
     totalCost = 0
-    path.reverse()
+    path = path[::-1]
 
     for i in range(len(path) - 1):
         edgeCosts = costFunction(path[i+1].depth)
