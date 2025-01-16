@@ -22,7 +22,7 @@ class Node:
         return f"({self.x}, {self.y})"
     
     # Returns a list of all possible children nodes
-    def expand(self, costFunction: Callable):
+    def expand(self, costFunction: Callable = lambda depth: (1,1)):
         children = []
         costs = costFunction(self.depth + 1)
         if self.x - 1 >= 0:

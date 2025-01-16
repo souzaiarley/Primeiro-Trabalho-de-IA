@@ -3,21 +3,7 @@ from algorithms import *
 from costFunctions import *
 from heuristics import *
 from random import randint
-
-# This function returns the cost of a path using a cost function
-def getPathCost(path: list, costFunction: Callable):
-    totalCost = 0
-    path = path[::-1]
-
-    for i in range(len(path) - 1):
-        edgeCosts = costFunction(path[i+1].depth)
-
-        if path[i+1].x > path[i].x or path[i+1].x < path[i].x:
-            totalCost += edgeCosts[0]
-        else:
-            totalCost += edgeCosts[1]
-
-    return totalCost
+from pathCost import getPathCost
 
 # This function returns a string with the result of the search using it's information
 def printResult(start: Node, goal: Node, result):
@@ -271,6 +257,80 @@ def Experiment_2():
                 f.write(f"\n        Cost function: {label}")
                 result = Dijkstra(start, goal, cost_function)
                 f.write(printResult(start, goal, result))
+
+            # Perform A* Search for each combination of cost function and heuristic
+            f.write("\n    A* Search\n")
+            for cost_function, cost_label in [(C_1, "C_1"), (C_2, "C_2"), (C_3, "C_3"), (C_4, "C_4")]:
+                for heuristic, heuristic_label in [(euclidean, "Euclidean (H1)"), (manhattan, "Manhattan (H2)")]:
+                    f.write(f"\n        Cost function: {cost_label}, Heuristic: {heuristic_label}")
+                    result = AStar(start, goal, cost_function, heuristic)
+                    f.write(printResult(start, goal, result))
+
+#This function runs the experiment 3, saving the results in a file
+def Experiment_3():
+    with open("experiments/experiment_3.txt", "w") as f:
+        f.write("|==============|\n")
+        f.write("| Experiment 3 |\n")
+        f.write("|==============|\n")
+
+        for i in range(50):
+            # Generate random start and goal nodes
+            startX = randint(0, 30)
+            startY = randint(0, 30)
+            goalX = randint(0, 30)
+            goalY = randint(0, 30)
+
+            start = Node(startX, startY)
+            goal = Node(goalX, goalY)
+
+            f.write(f"\nNodes: Start {start} - Goal {goal}\n")
+
+            # Greedy Best-First Search (euclidean)
+            f.write("\n    Greedy Best-First Search (euclidean)\n")
+
+            # Calling the GBFS function with euclidean
+            result = GBFS(start, goal, C_1, euclidean)
+
+            # Getting the goal node
+            goalNode = result[0]
+            
+            # Getting the path from the goal node to the start node
+            path = goalNode.path()
+
+            f.write(f"\n            Solution Found:\n")
+            f.write(f"            Start: {start}\n")
+            f.write(f"            Goal: {goal}\n")
+            f.write(f"            Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
+            f.write(f"            Path cost: {goalNode.cost} (C1)\n")
+            f.write(f"            Path cost: {getPathCost(path, C_2)} (C2)\n")
+            f.write(f"            Path cost: {getPathCost(path, C_3)} (C3)\n")
+            f.write(f"            Path cost: {getPathCost(path, C_4)} (C4)\n")
+            f.write(f"            Nodes generated: {result[1]}\n")
+            f.write(f"            Nodes visited: {result[2]}\n")
+
+            #Greedy Best-First Search(manhattan)
+            f.write("\n    Greedy Best-First Search (manhattan)\n")
+
+            # Calling the GBFS function with manhattan
+            result = GBFS(start, goal, C_1, manhattan)
+
+            # Getting the goal node
+            goalNode = result[0]
+            
+            # Getting the path from the goal node to the start node
+            path = goalNode.path()
+
+            f.write(f"\n        Iteration: {i+1}\n")
+            f.write(f"\n            Solution Found:\n")
+            f.write(f"            Start: {start}\n")
+            f.write(f"            Goal: {goal}\n")
+            f.write(f"            Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
+            f.write(f"            Path cost: {goalNode.cost} (C1)\n")
+            f.write(f"            Path cost: {getPathCost(path, C_2)} (C2)\n")
+            f.write(f"            Path cost: {getPathCost(path, C_3)} (C3)\n")
+            f.write(f"            Path cost: {getPathCost(path, C_4)} (C4)\n")
+            f.write(f"            Nodes generated: {result[1]}\n")
+            f.write(f"            Nodes visited: {result[2]}\n")
 
             # Perform A* Search for each combination of cost function and heuristic
             f.write("\n    A* Search\n")

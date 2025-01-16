@@ -3,6 +3,7 @@ from queue import Queue
 from queue import PriorityQueue
 from typing import Callable
 from random import shuffle
+from pathCost import getPathCost
 
 # Breadth First Search
 def BFS(start: Node, goal: Node, costFunction: Callable):
@@ -264,10 +265,11 @@ def GBFS(start: Node, goal: Node, costFunction: Callable, heuristic: Callable):
 
         # If the current node's state is the goal, return the current node, the number of nodes reached (generated), and the number of nodes visited
         if current.x == goal.x and current.y == goal.y:
+            current.cost = getPathCost(current.path(), costFunction)
             return (current, generated, len(visited))
 
         # Expand the current node
-        children = current.expand(costFunction)
+        children = current.expand()
 
         # Update the number of nodes generated
         generated += len(children)
