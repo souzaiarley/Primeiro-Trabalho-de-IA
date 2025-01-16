@@ -112,78 +112,57 @@ def Experiment_0():
         result = Dijkstra(start, goal, C_4)
         f.write(printResult(start, goal, result))
         
-        # Greedy Best-First Search
-        f.write("\n    Greedy Best-First Search\n")
+        f.write("\n    Greedy Best-First Search(euclidean)\n")
 
-        # Calling the Greedy function with the cost functions
-        f.write("\n        Cost function: C_1 (euclidean)")
+        # Calling the BFS function
         result = GBFS(start, goal, C_1, euclidean)
-        f.write(printResult(start, goal, result))
 
-        f.write("\n        Cost function: C_1 (manhattan)")
+        # Getting the goal node
+        goalNode = result[0]
+        
+        # Getting the path from the goal node to the start node
+        path = goalNode.path()
+
+        f.write(f"\n            Solution Found:\n")
+        f.write(f"            Start: {start}\n")
+        f.write(f"            Goal: {goal}\n")
+        f.write(f"            Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
+        f.write(f"            Path cost: {goalNode.cost} (C1)\n")
+        f.write(f"            Path cost: {getPathCost(path, C_2)} (C2)\n")
+        f.write(f"            Path cost: {getPathCost(path, C_3)} (C3)\n")
+        f.write(f"            Path cost: {getPathCost(path, C_4)} (C4)\n")
+        f.write(f"            Nodes generated: {result[1]}\n")
+        f.write(f"            Nodes visited: {result[2]}\n")
+
+        f.write("\n    Greedy Best-First Search(manhattan)\n")
+
+        # Calling the BFS function
         result = GBFS(start, goal, C_1, manhattan)
-        f.write(printResult(start, goal, result))
 
-        f.write("\n        Cost function: C_2 (euclidean)")
-        result = GBFS(start, goal, C_2, euclidean)
-        f.write(printResult(start, goal, result))
+        # Getting the goal node
+        goalNode = result[0]
+        
+        # Getting the path from the goal node to the start node
+        path = goalNode.path()
 
-        f.write("\n        Cost function: C_2 (manhattan)")
-        result = GBFS(start, goal, C_2, manhattan)
-        f.write(printResult(start, goal, result))
+        f.write(f"\n            Solution Found:\n")
+        f.write(f"            Start: {start}\n")
+        f.write(f"            Goal: {goal}\n")
+        f.write(f"            Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
+        f.write(f"            Path cost: {goalNode.cost} (C1)\n")
+        f.write(f"            Path cost: {getPathCost(path, C_2)} (C2)\n")
+        f.write(f"            Path cost: {getPathCost(path, C_3)} (C3)\n")
+        f.write(f"            Path cost: {getPathCost(path, C_4)} (C4)\n")
+        f.write(f"            Nodes generated: {result[1]}\n")
+        f.write(f"            Nodes visited: {result[2]}\n")
 
-        f.write("\n        Cost function: C_3 (euclidean)")
-        result = GBFS(start, goal, C_3, euclidean)
-        f.write(printResult(start, goal, result))
-
-        f.write("\n        Cost function: C_3 (manhattan)")
-        result = GBFS(start, goal, C_3, manhattan)
-        f.write(printResult(start, goal, result))
-
-        f.write("\n        Cost function: C_4 (euclidean)")
-        result = GBFS(start, goal, C_4, euclidean)
-        f.write(printResult(start, goal, result))
-
-        f.write("\n        Cost function: C_4 (manhattan)")
-        result = GBFS(start, goal, C_4, manhattan)
-        f.write(printResult(start, goal, result))
-
-        # A* Search
+        # Perform A* Search for each combination of cost function and heuristic
         f.write("\n    A* Search\n")
-
-        # Calling the AStar function with the cost functions
-        f.write("\n        Cost function: C_1 (euclidean)")
-        result = AStar(start, goal, C_1, euclidean)
-        f.write(printResult(start, goal, result))
-
-        f.write("\n        Cost function: C_1 (manhattan)")
-        result = AStar(start, goal, C_1, manhattan)
-        f.write(printResult(start, goal, result))
-
-        f.write("\n        Cost function: C_2 (euclidean)")
-        result = AStar(start, goal, C_2, euclidean)
-        f.write(printResult(start, goal, result))
-
-        f.write("\n        Cost function: C_2 (manhattan)")
-        result = AStar(start, goal, C_2, manhattan)
-        f.write(printResult(start, goal, result))
-
-        f.write("\n        Cost function: C_3 (euclidean)")
-        result = AStar(start, goal, C_3, euclidean)
-        f.write(printResult(start, goal, result))
-
-        f.write("\n        Cost function: C_3 (manhattan)")
-        result = AStar(start, goal, C_3, manhattan)
-        f.write(printResult(start, goal, result))
-
-        f.write("\n        Cost function: C_4 (euclidean)")
-        result = AStar(start, goal, C_4, euclidean)
-        f.write(printResult(start, goal, result))
-
-        f.write("\n        Cost function: C_4 (manhattan)")
-        result = AStar(start, goal, C_4, manhattan)
-        f.write(printResult(start, goal, result))
-
+        for cost_function, cost_label in [(C_1, "C_1"), (C_2, "C_2"), (C_3, "C_3"), (C_4, "C_4")]:
+            for heuristic, heuristic_label in [(euclidean, "Euclidean (H1)"), (manhattan, "Manhattan (H2)")]:
+                f.write(f"\n        Cost function: {cost_label}, Heuristic: {heuristic_label}")
+                result = AStar(start, goal, cost_function, heuristic)
+                f.write(printResult(start, goal, result))
 
 # This function runs the experiment 1, saving the results in a file
 def Experiment_1():
@@ -333,6 +312,8 @@ def Experiment_3():
             path = goalNode.path()
 
             f.write(f"\n            Solution Found:\n")
+            f.write(f"            Start: {start}\n")
+            f.write(f"            Goal: {goal}\n")
             f.write(f"            Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
             f.write(f"            Path cost: {goalNode.cost} (C1)\n")
             f.write(f"            Path cost: {getPathCost(path, C_2)} (C2)\n")
@@ -353,6 +334,8 @@ def Experiment_3():
             path = goalNode.path()
 
             f.write(f"\n            Solution Found:\n")
+            f.write(f"            Start: {start}\n")
+            f.write(f"            Goal: {goal}\n")
             f.write(f"            Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
             f.write(f"            Path cost: {goalNode.cost} (C1)\n")
             f.write(f"            Path cost: {getPathCost(path, C_2)} (C2)\n")

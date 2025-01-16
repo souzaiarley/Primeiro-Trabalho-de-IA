@@ -95,7 +95,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             Solution found:
             Start: (0, 0)
             goal: (2, 2)
-            Path: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2)
+            Path: (0, 0) -> (1, 0) -> (1, 1) -> (2, 1) -> (2, 2)
             Path cost: 40
             Nodes generated: 17
             Nodes visited: 12
@@ -107,8 +107,8 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2)
             Path cost: 50
-            Nodes generated: 20
-            Nodes visited: 14
+            Nodes generated: 18
+            Nodes visited: 13
     
         Cost function: C_3
 
@@ -130,111 +130,55 @@ Nodes: Start (0, 0) - Goal (2, 2)
             Nodes generated: 18
             Nodes visited: 13
     
-    Greedy Best-First Search
+    Greedy Best-First Search(euclidean)
 
-        Cost function: C_1 (euclidean)
-
-            Solution found:
+            Solution Found:
             Start: (0, 0)
-            goal: (2, 2)
-            Path: (0, 0) -> (1, 0) -> (1, 1) -> (1, 2) -> (2, 2)
-            Path cost: 40
-            Nodes generated: 10
-            Nodes visited: 5
-    
-        Cost function: C_1 (manhattan)
-
-            Solution found:
-            Start: (0, 0)
-            goal: (2, 2)
-            Path: (0, 0) -> (0, 1) -> (1, 1) -> (2, 1) -> (2, 2)
-            Path cost: 40
-            Nodes generated: 10
-            Nodes visited: 5
-    
-        Cost function: C_2 (euclidean)
-
-            Solution found:
-            Start: (0, 0)
-            goal: (2, 2)
-            Path: (0, 0) -> (1, 0) -> (1, 1) -> (1, 2) -> (2, 2)
-            Path cost: 50
-            Nodes generated: 10
-            Nodes visited: 5
-    
-        Cost function: C_2 (manhattan)
-
-            Solution found:
-            Start: (0, 0)
-            goal: (2, 2)
-            Path: (0, 0) -> (1, 0) -> (2, 0) -> (2, 1) -> (2, 2)
-            Path cost: 50
+            Goal: (2, 2)
+            Path: (0, 0) -> (1, 0) -> (1, 1) -> (2, 1) -> (2, 2)
+            Path cost: 40 (C1)
+            Path cost: 50 (C2)
+            Path cost: 48 (C3)
+            Path cost: 46 (C4)
             Nodes generated: 9
             Nodes visited: 5
-    
-        Cost function: C_3 (euclidean)
 
-            Solution found:
+    Greedy Best-First Search(manhattan)
+
+            Solution Found:
             Start: (0, 0)
-            goal: (2, 2)
-            Path: (0, 0) -> (0, 1) -> (1, 1) -> (1, 2) -> (2, 2)
-            Path cost: 44
+            Goal: (2, 2)
+            Path: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2)
+            Path cost: 40 (C1)
+            Path cost: 50 (C2)
+            Path cost: 45 (C3)
+            Path cost: 43 (C4)
             Nodes generated: 9
             Nodes visited: 5
-    
-        Cost function: C_3 (manhattan)
 
-            Solution found:
-            Start: (0, 0)
-            goal: (2, 2)
-            Path: (0, 0) -> (0, 1) -> (1, 1) -> (2, 1) -> (2, 2)
-            Path cost: 45
-            Nodes generated: 10
-            Nodes visited: 5
-    
-        Cost function: C_4 (euclidean)
-
-            Solution found:
-            Start: (0, 0)
-            goal: (2, 2)
-            Path: (0, 0) -> (1, 0) -> (1, 1) -> (1, 2) -> (2, 2)
-            Path cost: 45
-            Nodes generated: 10
-            Nodes visited: 5
-    
-        Cost function: C_4 (manhattan)
-
-            Solution found:
-            Start: (0, 0)
-            goal: (2, 2)
-            Path: (0, 0) -> (1, 0) -> (2, 0) -> (2, 1) -> (2, 2)
-            Path cost: 47
-            Nodes generated: 9
-            Nodes visited: 5
-    
     A* Search
 
-        Cost function: C_1 (euclidean)
+        Cost function: C_1, Heuristic: Euclidean (H1)
 
             Solution found:
             Start: (0, 0)
             goal: (2, 2)
-            Path: (0, 0) -> (0, 1) -> (1, 1) -> (1, 2) -> (2, 2)
+            Path: (0, 0) -> (1, 0) -> (1, 1) -> (1, 2) -> (2, 2)
             Path cost: 40
             Nodes generated: 15
             Nodes visited: 11
     
-        Cost function: C_1 (manhattan)
+        Cost function: C_1, Heuristic: Manhattan (H2)
 
             Solution found:
             Start: (0, 0)
             goal: (2, 2)
-            Path: (0, 0) -> (0, 1) -> (1, 1) -> (2, 1) -> (2, 2)
+            Path: (0, 0) -> (1, 0) -> (2, 0) -> (2, 1) -> (2, 2)
             Path cost: 40
             Nodes generated: 15
             Nodes visited: 11
     
-        Cost function: C_2 (euclidean)
+        Cost function: C_2, Heuristic: Euclidean (H1)
 
             Solution found:
             Start: (0, 0)
@@ -244,7 +188,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             Nodes generated: 18
             Nodes visited: 13
     
-        Cost function: C_2 (manhattan)
+        Cost function: C_2, Heuristic: Manhattan (H2)
 
             Solution found:
             Start: (0, 0)
@@ -254,7 +198,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             Nodes generated: 18
             Nodes visited: 13
     
-        Cost function: C_3 (euclidean)
+        Cost function: C_3, Heuristic: Euclidean (H1)
 
             Solution found:
             Start: (0, 0)
@@ -264,7 +208,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             Nodes generated: 18
             Nodes visited: 13
     
-        Cost function: C_3 (manhattan)
+        Cost function: C_3, Heuristic: Manhattan (H2)
 
             Solution found:
             Start: (0, 0)
@@ -274,7 +218,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             Nodes generated: 17
             Nodes visited: 12
     
-        Cost function: C_4 (euclidean)
+        Cost function: C_4, Heuristic: Euclidean (H1)
 
             Solution found:
             Start: (0, 0)
@@ -284,13 +228,13 @@ Nodes: Start (0, 0) - Goal (2, 2)
             Nodes generated: 18
             Nodes visited: 13
     
-        Cost function: C_4 (manhattan)
+        Cost function: C_4, Heuristic: Manhattan (H2)
 
             Solution found:
             Start: (0, 0)
             goal: (2, 2)
             Path: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2)
             Path cost: 43
-            Nodes generated: 17
-            Nodes visited: 12
+            Nodes generated: 15
+            Nodes visited: 11
     
