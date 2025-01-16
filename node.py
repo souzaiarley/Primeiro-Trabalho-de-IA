@@ -22,7 +22,7 @@ class Node:
         return f"({self.x}, {self.y})"
     
     # Returns a list of all possible children nodes
-    def expand(self, costFunction: Callable):
+    def expand(self, costFunction: Callable = lambda depth: (1, 1)):
         children = []
         costs = costFunction(self.depth + 1)
         if self.x - 1 >= 0:
@@ -34,6 +34,7 @@ class Node:
         if self.y + 1 <= 30:
             children.append(Node(self.x, self.y + 1, self.depth + 1, self, self.cost + costs[1]))
         return children
+
     
     # Returns the path from the current node to the root node
     def path(self):
