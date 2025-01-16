@@ -2,11 +2,10 @@ from node import Node
 from queue import Queue
 from queue import PriorityQueue
 from typing import Callable
-from random import shuffle
 from pathCost import getPathCost
 
 # Breadth First Search
-def BFS(start: Node, goal: Node, costFunction: Callable):
+def BFS(start: Node, goal: Node, costFunction: Callable, random: bool = False):
     # Start from the start node
     currentNode = start
     
@@ -35,7 +34,7 @@ def BFS(start: Node, goal: Node, costFunction: Callable):
         visited.append(currentNode)
         
         # Expand the current node
-        children = currentNode.expand(costFunction)
+        children = currentNode.expand(costFunction, random)
         
         # Update the number of nodes generated
         generated += len(children)
@@ -51,57 +50,9 @@ def BFS(start: Node, goal: Node, costFunction: Callable):
     # If the goal is not found, return None
     return None
 
-# Random Breadth First Search
-def RandomBFS(start: Node, goal: Node, costFunction: Callable):
-    # Start from the start node
-    currentNode = start
-    
-    # If the start node is the goal node, return the start node
-    if currentNode == goal:
-        return (currentNode, 1, 1)
-    
-    # Create a queue to store the nodes to be visited and add the start node to the queue
-    frontier = Queue()
-    frontier.put(currentNode)
-
-    # Create a set to store the states that have been reached and add the start node's state to the set
-    reached = set()
-    reached.add((currentNode.x, currentNode.y))
-
-    # Create a list to store the nodes that have been visited
-    visited = []
-
-    # Number of nodes generated
-    generated = 1
-
-    # While the queue is not empty
-    while not frontier.empty():
-        # Get the first node in the queue, remove it from the queue, and add it to the visited list
-        currentNode = frontier.get()
-        visited.append(currentNode)
-        
-        # Expand the current node
-        children = currentNode.expand(costFunction)
-
-        # Shuffle the children nodes to make the search random
-        shuffle(children)
-        
-        # Update the number of nodes generated
-        generated += len(children)
-
-        # For each child node, if it's state is the goal, return the child node. Otherwise, if the state of the child node has not been reached, add the child node to the queue and it's state to the reached set
-        for child in children:
-            if child.x == goal.x and child.y == goal.y:
-                return (child, generated, len(visited)) # Return the goal node, the number of nodes reached (generated), and the number of nodes visited
-            if (child.x, child.y) not in reached:
-                reached.add((child.x, child.y))
-                frontier.put(child)
-    
-    # If the goal is not found, return None
-    return None
 
 # Depth First Search
-def DFS(start: Node, goal: Node, costFunction: Callable):
+def DFS(start: Node, goal: Node, costFunction: Callable, random: bool = False):
     # Start from the start node
     currentNode = start
     
@@ -130,7 +81,7 @@ def DFS(start: Node, goal: Node, costFunction: Callable):
         visited.append(currentNode)
 
         # Expand the current node
-        children = currentNode.expand(costFunction)
+        children = currentNode.expand(costFunction, random)
 
         # Update the number of nodes generated
         generated += len(children)
@@ -146,54 +97,6 @@ def DFS(start: Node, goal: Node, costFunction: Callable):
     # If the goal is not found, return None
     return None
 
-# Random Depth First Search
-def RandomDFS(start: Node, goal: Node, costFunction: Callable):
-    # Start from the start node
-    currentNode = start
-    
-    # If the start node is the goal node, return the start node
-    if currentNode == goal:
-        return (currentNode, 1, 1)
-    
-    # Create a stack to store the nodes to be visited and add the start node to the stack
-    frontier = []
-    frontier.append(currentNode)
-
-    # Create a set to store the states that have been reached and add the start node's state to the set
-    reached = set()
-    reached.add((currentNode.x, currentNode.y))
-
-    # Create a list to store the nodes that have been visited
-    visited = []
-
-    # Number of nodes generated
-    generated = 1
-
-    # While the stack is not empty
-    while not len(frontier) == 0:
-        # Get the last node in the stack, remove it from the stack, and add it to the visited list
-        currentNode = frontier.pop()
-        visited.append(currentNode)
-
-        # Expand the current node
-        children = currentNode.expand(costFunction)
-
-        # Shuffle the children nodes to make the search random
-        shuffle(children)
-
-        # Update the number of nodes generated
-        generated += len(children)
-
-        # For each child node, if it's state is the goal, return the child node. Otherwise, if the state of the child node has not been reached, add the child node to the queue and it's state to the reached set
-        for child in children:
-            if child.x == goal.x and child.y == goal.y:
-                return (child, generated, len(visited)) # Return the goal node, the number of nodes reached (generated), and the number of nodes visited
-            if (child.x, child.y) not in reached:
-                reached.add((child.x, child.y))
-                frontier.append(child)
-    
-    # If the goal is not found, return None
-    return None
 
 # Uniform Cost Search
 def Dijkstra(start: Node, goal: Node, costFunction: Callable):

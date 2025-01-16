@@ -365,7 +365,7 @@ def Experiment_4():
 
             for i in range(10):
                 # Calling the BFS function
-                result = RandomBFS(start, goal, C_1)
+                result = BFS(start, goal, C_1, True)
 
                 # Getting the goal node
                 goalNode = result[0]
@@ -390,7 +390,7 @@ def Experiment_4():
 
             for i in range(10):
                 # Calling the DFS function
-                result = RandomDFS(start, goal, C_1)
+                result = DFS(start, goal, C_1, True)
 
                 # Getting the goal node
                 goalNode = result[0]
