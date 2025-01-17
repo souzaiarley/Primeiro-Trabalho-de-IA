@@ -13,7 +13,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (1, 0) -> (2, 0) -> (2, 1) -> (2, 2)
             Path cost: 40
-            Nodes generated: 13
+            Nodes generated: 26
             Nodes visited: 8
     
         Cost function: C_2
@@ -23,7 +23,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (1, 0) -> (2, 0) -> (2, 1) -> (2, 2)
             Path cost: 50
-            Nodes generated: 13
+            Nodes generated: 26
             Nodes visited: 8
     
         Cost function: C_3
@@ -33,7 +33,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (1, 0) -> (2, 0) -> (2, 1) -> (2, 2)
             Path cost: 47
-            Nodes generated: 13
+            Nodes generated: 26
             Nodes visited: 8
     
         Cost function: C_4
@@ -43,7 +43,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (1, 0) -> (2, 0) -> (2, 1) -> (2, 2)
             Path cost: 47
-            Nodes generated: 13
+            Nodes generated: 26
             Nodes visited: 8
     
     Depth-First Search
@@ -55,7 +55,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (0, 1) -> (0, 2) -> (0, 3) -> (0, 4) -> (0, 5) -> (0, 6) -> (0, 7) -> (0, 8) -> (0, 9) -> (0, 10) -> (0, 11) -> (0, 12) -> (0, 13) -> (0, 14) -> (0, 15) -> (0, 16) -> (0, 17) -> (0, 18) -> (0, 19) -> (0, 20) -> (0, 21) -> (0, 22) -> (0, 23) -> (0, 24) -> (0, 25) -> (0, 26) -> (0, 27) -> (0, 28) -> (0, 29) -> (0, 30) -> (1, 30) -> (2, 30) -> (2, 29) -> (2, 28) -> (2, 27) -> (2, 26) -> (2, 25) -> (2, 24) -> (2, 23) -> (2, 22) -> (2, 21) -> (2, 20) -> (2, 19) -> (2, 18) -> (2, 17) -> (2, 16) -> (2, 15) -> (2, 14) -> (2, 13) -> (2, 12) -> (2, 11) -> (2, 10) -> (2, 9) -> (2, 8) -> (2, 7) -> (2, 6) -> (2, 5) -> (2, 4) -> (2, 3) -> (2, 2)
             Path cost: 600
-            Nodes generated: 119
+            Nodes generated: 206
             Nodes visited: 60
     
         Cost function: C_2
@@ -65,7 +65,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (0, 1) -> (0, 2) -> (0, 3) -> (0, 4) -> (0, 5) -> (0, 6) -> (0, 7) -> (0, 8) -> (0, 9) -> (0, 10) -> (0, 11) -> (0, 12) -> (0, 13) -> (0, 14) -> (0, 15) -> (0, 16) -> (0, 17) -> (0, 18) -> (0, 19) -> (0, 20) -> (0, 21) -> (0, 22) -> (0, 23) -> (0, 24) -> (0, 25) -> (0, 26) -> (0, 27) -> (0, 28) -> (0, 29) -> (0, 30) -> (1, 30) -> (2, 30) -> (2, 29) -> (2, 28) -> (2, 27) -> (2, 26) -> (2, 25) -> (2, 24) -> (2, 23) -> (2, 22) -> (2, 21) -> (2, 20) -> (2, 19) -> (2, 18) -> (2, 17) -> (2, 16) -> (2, 15) -> (2, 14) -> (2, 13) -> (2, 12) -> (2, 11) -> (2, 10) -> (2, 9) -> (2, 8) -> (2, 7) -> (2, 6) -> (2, 5) -> (2, 4) -> (2, 3) -> (2, 2)
             Path cost: 610
-            Nodes generated: 119
+            Nodes generated: 206
             Nodes visited: 60
     
         Cost function: C_3
@@ -75,7 +75,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (0, 1) -> (0, 2) -> (0, 3) -> (0, 4) -> (0, 5) -> (0, 6) -> (0, 7) -> (0, 8) -> (0, 9) -> (0, 10) -> (0, 11) -> (0, 12) -> (0, 13) -> (0, 14) -> (0, 15) -> (0, 16) -> (0, 17) -> (0, 18) -> (0, 19) -> (0, 20) -> (0, 21) -> (0, 22) -> (0, 23) -> (0, 24) -> (0, 25) -> (0, 26) -> (0, 27) -> (0, 28) -> (0, 29) -> (0, 30) -> (1, 30) -> (2, 30) -> (2, 29) -> (2, 28) -> (2, 27) -> (2, 26) -> (2, 25) -> (2, 24) -> (2, 23) -> (2, 22) -> (2, 21) -> (2, 20) -> (2, 19) -> (2, 18) -> (2, 17) -> (2, 16) -> (2, 15) -> (2, 14) -> (2, 13) -> (2, 12) -> (2, 11) -> (2, 10) -> (2, 9) -> (2, 8) -> (2, 7) -> (2, 6) -> (2, 5) -> (2, 4) -> (2, 3) -> (2, 2)
             Path cost: 605
-            Nodes generated: 119
+            Nodes generated: 206
             Nodes visited: 60
     
         Cost function: C_4
@@ -85,7 +85,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (0, 1) -> (0, 2) -> (0, 3) -> (0, 4) -> (0, 5) -> (0, 6) -> (0, 7) -> (0, 8) -> (0, 9) -> (0, 10) -> (0, 11) -> (0, 12) -> (0, 13) -> (0, 14) -> (0, 15) -> (0, 16) -> (0, 17) -> (0, 18) -> (0, 19) -> (0, 20) -> (0, 21) -> (0, 22) -> (0, 23) -> (0, 24) -> (0, 25) -> (0, 26) -> (0, 27) -> (0, 28) -> (0, 29) -> (0, 30) -> (1, 30) -> (2, 30) -> (2, 29) -> (2, 28) -> (2, 27) -> (2, 26) -> (2, 25) -> (2, 24) -> (2, 23) -> (2, 22) -> (2, 21) -> (2, 20) -> (2, 19) -> (2, 18) -> (2, 17) -> (2, 16) -> (2, 15) -> (2, 14) -> (2, 13) -> (2, 12) -> (2, 11) -> (2, 10) -> (2, 9) -> (2, 8) -> (2, 7) -> (2, 6) -> (2, 5) -> (2, 4) -> (2, 3) -> (2, 2)
             Path cost: 600
-            Nodes generated: 119
+            Nodes generated: 206
             Nodes visited: 60
     
     Uniform-Cost Search (Dijkstra)
@@ -95,10 +95,10 @@ Nodes: Start (0, 0) - Goal (2, 2)
             Solution found:
             Start: (0, 0)
             goal: (2, 2)
-            Path: (0, 0) -> (1, 0) -> (1, 1) -> (2, 1) -> (2, 2)
+            Path: (0, 0) -> (0, 1) -> (1, 1) -> (1, 2) -> (2, 2)
             Path cost: 40
-            Nodes generated: 17
-            Nodes visited: 12
+            Nodes generated: 40
+            Nodes visited: 13
     
         Cost function: C_2
 
@@ -107,7 +107,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2)
             Path cost: 50
-            Nodes generated: 18
+            Nodes generated: 40
             Nodes visited: 13
     
         Cost function: C_3
@@ -117,7 +117,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2)
             Path cost: 43
-            Nodes generated: 18
+            Nodes generated: 40
             Nodes visited: 13
     
         Cost function: C_4
@@ -127,7 +127,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2)
             Path cost: 43
-            Nodes generated: 18
+            Nodes generated: 40
             Nodes visited: 13
     
     Greedy Best-First Search(euclidean)
@@ -138,9 +138,9 @@ Nodes: Start (0, 0) - Goal (2, 2)
             Path: (0, 0) -> (1, 0) -> (1, 1) -> (2, 1) -> (2, 2)
             Path cost: 40 (C1)
             Path cost: 50 (C2)
-            Path cost: 48 (C3)
+            Path cost: 46 (C3)
             Path cost: 46 (C4)
-            Nodes generated: 9
+            Nodes generated: 14
             Nodes visited: 5
 
     Greedy Best-First Search(manhattan)
@@ -148,12 +148,12 @@ Nodes: Start (0, 0) - Goal (2, 2)
             Solution Found:
             Start: (0, 0)
             Goal: (2, 2)
-            Path: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2)
+            Path: (0, 0) -> (1, 0) -> (2, 0) -> (2, 1) -> (2, 2)
             Path cost: 40 (C1)
             Path cost: 50 (C2)
-            Path cost: 45 (C3)
-            Path cost: 43 (C4)
-            Nodes generated: 9
+            Path cost: 47 (C3)
+            Path cost: 47 (C4)
+            Nodes generated: 13
             Nodes visited: 5
 
     A* Search
@@ -163,9 +163,9 @@ Nodes: Start (0, 0) - Goal (2, 2)
             Solution found:
             Start: (0, 0)
             goal: (2, 2)
-            Path: (0, 0) -> (1, 0) -> (1, 1) -> (1, 2) -> (2, 2)
+            Path: (0, 0) -> (0, 1) -> (1, 1) -> (1, 2) -> (2, 2)
             Path cost: 40
-            Nodes generated: 15
+            Nodes generated: 33
             Nodes visited: 11
     
         Cost function: C_1, Heuristic: Manhattan (H2)
@@ -173,9 +173,9 @@ Nodes: Start (0, 0) - Goal (2, 2)
             Solution found:
             Start: (0, 0)
             goal: (2, 2)
-            Path: (0, 0) -> (1, 0) -> (2, 0) -> (2, 1) -> (2, 2)
+            Path: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2)
             Path cost: 40
-            Nodes generated: 15
+            Nodes generated: 33
             Nodes visited: 11
     
         Cost function: C_2, Heuristic: Euclidean (H1)
@@ -185,7 +185,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2)
             Path cost: 50
-            Nodes generated: 18
+            Nodes generated: 40
             Nodes visited: 13
     
         Cost function: C_2, Heuristic: Manhattan (H2)
@@ -195,7 +195,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2)
             Path cost: 50
-            Nodes generated: 18
+            Nodes generated: 40
             Nodes visited: 13
     
         Cost function: C_3, Heuristic: Euclidean (H1)
@@ -205,7 +205,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2)
             Path cost: 43
-            Nodes generated: 18
+            Nodes generated: 40
             Nodes visited: 13
     
         Cost function: C_3, Heuristic: Manhattan (H2)
@@ -215,7 +215,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2)
             Path cost: 43
-            Nodes generated: 17
+            Nodes generated: 37
             Nodes visited: 12
     
         Cost function: C_4, Heuristic: Euclidean (H1)
@@ -225,7 +225,7 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2)
             Path cost: 43
-            Nodes generated: 18
+            Nodes generated: 40
             Nodes visited: 13
     
         Cost function: C_4, Heuristic: Manhattan (H2)
@@ -235,6 +235,6 @@ Nodes: Start (0, 0) - Goal (2, 2)
             goal: (2, 2)
             Path: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2)
             Path cost: 43
-            Nodes generated: 15
-            Nodes visited: 11
+            Nodes generated: 37
+            Nodes visited: 12
     

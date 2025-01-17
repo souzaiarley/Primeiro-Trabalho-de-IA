@@ -1,3 +1,4 @@
+from problem import Problem
 from node import Node
 from algorithms import *
 from costFunctions import *
@@ -6,14 +7,14 @@ from random import randint
 from pathCost import getPathCost
 
 # This function returns a string with the result of the search using it's information
-def printResult(start: Node, goal: Node, result):
+def printResult(problem: Problem, result):
     if result is None:
         return "No solution"
 
     return f"""\n
             Solution found:
-            Start: {start}
-            goal: {goal}
+            Start: {problem.initial}
+            goal: {problem.goal}
             Path: {" -> ".join([str(node) for node in reversed(result[0].path())])}
             Path cost: {result[0].cost}
             Nodes generated: {result[1]}
@@ -32,75 +33,74 @@ def Experiment_0():
         goalX = int(input("Enter the x value for the goal node: "))
         goalY = int(input("Enter the y value for the goal node: "))
 
-        start = Node(startX, startY)
-        goal = Node(goalX, goalY)
-
-        f.write(f"\nNodes: Start {start} - Goal {goal}\n")
+        problem = Problem((startX, startY), (goalX, goalY))
+        
+        f.write(f"\nNodes: Start {problem.initial} - Goal {problem.goal}\n")
             
         # Breadth-First Search
         f.write("\n    Breadth-First Search\n")
 
         # Calling the BFS function with the cost functions
         f.write("\n        Cost function: C_1")
-        result = BFS(start, goal, C_1)
-        f.write(printResult(start, goal, result))
+        result = BFS(problem, C_1)
+        f.write(printResult(problem, result))
 
         f.write("\n        Cost function: C_2")
-        result = BFS(start, goal, C_2)
-        f.write(printResult(start, goal, result))
+        result = BFS(problem, C_2)
+        f.write(printResult(problem, result))
 
         f.write("\n        Cost function: C_3")
-        result = BFS(start, goal, C_3)
-        f.write(printResult(start, goal, result))
+        result = BFS(problem, C_3)
+        f.write(printResult(problem, result))
 
         f.write("\n        Cost function: C_4")
-        result = BFS(start, goal, C_4)
-        f.write(printResult(start, goal, result))
+        result = BFS(problem, C_4)
+        f.write(printResult(problem, result))
 
         # Depth-First Search
         f.write("\n    Depth-First Search\n")
 
         # Calling the DFS function with the cost functions
         f.write("\n        Cost function: C_1")
-        result = DFS(start, goal, C_1)
-        f.write(printResult(start, goal, result))
+        result = DFS(problem, C_1)
+        f.write(printResult(problem, result))
 
         f.write("\n        Cost function: C_2")
-        result = DFS(start, goal, C_2)
-        f.write(printResult(start, goal, result))
+        result = DFS(problem, C_2)
+        f.write(printResult(problem, result))
 
         f.write("\n        Cost function: C_3")
-        result = DFS(start, goal, C_3)
-        f.write(printResult(start, goal, result))
+        result = DFS(problem, C_3)
+        f.write(printResult(problem, result))
 
         f.write("\n        Cost function: C_4")
-        result = DFS(start, goal, C_4)
-        f.write(printResult(start, goal, result))
+        result = DFS(problem, C_4)
+        f.write(printResult(problem, result))
 
         # Uniform-Cost Search
         f.write("\n    Uniform-Cost Search (Dijkstra)\n")
 
         # Calling the Dijkstra function with the cost functions
         f.write("\n        Cost function: C_1")
-        result = Dijkstra(start, goal, C_1)
-        f.write(printResult(start, goal, result))
+        result = Dijkstra(problem, C_1)
+        f.write(printResult(problem, result))
 
         f.write("\n        Cost function: C_2")
-        result = Dijkstra(start, goal, C_2)
-        f.write(printResult(start, goal, result))
+        result = Dijkstra(problem, C_2)
+        f.write(printResult(problem, result))
 
         f.write("\n        Cost function: C_3")
-        result = Dijkstra(start, goal, C_3)
-        f.write(printResult(start, goal, result))
+        result = Dijkstra(problem, C_3)
+        f.write(printResult(problem, result))
 
         f.write("\n        Cost function: C_4")
-        result = Dijkstra(start, goal, C_4)
-        f.write(printResult(start, goal, result))
+        result = Dijkstra(problem, C_4)
+        f.write(printResult(problem, result))
         
         f.write("\n    Greedy Best-First Search(euclidean)\n")
 
         # Calling the BFS function
-        result = GBFS(start, goal, C_1, euclidean)
+        result = GBFS(problem, C_1, euclidean)
 
         # Getting the goal node
         goalNode = result[0]
@@ -109,8 +109,8 @@ def Experiment_0():
         path = goalNode.path()
 
         f.write(f"\n            Solution Found:\n")
-        f.write(f"            Start: {start}\n")
-        f.write(f"            Goal: {goal}\n")
+        f.write(f"            Start: {problem.initial}\n")
+        f.write(f"            Goal: {problem.goal}\n")
         f.write(f"            Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
         f.write(f"            Path cost: {goalNode.cost} (C1)\n")
         f.write(f"            Path cost: {getPathCost(path, C_2)} (C2)\n")
@@ -122,7 +122,7 @@ def Experiment_0():
         f.write("\n    Greedy Best-First Search(manhattan)\n")
 
         # Calling the BFS function
-        result = GBFS(start, goal, C_1, manhattan)
+        result = GBFS(problem, C_1, manhattan)
 
         # Getting the goal node
         goalNode = result[0]
@@ -131,8 +131,8 @@ def Experiment_0():
         path = goalNode.path()
 
         f.write(f"\n            Solution Found:\n")
-        f.write(f"            Start: {start}\n")
-        f.write(f"            Goal: {goal}\n")
+        f.write(f"            Start: {problem.initial}\n")
+        f.write(f"            Goal: {problem.goal}\n")
         f.write(f"            Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
         f.write(f"            Path cost: {goalNode.cost} (C1)\n")
         f.write(f"            Path cost: {getPathCost(path, C_2)} (C2)\n")
@@ -146,8 +146,8 @@ def Experiment_0():
         for cost_function, cost_label in [(C_1, "C_1"), (C_2, "C_2"), (C_3, "C_3"), (C_4, "C_4")]:
             for heuristic, heuristic_label in [(euclidean, "Euclidean (H1)"), (manhattan, "Manhattan (H2)")]:
                 f.write(f"\n        Cost function: {cost_label}, Heuristic: {heuristic_label}")
-                result = AStar(start, goal, cost_function, heuristic)
-                f.write(printResult(start, goal, result))
+                result = AStar(problem, cost_function, heuristic)
+                f.write(printResult(problem, result))
 
 # This function runs the experiment 1, saving the results in a file
 def Experiment_1():
@@ -163,70 +163,69 @@ def Experiment_1():
             goalX = randint(0, 30)
             goalY = randint(0, 30)
 
-            start = Node(startX, startY)
-            goal = Node(goalX, goalY)
+            problem = Problem((startX, startY), (goalX, goalY))
 
-            f.write(f"\nNodes: Start {start} - Goal {goal}\n")
+            f.write(f"\nNodes: Start {problem.initial} - Goal {problem.goal}\n")
             
             # Breadth-First Search
             f.write("\n    Breadth-First Search\n")
 
             # Calling the BFS function with the cost functions
             f.write("\n        Cost function: C_1")
-            result = BFS(start, goal, C_1)
-            f.write(printResult(start, goal, result))
+            result = BFS(problem, C_1)
+            f.write(printResult(problem, result))
 
             f.write("\n        Cost function: C_2")
-            result = BFS(start, goal, C_2)
-            f.write(printResult(start, goal, result))
+            result = BFS(problem, C_2)
+            f.write(printResult(problem, result))
 
             f.write("\n        Cost function: C_3")
-            result = BFS(start, goal, C_3)
-            f.write(printResult(start, goal, result))
+            result = BFS(problem, C_3)
+            f.write(printResult(problem, result))
 
             f.write("\n        Cost function: C_4")
-            result = BFS(start, goal, C_4)
-            f.write(printResult(start, goal, result))
+            result = BFS(problem, C_4)
+            f.write(printResult(problem, result))
 
             # Depth-First Search
             f.write("\n    Depth-First Search\n")
 
             # Calling the DFS function with the cost functions
             f.write("\n        Cost function: C_1")
-            result = DFS(start, goal, C_1)
-            f.write(printResult(start, goal, result))
+            result = DFS(problem, C_1)
+            f.write(printResult(problem, result))
 
             f.write("\n        Cost function: C_2")
-            result = DFS(start, goal, C_2)
-            f.write(printResult(start, goal, result))
+            result = DFS(problem, C_2)
+            f.write(printResult(problem, result))
 
             f.write("\n        Cost function: C_3")
-            result = DFS(start, goal, C_3)
-            f.write(printResult(start, goal, result))
+            result = DFS(problem, C_3)
+            f.write(printResult(problem, result))
 
             f.write("\n        Cost function: C_4")
-            result = DFS(start, goal, C_4)
-            f.write(printResult(start, goal, result))
+            result = DFS(problem, C_4)
+            f.write(printResult(problem, result))
 
             # Uniform-Cost Search
             f.write("\n    Uniform-Cost Search (Dijkstra)\n")
 
             # Calling the Dijkstra function with the cost functions
             f.write("\n        Cost function: C_1")
-            result = Dijkstra(start, goal, C_1)
-            f.write(printResult(start, goal, result))
+            result = Dijkstra(problem, C_1)
+            f.write(printResult(problem, result))
 
             f.write("\n        Cost function: C_2")
-            result = Dijkstra(start, goal, C_2)
-            f.write(printResult(start, goal, result))
+            result = Dijkstra(problem, C_2)
+            f.write(printResult(problem, result))
 
             f.write("\n        Cost function: C_3")
-            result = Dijkstra(start, goal, C_3)
-            f.write(printResult(start, goal, result))
+            result = Dijkstra(problem, C_3)
+            f.write(printResult(problem, result))
 
             f.write("\n        Cost function: C_4")
-            result = Dijkstra(start, goal, C_4)
-            f.write(printResult(start, goal, result))
+            result = Dijkstra(problem, C_4)
+            f.write(printResult(problem, result))
 
 
 # This function runs the experiment 2, saving the results in a file
@@ -243,28 +242,26 @@ def Experiment_2():
             goalX = randint(0, 30)
             goalY = randint(0, 30)
 
-            # Create Node objects for the start and goal points
-            start = Node(startX, startY)
-            goal = Node(goalX, goalY)
+            problem = Problem((startX, startY), (goalX, goalY))
 
             # Log the start and goal nodes to the file
             f.write(f"\nIteration {i + 1}:\n")
-            f.write(f"Nodes: Start {start} - Goal {goal}\n")
+            f.write(f"Nodes: Start {problem.initial} - Goal {problem.goal}\n")
 
             # Perform Uniform-Cost Search (Dijkstra) for each cost function
             f.write("\n    Uniform-Cost Search (Dijkstra)\n")
             for cost_function, label in [(C_1, "C_1"), (C_2, "C_2"), (C_3, "C_3"), (C_4, "C_4")]:
                 f.write(f"\n        Cost function: {label}")
-                result = Dijkstra(start, goal, cost_function)
-                f.write(printResult(start, goal, result))
+                result = Dijkstra(problem, cost_function)
+                f.write(printResult(problem, result))
 
             # Perform A* Search for each combination of cost function and heuristic
             f.write("\n    A* Search\n")
             for cost_function, cost_label in [(C_1, "C_1"), (C_2, "C_2"), (C_3, "C_3"), (C_4, "C_4")]:
                 for heuristic, heuristic_label in [(euclidean, "Euclidean (H1)"), (manhattan, "Manhattan (H2)")]:
                     f.write(f"\n        Cost function: {cost_label}, Heuristic: {heuristic_label}")
-                    result = AStar(start, goal, cost_function, heuristic)
-                    f.write(printResult(start, goal, result))
+                    result = AStar(problem, cost_function, heuristic)
+                    f.write(printResult(problem, result))
 
 #This function runs the experiment 3, saving the results in a file
 def Experiment_3():
@@ -280,16 +277,15 @@ def Experiment_3():
             goalX = randint(0, 30)
             goalY = randint(0, 30)
 
-            start = Node(startX, startY)
-            goal = Node(goalX, goalY)
+            problem = Problem((startX, startY), (goalX, goalY))
 
-            f.write(f"\nNodes: Start {start} - Goal {goal}\n")
+            f.write(f"\nNodes: Start {problem.initial} - Goal {problem.goal}\n")
 
             # Greedy Best-First Search (euclidean)
             f.write("\n    Greedy Best-First Search (euclidean)\n")
 
             # Calling the GBFS function with euclidean
-            result = GBFS(start, goal, C_1, euclidean)
+            result = GBFS(problem, C_1, euclidean)
 
             # Getting the goal node
             goalNode = result[0]
@@ -298,8 +294,8 @@ def Experiment_3():
             path = goalNode.path()
 
             f.write(f"\n            Solution Found:\n")
-            f.write(f"            Start: {start}\n")
-            f.write(f"            Goal: {goal}\n")
+            f.write(f"            Start: {problem.initial}\n")
+            f.write(f"            Goal: {problem.goal}\n")
             f.write(f"            Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
             f.write(f"            Path cost: {goalNode.cost} (C1)\n")
             f.write(f"            Path cost: {getPathCost(path, C_2)} (C2)\n")
@@ -312,7 +308,7 @@ def Experiment_3():
             f.write("\n    Greedy Best-First Search (manhattan)\n")
 
             # Calling the GBFS function with manhattan
-            result = GBFS(start, goal, C_1, manhattan)
+            result = GBFS(problem, C_1, manhattan)
 
             # Getting the goal node
             goalNode = result[0]
@@ -322,8 +318,8 @@ def Experiment_3():
 
             f.write(f"\n        Iteration: {i+1}\n")
             f.write(f"\n            Solution Found:\n")
-            f.write(f"            Start: {start}\n")
-            f.write(f"            Goal: {goal}\n")
+            f.write(f"            Start: {problem.initial}\n")
+            f.write(f"            Goal: {problem.goal}\n")
             f.write(f"            Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
             f.write(f"            Path cost: {goalNode.cost} (C1)\n")
             f.write(f"            Path cost: {getPathCost(path, C_2)} (C2)\n")
@@ -337,8 +333,8 @@ def Experiment_3():
             for cost_function, cost_label in [(C_1, "C_1"), (C_2, "C_2"), (C_3, "C_3"), (C_4, "C_4")]:
                 for heuristic, heuristic_label in [(euclidean, "Euclidean (H1)"), (manhattan, "Manhattan (H2)")]:
                     f.write(f"\n        Cost function: {cost_label}, Heuristic: {heuristic_label}")
-                    result = AStar(start, goal, cost_function, heuristic)
-                    f.write(printResult(start, goal, result))
+                    result = AStar(problem, cost_function, heuristic)
+                    f.write(printResult(problem, result))
 
 
 # This function runs the experiment 4, saving the results in a file
@@ -355,17 +351,16 @@ def Experiment_4():
             goalX = randint(0, 30)
             goalY = randint(0, 30)
 
-            start = Node(startX, startY)
-            goal = Node(goalX, goalY)
+            problem = Problem((startX, startY), (goalX, goalY))
 
-            f.write(f"\nNodes: Start {start} - Goal {goal}\n")
+            f.write(f"\nNodes: Start {problem.initial} - Goal {problem.goal}\n")
 
             # Breadth-First Search (random)
             f.write("\n    Random Breadth-First Search\n")
 
             for i in range(10):
                 # Calling the BFS function
-                result = RandomBFS(start, goal, C_1)
+                result = RandomBFS(problem, C_1)
 
                 # Getting the goal node
                 goalNode = result[0]
@@ -375,8 +370,8 @@ def Experiment_4():
 
                 f.write(f"\n        Iteration: {i+1}\n")
                 f.write(f"\n            Solution Found:\n")
-                f.write(f"            Start: {start}\n")
-                f.write(f"            Goal: {goal}\n")
+                f.write(f"            Start: {problem.initial}\n")
+                f.write(f"            Goal: {problem.goal}\n")
                 f.write(f"            Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
                 f.write(f"            Path cost: {goalNode.cost} (C1)\n")
                 f.write(f"            Path cost: {getPathCost(path, C_2)} (C2)\n")
@@ -390,7 +385,7 @@ def Experiment_4():
 
             for i in range(10):
                 # Calling the DFS function
-                result = RandomDFS(start, goal, C_1)
+                result = RandomDFS(problem, C_1)
 
                 # Getting the goal node
                 goalNode = result[0]
@@ -400,8 +395,8 @@ def Experiment_4():
 
                 f.write(f"\n        Iteration: {i+1}\n")
                 f.write(f"\n            Solution Found:\n")
-                f.write(f"            Start: {start}\n")
-                f.write(f"            Goal: {goal}\n")
+                f.write(f"            Start: {problem.initial}\n")
+                f.write(f"            Goal: {problem.goal}\n")
                 f.write(f"            Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
                 f.write(f"            Path cost: {goalNode.cost} (C1)\n")
                 f.write(f"            Path cost: {getPathCost(path, C_2)} (C2)\n")
