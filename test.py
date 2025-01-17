@@ -2,16 +2,16 @@ import costFunctions as c
 from heuristics import *
 from algorithms import *
 from typing import Callable
+from problem import Problem
 from node import Node
 
 def test(algorithm: Callable, costFunction: Callable, *heuristic: Callable):
-    start = Node(0, 0)
-    objective = Node(2, 2)
+    problem = Problem((0, 0), (2, 2))
 
     if not heuristic:
-        result = algorithm(start, objective, costFunction)
+        result = algorithm(problem, costFunction)
     else:
-        result = algorithm(start, objective, costFunction, heuristic[0])
+        result = algorithm(problem, costFunction, heuristic[0])
 
     path = result[0].path()
 
@@ -19,12 +19,12 @@ def test(algorithm: Callable, costFunction: Callable, *heuristic: Callable):
         print("No solution")
     else:
         print(f"\nSolution found:")
-        print("Start:", start)
-        print("Objective:", objective)
+        print("Start:", problem.initial)
+        print("Objective:", problem.goal)
         print("Path:", end=" ")
         for node in reversed(path):
             print(node, end="")
-            if node != objective:
+            if node.state != problem.goal:
                 print(" -> ", end="")
         print(f"\nPath cost: {result[0].cost}")
         print(f"Nodes generated: {result[1]}")

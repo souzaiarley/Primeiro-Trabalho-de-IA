@@ -1,3 +1,4 @@
+from problem import Problem
 from node import Node
 from queue import Queue
 from queue import PriorityQueue
@@ -6,12 +7,12 @@ from random import shuffle
 from pathCost import getPathCost
 
 # Breadth First Search
-def BFS(start: Node, goal: Node, costFunction: Callable):
+def BFS(problem: Problem, costFunction: Callable):
     # Start from the start node
-    currentNode = start
+    currentNode = Node(problem.initial[0], problem.initial[1])
     
     # If the start node is the goal node, return the start node
-    if currentNode == goal:
+    if problem.isGoal(currentNode.state):
         return (currentNode, 1, 1)
     
     # Create a queue to store the nodes to be visited and add the start node to the queue
@@ -20,7 +21,7 @@ def BFS(start: Node, goal: Node, costFunction: Callable):
 
     # Create a set to store the states that have been reached and add the start node's state to the set
     reached = set()
-    reached.add((currentNode.x, currentNode.y))
+    reached.add(currentNode.state)
 
     # Create a list to store the nodes that have been visited
     visited = []
@@ -42,22 +43,24 @@ def BFS(start: Node, goal: Node, costFunction: Callable):
 
         # For each child node, if it's state is the goal, return the child node. Otherwise, if the state of the child node has not been reached, add the child node to the queue and it's state to the reached set
         for child in children:
-            if child.x == goal.x and child.y == goal.y:
+            s = child.state
+
+            if problem.isGoal(s):
                 return (child, generated, len(visited)) # Return the goal node, the number of nodes reached (generated), and the number of nodes visited
-            if (child.x, child.y) not in reached:
-                reached.add((child.x, child.y))
+            if s not in reached:
+                reached.add(s)
                 frontier.put(child)
     
     # If the goal is not found, return None
     return None
 
 # Random Breadth First Search
-def RandomBFS(start: Node, goal: Node, costFunction: Callable):
+def RandomBFS(problem: Problem, costFunction: Callable):
     # Start from the start node
-    currentNode = start
+    currentNode = Node(problem.initial[0], problem.initial[1])
     
     # If the start node is the goal node, return the start node
-    if currentNode == goal:
+    if problem.isGoal(currentNode.state):
         return (currentNode, 1, 1)
     
     # Create a queue to store the nodes to be visited and add the start node to the queue
@@ -66,7 +69,7 @@ def RandomBFS(start: Node, goal: Node, costFunction: Callable):
 
     # Create a set to store the states that have been reached and add the start node's state to the set
     reached = set()
-    reached.add((currentNode.x, currentNode.y))
+    reached.add(currentNode.state)
 
     # Create a list to store the nodes that have been visited
     visited = []
@@ -91,22 +94,24 @@ def RandomBFS(start: Node, goal: Node, costFunction: Callable):
 
         # For each child node, if it's state is the goal, return the child node. Otherwise, if the state of the child node has not been reached, add the child node to the queue and it's state to the reached set
         for child in children:
-            if child.x == goal.x and child.y == goal.y:
+            s = child.state
+
+            if problem.isGoal(s):
                 return (child, generated, len(visited)) # Return the goal node, the number of nodes reached (generated), and the number of nodes visited
-            if (child.x, child.y) not in reached:
-                reached.add((child.x, child.y))
+            if s not in reached:
+                reached.add(s)
                 frontier.put(child)
     
     # If the goal is not found, return None
     return None
 
 # Depth First Search
-def DFS(start: Node, goal: Node, costFunction: Callable):
+def DFS(problem: Problem, costFunction: Callable):
     # Start from the start node
-    currentNode = start
+    currentNode = Node(problem.initial[0], problem.initial[1])
     
     # If the start node is the goal node, return the start node
-    if currentNode == goal:
+    if problem.isGoal(currentNode.state):
         return (currentNode, 1, 1)
     
     # Create a stack to store the nodes to be visited and add the start node to the stack
@@ -115,7 +120,7 @@ def DFS(start: Node, goal: Node, costFunction: Callable):
 
     # Create a set to store the states that have been reached and add the start node's state to the set
     reached = set()
-    reached.add((currentNode.x, currentNode.y))
+    reached.add(currentNode.state)
 
     # Create a list to store the nodes that have been visited
     visited = []
@@ -137,22 +142,24 @@ def DFS(start: Node, goal: Node, costFunction: Callable):
 
         # For each child node, if it's state is the goal, return the child node. Otherwise, if the state of the child node has not been reached, add the child node to the queue and it's state to the reached set
         for child in children:
-            if child.x == goal.x and child.y == goal.y:
+            s = child.state
+
+            if problem.isGoal(s):
                 return (child, generated, len(visited)) # Return the goal node, the number of nodes reached (generated), and the number of nodes visited
-            if (child.x, child.y) not in reached:
-                reached.add((child.x, child.y))
+            if s not in reached:
+                reached.add(s)
                 frontier.append(child)
     
     # If the goal is not found, return None
     return None
 
 # Random Depth First Search
-def RandomDFS(start: Node, goal: Node, costFunction: Callable):
+def RandomDFS(problem: Problem, costFunction: Callable):
     # Start from the start node
-    currentNode = start
+    currentNode = Node(problem.initial[0], problem.initial[1])
     
     # If the start node is the goal node, return the start node
-    if currentNode == goal:
+    if problem.isGoal(currentNode.state):
         return (currentNode, 1, 1)
     
     # Create a stack to store the nodes to be visited and add the start node to the stack
@@ -161,7 +168,7 @@ def RandomDFS(start: Node, goal: Node, costFunction: Callable):
 
     # Create a set to store the states that have been reached and add the start node's state to the set
     reached = set()
-    reached.add((currentNode.x, currentNode.y))
+    reached.add(currentNode.state)
 
     # Create a list to store the nodes that have been visited
     visited = []
@@ -186,27 +193,29 @@ def RandomDFS(start: Node, goal: Node, costFunction: Callable):
 
         # For each child node, if it's state is the goal, return the child node. Otherwise, if the state of the child node has not been reached, add the child node to the queue and it's state to the reached set
         for child in children:
-            if child.x == goal.x and child.y == goal.y:
+            s = child.state
+
+            if problem.isGoal(s):
                 return (child, generated, len(visited)) # Return the goal node, the number of nodes reached (generated), and the number of nodes visited
-            if (child.x, child.y) not in reached:
-                reached.add((child.x, child.y))
+            if s not in reached:
+                reached.add(s)
                 frontier.append(child)
     
     # If the goal is not found, return None
     return None
 
 # Uniform Cost Search
-def Dijkstra(start: Node, goal: Node, costFunction: Callable):
+def Dijkstra(problem: Problem, costFunction: Callable):
     # Start from the start node
-    current = start
+    currentNode = Node(problem.initial[0], problem.initial[1])
     
     # Create a priority queue to store the nodes to be visited and add the start node to the queue
     frontier = PriorityQueue()
-    frontier.put((0, id(current), current))
+    frontier.put((0, id(currentNode), currentNode))
 
     # Create a dictionary to store the states that have been reached and it's nodes. It also adds the start state to the dictionary
     reached = {}
-    reached[(current.x, current.y)] = current
+    reached[currentNode.state] = currentNode
 
     # Create a list to store the nodes that have been visited
     visited = []
@@ -217,39 +226,41 @@ def Dijkstra(start: Node, goal: Node, costFunction: Callable):
     # While the queue is not empty
     while not frontier.empty():
         # Get the first node in the queue, remove it from the queue, and add it to the visited list
-        current = frontier.get()[2]
-        visited.append(current)
+        currentNode = frontier.get()[2]
+        visited.append(currentNode)
         
         # If the current node's state is the goal, return the current node, the number of nodes reached (generated), and the number of nodes visited
-        if current.x == goal.x and current.y == goal.y:
-            return (current, generated, len(visited))
+        if problem.isGoal(currentNode.state):
+            return (currentNode, generated, len(visited))
         
         # Expand the current node
-        children = current.expand(costFunction)
+        children = currentNode.expand(costFunction)
 
         # Update the number of nodes generated
         generated += len(children)
 
         # For each child node, if the child node's state is not in the reached dictionary or the cost of the child node is less than the cost of the node in the reached dictionary, add the child node to the reached dictionary and to the queue (Relaxation)
         for child in children:
-            if (child.x, child.y) not in reached or child.cost < reached[(child.x, child.y)].cost:
-                reached[(child.x, child.y)] = child
+            s = child.state
+
+            if s not in reached or child.cost < reached[s].cost:
+                reached[s] = child
                 frontier.put((child.cost, id(child), child))
     
     # If the goal node is not found, return None
     return None
 
-def GBFS(start: Node, goal: Node, costFunction: Callable, heuristic: Callable):
+def GBFS(problem: Problem, costFunction: Callable, heuristic: Callable):
     # Start from the start node
-    current = start
+    currentNode = Node(problem.initial[0], problem.initial[1])
 
     # Create a priority queue to store the nodes to be visited and add the start node to the queue
     frontier = PriorityQueue()
-    frontier.put((0, id(current), current))  # Priority = f(n) = h(n)
+    frontier.put((0, id(currentNode), currentNode))  # Priority = f(n) = h(n)
 
     # Create a dictionary to store the states that have been reached and it's nodes. It also adds the start state to the dictionary
     reached = {}
-    reached[(current.x, current.y)] = current
+    reached[currentNode.state] = currentNode
 
     # List of visited nodes
     visited = []
@@ -260,44 +271,46 @@ def GBFS(start: Node, goal: Node, costFunction: Callable, heuristic: Callable):
     # While the queue is not empty
     while not frontier.empty():
         # Remove the node with the lowest f(n) cost
-        current = frontier.get()[2]
-        visited.append(current)
+        currentNode = frontier.get()[2]
+        visited.append(currentNode)
 
         # If the current node's state is the goal, return the current node, the number of nodes reached (generated), and the number of nodes visited
-        if current.x == goal.x and current.y == goal.y:
-            current.cost = getPathCost(current.path(), costFunction)
-            return (current, generated, len(visited))
+        if problem.isGoal(currentNode.state):
+            currentNode.cost = getPathCost(currentNode.path(), costFunction)
+            return (currentNode, generated, len(visited))
 
         # Expand the current node
-        children = current.expand()
+        children = currentNode.expand()
 
         # Update the number of nodes generated
         generated += len(children)
 
         for child in children:
+            s = child.state
+
             # Calculate the costs
-            f_cost = heuristic(child, goal)  # f(n) = h(n)
+            f_cost = heuristic(s, problem.goal)  # f(n) = h(n)
 
             # Check if the node should be updated
-            if (child.x, child.y) not in reached:
-                reached[(child.x, child.y)] = child  # Update the node in the reached dictionary
+            if s not in reached:
+                reached[s] = child  # Update the node in the reached dictionary
                 frontier.put((f_cost, id(child), child))  # Add to the priority queue
 
     # If the goal is not found, return None
     return None
 
 
-def AStar(start: Node, goal: Node, costFunction: Callable, heuristic: Callable):
+def AStar(problem: Problem, costFunction: Callable, heuristic: Callable):
     # Start from the start node
-    current = start
+    currentNode = Node(problem.initial[0], problem.initial[1])
 
     # Create the priority queue and add the start node
     frontier = PriorityQueue()
-    frontier.put((0, id(current), current))  # Priority = f(n) = g(n) + h(n)
+    frontier.put((0, id(currentNode), currentNode))  # Priority = f(n) = g(n) + h(n)
 
     # Create a dictionary to store the states that have been reached and it's nodes. It also adds the start state to the dictionary
     reached = {}
-    reached[(current.x, current.y)] = current
+    reached[currentNode.state] = currentNode
 
     # List of visited nodes
     visited = []
@@ -308,28 +321,30 @@ def AStar(start: Node, goal: Node, costFunction: Callable, heuristic: Callable):
     # While the queue is not empty
     while not frontier.empty():
         # Remove the node with the lowest f(n) cost
-        current = frontier.get()[2]
-        visited.append(current)
+        currentNode = frontier.get()[2]
+        visited.append(currentNode)
 
         # If the current node's state is the goal, return the current node, the number of nodes reached (generated), and the number of nodes visited
-        if current.x == goal.x and current.y == goal.y:
-            return (current, generated, len(visited))
+        if problem.isGoal(currentNode.state):
+            return (currentNode, generated, len(visited))
 
         # Expand the current node
-        children = current.expand(costFunction)
+        children = currentNode.expand(costFunction)
 
         # Update the number of nodes generated
         generated += len(children)
 
         # Expand the child nodes
         for child in children:
+            s = child.state
+
             # Calculate the costs
             g_cost = child.cost  # g(n) is already included in the child's cost (updated in expand)
-            f_cost = g_cost + heuristic(child, goal)  # f(n) = g(n) + h(n)
+            f_cost = g_cost + heuristic(s, problem.goal)  # f(n) = g(n) + h(n)
 
             # Check if the node should be updated
-            if (child.x, child.y) not in reached or g_cost < reached[(child.x, child.y)].cost:
-                reached[(child.x, child.y)] = child  # Update the node in the reached dictionary
+            if s not in reached or g_cost < reached[s].cost:
+                reached[s] = child  # Update the node in the reached dictionary
                 frontier.put((f_cost, id(child), child))  # Add to the priority queue
 
     # If the goal is not found, return None
