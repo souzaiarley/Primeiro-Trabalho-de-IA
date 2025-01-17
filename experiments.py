@@ -1,5 +1,5 @@
 from problem import Problem
-from node import Node
+from node import *
 from algorithms import *
 from costFunctions import *
 from heuristics import *
@@ -358,7 +358,7 @@ def Experiment_4():
             # Breadth-First Search (random)
             f.write("\n    Random Breadth-First Search\n")
 
-            for i in range(10):
+            for j in range(10):
                 # Calling the BFS function
                 result = RandomBFS(problem, C_1)
 
@@ -368,7 +368,7 @@ def Experiment_4():
                 # Getting the path from the goal node to the start node
                 path = goalNode.path()
 
-                f.write(f"\n        Iteration: {i+1}\n")
+                f.write(f"\n        Iteration: {j+1}\n")
                 f.write(f"\n            Solution Found:\n")
                 f.write(f"            Start: {problem.initial}\n")
                 f.write(f"            Goal: {problem.goal}\n")
@@ -383,7 +383,7 @@ def Experiment_4():
             # Depth-First Search (random)
             f.write("\n    Random Depth-First Search\n")
 
-            for i in range(10):
+            for j in range(10):
                 # Calling the DFS function
                 result = RandomDFS(problem, C_1)
 
@@ -393,7 +393,7 @@ def Experiment_4():
                 # Getting the path from the goal node to the start node
                 path = goalNode.path()
 
-                f.write(f"\n        Iteration: {i+1}\n")
+                f.write(f"\n        Iteration: {j+1}\n")
                 f.write(f"\n            Solution Found:\n")
                 f.write(f"            Start: {problem.initial}\n")
                 f.write(f"            Goal: {problem.goal}\n")
@@ -404,3 +404,195 @@ def Experiment_4():
                 f.write(f"            Path cost: {getPathCost(path, C_4)} (C4)\n")
                 f.write(f"            Nodes generated: {result[1]}\n")
                 f.write(f"            Nodes visited: {result[2]}\n")
+
+# This function runs the experiment 5, saving the results in a file
+def Experiment_5():
+    with open("experiments/experiment_5.txt", "w") as f:
+        f.write("|==============|\n")
+        f.write("| Experiment 5 |\n")
+        f.write("|==============|\n")
+        for i in range(25):
+                # Generate random start and goal nodes
+                startX = randint(0, 30)
+                startY = randint(0, 30)
+                goalX = randint(0, 30)
+                goalY = randint(0, 30)
+
+                problem = Problem((startX, startY, False), (goalX, goalY, True))
+
+                # Generate random coordinates for the pharmacies
+                pharmacies = []
+
+                while len(pharmacies) != 4:
+                    x = randint(0, 30)
+                    y = randint(0, 30)
+                    if (x, y) not in pharmacies:
+                        pharmacies.append((x, y))
+
+                f.write(f"\nNodes: Start {(startX, startY)} - Goal {(goalX, goalY)}\n")
+
+                f.write("Pharmacies: " + " - ".join([f"({x}, {y})" for x, y in pharmacies]) + "\n")
+
+                
+                f.write(f"\n    A* Search using C1 and H1\n")
+
+                result = AStar(problem, C_1, euclidean, ExperimentFiveNode, pharmacies)
+
+                # Getting the goal node
+                goalNode = result[0]
+
+                # Getting the path from the goal node to the start node
+                path = goalNode.path()
+
+                f.write(f"\n        Solution Found:\n")
+                f.write(f"        Start: {problem.initial}\n")
+                f.write(f"        Goal: {problem.goal}\n")
+                f.write(f"        Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
+                f.write(f"        Path cost: {goalNode.cost}\n")
+                f.write(f"        Nodes generated: {result[1]}\n")
+                f.write(f"        Nodes visited: {result[2]}\n")
+
+                
+
+
+                f.write(f"\n    A* Search using C1 and H2\n")
+
+                result = AStar(problem, C_1, manhattan, ExperimentFiveNode, pharmacies)
+
+                # Getting the goal node
+                goalNode = result[0]
+
+                # Getting the path from the goal node to the start node
+                path = goalNode.path()
+
+                f.write(f"\n        Solution Found:\n")
+                f.write(f"        Start: {problem.initial}\n")
+                f.write(f"        Goal: {problem.goal}\n")
+                f.write(f"        Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
+                f.write(f"        Path cost: {goalNode.cost}\n")
+                f.write(f"        Nodes generated: {result[1]}\n")
+                f.write(f"        Nodes visited: {result[2]}\n")
+
+
+                
+
+                f.write(f"\n    A* Search using C2 and H1\n")
+
+                result = AStar(problem, C_2, euclidean, ExperimentFiveNode, pharmacies)
+
+                # Getting the goal node
+                goalNode = result[0]
+
+                # Getting the path from the goal node to the start node
+                path = goalNode.path()
+
+                f.write(f"\n        Solution Found:\n")
+                f.write(f"        Start: {problem.initial}\n")
+                f.write(f"        Goal: {problem.goal}\n")
+                f.write(f"        Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
+                f.write(f"        Path cost: {goalNode.cost}\n")
+                f.write(f"        Nodes generated: {result[1]}\n")
+                f.write(f"        Nodes visited: {result[2]}\n")
+                
+                
+
+
+                f.write(f"\n    A* Search using C2 and H2\n")
+
+                result = AStar(problem, C_2, manhattan, ExperimentFiveNode, pharmacies)
+
+                # Getting the goal node
+                goalNode = result[0]
+
+                # Getting the path from the goal node to the start node
+                path = goalNode.path()
+
+                f.write(f"\n        Solution Found:\n")
+                f.write(f"        Start: {problem.initial}\n")
+                f.write(f"        Goal: {problem.goal}\n")
+                f.write(f"        Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
+                f.write(f"        Path cost: {goalNode.cost}\n")
+                f.write(f"        Nodes generated: {result[1]}\n")
+                f.write(f"        Nodes visited: {result[2]}\n")
+
+
+
+
+                f.write(f"\n    A* Search using C3 and H1\n")
+
+                result = AStar(problem, C_3, euclidean, ExperimentFiveNode, pharmacies)
+
+                # Getting the goal node
+                goalNode = result[0]
+
+                # Getting the path from the goal node to the start node
+                path = goalNode.path()
+
+                f.write(f"\n        Solution Found:\n")
+                f.write(f"        Start: {problem.initial}\n")
+                f.write(f"        Goal: {problem.goal}\n")
+                f.write(f"        Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
+                f.write(f"        Path cost: {goalNode.cost}\n")
+                f.write(f"        Nodes generated: {result[1]}\n")
+                f.write(f"        Nodes visited: {result[2]}\n")
+
+
+
+
+                f.write(f"\n    A* Search using C3 and H2\n")
+
+                result = AStar(problem, C_3, manhattan, ExperimentFiveNode, pharmacies)
+
+                # Getting the goal node
+                goalNode = result[0]
+
+                # Getting the path from the goal node to the start node
+                path = goalNode.path()
+
+                f.write(f"\n        Solution Found:\n")
+                f.write(f"        Start: {problem.initial}\n")
+                f.write(f"        Goal: {problem.goal}\n")
+                f.write(f"        Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
+                f.write(f"        Path cost: {goalNode.cost}\n")
+                f.write(f"        Nodes generated: {result[1]}\n")
+                f.write(f"        Nodes visited: {result[2]}\n")
+
+
+
+
+                f.write(f"\n    A* Search using C4 and H1\n")
+
+                result = AStar(problem, C_4, euclidean, ExperimentFiveNode, pharmacies)
+
+                # Getting the goal node
+                goalNode = result[0]
+
+                # Getting the path from the goal node to the start node
+                path = goalNode.path()
+                f.write(f"\n        Solution Found:\n")
+                f.write(f"        Start: {problem.initial}\n")
+                f.write(f"        Goal: {problem.goal}\n")
+                f.write(f"        Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
+                f.write(f"        Path cost: {goalNode.cost}\n")
+                f.write(f"        Nodes generated: {result[1]}\n")
+                f.write(f"        Nodes visited: {result[2]}\n")
+
+
+
+
+                f.write(f"\n    A* Search using C4 and H2\n")
+
+                result = AStar(problem, C_4, manhattan, ExperimentFiveNode, pharmacies)
+
+                # Getting the goal node
+                goalNode = result[0]
+
+                # Getting the path from the goal node to the start node
+                path = goalNode.path()
+                f.write(f"\n        Solution Found:\n")
+                f.write(f"        Start: {problem.initial}\n")
+                f.write(f"        Goal: {problem.goal}\n")
+                f.write(f"        Path: {' -> '.join([str(node) for node in reversed(path)])}\n")
+                f.write(f"        Path cost: {goalNode.cost}\n")
+                f.write(f"        Nodes generated: {result[1]}\n")
+                f.write(f"        Nodes visited: {result[2]}\n")

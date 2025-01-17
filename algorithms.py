@@ -300,9 +300,9 @@ def GBFS(problem: Problem, costFunction: Callable, heuristic: Callable):
     return None
 
 
-def AStar(problem: Problem, costFunction: Callable, heuristic: Callable):
+def AStar(problem: Problem, costFunction: Callable, heuristic: Callable, nodeClass=Node, pharmacies=[]):
     # Start from the start node
-    currentNode = Node(problem.initial[0], problem.initial[1])
+    currentNode = nodeClass(problem.initial[0], problem.initial[1], pharmacies=pharmacies)
 
     # Create the priority queue and add the start node
     frontier = PriorityQueue()

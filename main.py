@@ -7,6 +7,7 @@ if __name__ == "__main__":
     print("[2] Experiment 2")
     print("[3] Experiment 3")
     print("[4] Experiment 4")
+    print("[5] Experiment 5")
     choice = input("Choice: ")
 
     if choice == "0":
@@ -19,5 +20,7 @@ if __name__ == "__main__":
         Experiment_3()
     elif choice == "4":
         Experiment_4()
+    elif choice == "5":
+        Experiment_5()
     else:
         print("Invalid choice.")
