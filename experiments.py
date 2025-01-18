@@ -23,7 +23,7 @@ def printResult(problem: Problem, result):
 
 
 def Experiment_0():
-    with open("experiments/experiment_0.txt", "w") as f:
+    with open("experiments_output/experiment_0.txt", "w") as f:
         f.write("|==============|\n")
         f.write("| Experiment 0 |\n")
         f.write("|==============|\n")
@@ -151,7 +151,7 @@ def Experiment_0():
 
 # This function runs the experiment 1, saving the results in a file
 def Experiment_1():
-    with open("experiments/experiment_1.txt", "w") as f:
+    with open("experiments_output/experiment_1.txt", "w") as f:
         f.write("|==============|\n")
         f.write("| Experiment 1 |\n")
         f.write("|==============|\n")
@@ -230,7 +230,7 @@ def Experiment_1():
 
 # This function runs the experiment 2, saving the results in a file
 def Experiment_2():
-    with open("experiments/experiment_2.txt", "w") as f:
+    with open("experiments_output/experiment_2.txt", "w") as f:
         f.write("|==============|\n")
         f.write("| Experiment 2 |\n")
         f.write("|==============|\n")
@@ -265,7 +265,7 @@ def Experiment_2():
 
 #This function runs the experiment 3, saving the results in a file
 def Experiment_3():
-    with open("experiments/experiment_3.txt", "w") as f:
+    with open("experiments_output/experiment_3.txt", "w") as f:
         f.write("|==============|\n")
         f.write("| Experiment 3 |\n")
         f.write("|==============|\n")
@@ -339,7 +339,7 @@ def Experiment_3():
 
 # This function runs the experiment 4, saving the results in a file
 def Experiment_4():
-    with open("experiments/experiment_4.txt", "w") as f:
+    with open("experiments_output/experiment_4.txt", "w") as f:
         f.write("|==============|\n")
         f.write("| Experiment 4 |\n")
         f.write("|==============|\n")
@@ -407,7 +407,7 @@ def Experiment_4():
 
 # This function runs the experiment 5, saving the results in a file
 def Experiment_5():
-    with open("experiments/experiment_5.txt", "w") as f:
+    with open("experiments_output/experiment_5.txt", "w") as f:
         f.write("|==============|\n")
         f.write("| Experiment 5 |\n")
         f.write("|==============|\n")
