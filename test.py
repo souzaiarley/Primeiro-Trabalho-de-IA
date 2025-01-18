@@ -5,9 +5,7 @@ from typing import Callable
 from problem import Problem
 from node import Node
 
-def test(algorithm: Callable, costFunction: Callable, *heuristic: Callable):
-    problem = Problem((0, 0), (2, 2))
-
+def test(algorithm: Callable, costFunction: Callable, *heuristic: Callable, problem: Problem):
     if not heuristic:
         result = algorithm(problem, costFunction)
     else:
@@ -31,6 +29,13 @@ def test(algorithm: Callable, costFunction: Callable, *heuristic: Callable):
         print(f"Nodes visited: {result[2]}")
 
 if __name__ == "__main__":
+    startX = int(input("\nEnter the x value for the start node: "))
+    startY = int(input("Enter the y value for the start node: "))
+    goalX = int(input("Enter the x value for the goal node: "))
+    goalY = int(input("Enter the y value for the goal node: "))
+
+    problem = Problem((startX, startY), (goalX, goalY))
+
     print("Choose a cost function:")
     print("[0] C_1")
     print("[1] C_2")
@@ -63,13 +68,13 @@ if __name__ == "__main__":
 
     if choice == "0":
         print("Running Breadth-First Search with cost function", choice_str)
-        test(BFS, costFunction)
+        test(BFS, costFunction, problem=problem)
     elif choice == "1":
         print("Running Depth-First Search with cost function", choice_str)
-        test(DFS, costFunction)
+        test(DFS, costFunction, problem=problem)
     elif choice == "2":
         print("Running Dijkstra with cost function", choice_str)
-        test(Dijkstra, costFunction)
+        test(Dijkstra, costFunction, problem=problem)
     elif choice == "3" or "4":
         print("Choose a heuristic function:")
         print("[0] euclidean")
@@ -86,9 +91,9 @@ if __name__ == "__main__":
             exit()
         if choice == "3":
             print("Running Greedy Search with cost function", choice_str, "and heuristic", heuristic_str)
-            test(GBFS, costFunction, heuristic)
+            test(GBFS, costFunction, heuristic, problem=problem)
         elif choice == "4":
             print("Running A* with cost function", choice_str, " and", heuristic_str, "heuristic")
-            test(AStar, costFunction, heuristic)
+            test(AStar, costFunction, heuristic, problem=problem)
     else:
         print("Invalid choice.")
