@@ -97,7 +97,7 @@ def Experiment_0():
         result = Dijkstra(problem, C_4)
         f.write(printResult(problem, result))
         
-        f.write("\n    Greedy Best-First Search(euclidean)\n")
+        f.write("\n    Greedy Best-First Search (euclidean)\n")
 
         # Calling the BFS function
         result = GBFS(problem, C_1, euclidean)
@@ -119,7 +119,7 @@ def Experiment_0():
         f.write(f"            Nodes generated: {result[1]}\n")
         f.write(f"            Nodes visited: {result[2]}\n")
 
-        f.write("\n    Greedy Best-First Search(manhattan)\n")
+        f.write("\n    Greedy Best-First Search (manhattan)\n")
 
         # Calling the BFS function
         result = GBFS(problem, C_1, manhattan)
