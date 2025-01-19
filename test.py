@@ -3,7 +3,7 @@ from heuristics import *
 from algorithms import *
 from typing import Callable
 from problem import Problem
-from node import Node
+from node import *
 
 def test(algorithm: Callable, costFunction: Callable, *heuristic: Callable, problem: Problem):
     if not heuristic:
@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
     problem = Problem((startX, startY), (goalX, goalY))
 
-    print("Choose a cost function:")
+    print("\nChoose a cost function:")
     print("[0] C_1")
     print("[1] C_2")
     print("[2] C_3")
@@ -58,7 +58,7 @@ if __name__ == "__main__":
         print("Invalid choice.")
         exit()
 
-    print("Choose an algorithm to run:")
+    print("\nChoose an algorithm to run:")
     print("[0] Breadth-First Search")
     print("[1] Depth-First Search")
     print("[2] Dijkstra")
@@ -76,7 +76,7 @@ if __name__ == "__main__":
         print("Running Dijkstra with cost function", choice_str)
         test(Dijkstra, costFunction, problem=problem)
     elif choice == "3" or "4":
-        print("Choose a heuristic function:")
+        print("\nChoose a heuristic function:")
         print("[0] euclidean")
         print("[1] manhattan")
         heuristic_str = input("Choice: ")
@@ -93,7 +93,45 @@ if __name__ == "__main__":
             print("Running Greedy Search with cost function", choice_str, "and heuristic", heuristic_str)
             test(GBFS, costFunction, heuristic, problem=problem)
         elif choice == "4":
-            print("Running A* with cost function", choice_str, " and", heuristic_str, "heuristic")
-            test(AStar, costFunction, heuristic, problem=problem)
+            print("\nDo you want to passa a pharmacy list? [y/n]")
+            choice = input("Choice: ")
+            choice = choice.lower()
+            if choice == "y":
+                pharmacies = []
+                
+                while len(pharmacies) != 4:
+                    print(f"\nPharmacies: {len(pharmacies)}/4")
+                    x = int(input("Enter the x value for the pharmacy node: "))
+                    y = int(input("Enter the y value for the pharmacy node: "))
+                    if x < 0 or x > 30 or y < 0 or y > 30:
+                        print("Invalid coordinates.")
+                    else:
+                        if (x, y) not in pharmacies:
+                            pharmacies.append((x, y))
+                        else:
+                            print("This pharmacy is already in the list.")
+
+                problem = Problem((startX, startY, False), (goalX, goalY, True))
+
+                print("\nRunning A* with cost function", choice_str, " and", heuristic_str, "heuristic")
+
+                result = AStar(problem, costFunction, heuristic, ExperimentFiveNode, pharmacies)
+                goalNode = result[0]
+                path = goalNode.path()
+
+                print(f"\nSolution Found:")
+                print(f"Start: {(startX, startY)}")
+                print(f"Goal: {(goalX, goalY)}")
+                print("Pharmacies: " + " - ".join([f"({x}, {y})" for x, y in pharmacies]))
+                print(f"Path: {' -> '.join([str(node) for node in reversed(path)])}")
+                print(f"Path cost: {goalNode.cost}")
+                print(f"Nodes generated: {result[1]}")
+                print(f"Nodes visited: {result[2]}")
+
+            elif choice == "n":
+                print("Running A* with cost function", choice_str, " and", heuristic_str, "heuristic")
+                test(AStar, costFunction, heuristic, problem=problem)
+            else:
+                print("Invalid choice.")
     else:
         print("Invalid choice.")
